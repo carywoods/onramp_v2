@@ -181,26 +181,32 @@ def answer():
     if classification.get("return_all"):
         top_k = 120
 
-    # If proximity query and profile has a geocoded ZIP, use that as the anchor
+    # Inject profile coordinates into proximity queries
     profile = session.get("profile", {})
-    if classification.get("proximity_query") and not classification.get("proximity_lat"):
-        geo = profile.get("zip_geo")
-        if geo:
-            classification["proximity_lat"] = geo["lat"]
-            classification["proximity_lon"] = geo["lon"]
+    geo     = profile.get("zip_geo")
 
-    # Also treat "close to home" as a proximity query when profile ZIP is set
-    # and the student's close_to_home priority is high (4-5) even without
-    # explicit proximity words in the query
-    if (not classification.get("proximity_query")
-            and profile.get("zip_geo")
-            and profile.get("close_to_home", 0) >= 4
+    # Any proximity signal — explicit words in query OR high close_to_home slider
+    proximity_intent = (
+        classification.get("proximity_query")
+        or (geo and profile.get("close_to_home", 0) >= 4
             and not classification.get("state_filter")
-            and not classification.get("enrollment_max")):
-        geo = profile["zip_geo"]
-        classification["proximity_query"] = True
-        classification["proximity_lat"]   = geo["lat"]
-        classification["proximity_lon"]   = geo["lon"]
+            and not classification.get("enrollment_max"))
+    )
+
+    if proximity_intent:
+        # Use profile ZIP if classifier didn't find a named location
+        if not classification.get("proximity_lat") and geo:
+            classification["proximity_query"] = True
+            classification["proximity_lat"]   = geo["lat"]
+            classification["proximity_lon"]   = geo["lon"]
+        # If no profile ZIP either, proximity can't be resolved — clear the flag
+        # so we fall through to normal FTS rather than returning nothing
+        elif not classification.get("proximity_lat"):
+            classification["proximity_query"] = False
+
+    print(f"[retrieval] proximity={classification.get('proximity_query')} "
+          f"lat={classification.get('proximity_lat')} lon={classification.get('proximity_lon')} "
+          f"zip_geo={geo}")
 
     try:
         context_blocks = build_context_blocks(KB_DIR, retrieval_query, top_k,
