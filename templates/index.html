@@ -445,8 +445,11 @@
             if (!resp.ok) throw new Error(data.error || 'Something went wrong.');
 
             answerText.innerHTML = renderMarkdown(data.answer);
+            const lang = data.detected_language && data.detected_language !== 'English'
+                ? ` · Responding in ${data.detected_language}`
+                : '';
             metaLine.textContent =
-                `Query understood as: "${data.retrieval_query}" · ${data.classifier_model}`;
+                `Query understood as: "${data.retrieval_query}" · ${data.classifier_model}${lang}`;
             answerBox.style.display = 'block';
 
             if (data.context && data.context.length > 0) {
@@ -501,7 +504,16 @@
 
     function renderMarkdown(text) {
         if (!text) return '';
+        // Extract markdown links before escaping so URLs are preserved
+        const links = [];
+        text = text.replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, (_, label, url) => {
+            const i = links.length;
+            links.push(`<a href="${url}" target="_blank" rel="noopener">${esc(label)}</a>`);
+            return `\x00LINK${i}\x00`;
+        });
         let html = esc(text);
+        // Restore links
+        html = html.replace(/\x00LINK(\d+)\x00/g, (_, i) => links[parseInt(i)]);
         html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
         html = html.replace(/^[\*\-]\s+(.+)$/gm, '<li>$1</li>');
         html = html.replace(/(<li>.*<\/li>\n?)+/g, m => `<ul>${m}</ul>`);
