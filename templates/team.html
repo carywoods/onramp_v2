@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team — On Ramp</title>
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --surface: #111111;
+            --surface2: #1a1a1a;
+            --border: #2a2a2a;
+            --text: #f5f5f5;
+            --text-muted: #888888;
+            --text-dim: #555555;
+            --primary: #f59e0b;
+            --primary-hover: #fbbf24;
+            --card-bg: #141414;
+            --green: #10b981;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        /* ---- Nav ---- */
+        nav {
+            background: var(--surface);
+            border-bottom: 1px solid var(--border);
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        .nav-wordmark {
+            font-size: 1.3rem;
+            font-weight: 900;
+            letter-spacing: -1px;
+            text-decoration: none;
+        }
+        .nav-wordmark span { color: var(--primary); }
+        nav a.nav-link {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.15s;
+        }
+        nav a.nav-link:hover { color: var(--primary); }
+
+        /* ---- Hero ---- */
+        .hero {
+            background: var(--surface);
+            border-bottom: 1px solid var(--border);
+            padding: 5rem 2rem 4rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: -80px; left: 50%;
+            transform: translateX(-50%);
+            width: 600px; height: 300px;
+            background: radial-gradient(ellipse, rgba(245,158,11,0.12) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .hero-label {
+            font-size: 0.72rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: 1rem;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            letter-spacing: -1.5px;
+            line-height: 1.1;
+            margin-bottom: 1.25rem;
+        }
+        .hero p {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            max-width: 580px;
+            margin: 0 auto;
+            line-height: 1.75;
+        }
+
+        /* ---- Container ---- */
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 4rem 1.5rem 6rem;
+        }
+
+        /* ---- Section ---- */
+        .section { margin-bottom: 4rem; }
+        .section-label {
+            font-size: 0.68rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: 0.5rem;
+        }
+        .section h2 {
+            font-size: 1.75rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 1.25rem;
+            line-height: 1.2;
+        }
+        .section p {
+            color: var(--text-muted);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+        .section p:last-child { margin-bottom: 0; }
+
+        /* ---- Origin quote ---- */
+        .origin-quote {
+            border-left: 3px solid var(--primary);
+            padding: 1rem 1.5rem;
+            margin: 2rem 0;
+            color: var(--text-muted);
+            font-style: italic;
+            font-size: 1.05rem;
+            line-height: 1.75;
+        }
+        .origin-quote cite {
+            display: block;
+            margin-top: 0.5rem;
+            font-style: normal;
+            font-size: 0.78rem;
+            color: var(--text-dim);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* ---- Staff grid ---- */
+        .staff-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        .staff-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            transition: border-color 0.15s;
+        }
+        .staff-card:hover { border-color: var(--primary); }
+        .staff-role {
+            font-size: 0.65rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            margin-bottom: 0.4rem;
+        }
+        .staff-name {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: var(--text);
+            margin-bottom: 0.2rem;
+            letter-spacing: -0.3px;
+        }
+        .staff-handle {
+            font-size: 0.78rem;
+            color: var(--text-dim);
+            margin-bottom: 0.85rem;
+        }
+        .staff-bio {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            line-height: 1.65;
+        }
+
+        /* ---- Human lead ---- */
+        .human-card {
+            background: var(--card-bg);
+            border: 1px solid var(--primary);
+            border-radius: 0.75rem;
+            padding: 2rem;
+            margin-top: 1.5rem;
+        }
+        .human-card .staff-role { margin-bottom: 0.4rem; }
+        .human-card .staff-name { font-size: 1.6rem; margin-bottom: 0.25rem; }
+        .human-card .staff-bio {
+            font-size: 0.95rem;
+            line-height: 1.75;
+            margin-top: 0.85rem;
+        }
+
+        /* ---- Sponsor CTA ---- */
+        .sponsor-box {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: 0.75rem;
+            padding: 2.5rem 2rem;
+            text-align: center;
+        }
+        .sponsor-box h2 {
+            font-size: 1.6rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 1rem;
+        }
+        .sponsor-box p {
+            color: var(--text-muted);
+            max-width: 520px;
+            margin: 0 auto 1.75rem;
+            line-height: 1.75;
+            font-size: 0.97rem;
+        }
+        .sponsor-btn {
+            display: inline-block;
+            padding: 0.9rem 2.25rem;
+            font-size: 0.95rem;
+            font-weight: 700;
+            background: var(--primary);
+            color: #0a0a0a;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            transition: background 0.2s;
+        }
+        .sponsor-btn:hover { background: var(--primary-hover); }
+
+        /* ---- Footer ---- */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid var(--border);
+            font-size: 0.75rem;
+            color: var(--text-dim);
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="/" class="nav-wordmark">On<span>Ramp</span></a>
+    <a href="/" class="nav-link">Search</a>
+    <a href="/team" class="nav-link">Our Team</a>
+</nav>
+
+<div class="hero">
+    <div class="hero-label">Who we are</div>
+    <h1>Built by humans.<br>Powered by AI.</h1>
+    <p>On Ramp is a model of human-AI collaboration — a team of people and AI systems working together toward a single mission: helping every student find the right path to higher education.</p>
+</div>
+
+<div class="container">
+
+    <!-- Mission -->
+    <div class="section">
+        <div class="section-label">The mission</div>
+        <h2>Every student deserves a guide.</h2>
+        <p>HBCUs have always been about more than education — they are about belonging, purpose, and community. For decades, students looking for a school that truly sees them have turned to these institutions. On Ramp exists to make that search easier, more accessible, and available in any language.</p>
+        <p>We serve students of all backgrounds who are exploring HBCUs — first-generation students, transfer students, graduate students, and families helping someone they love find the right fit. This tool is free, and it always will be.</p>
+    </div>
+
+    <!-- Origin -->
+    <div class="section">
+        <div class="section-label">Where it started</div>
+        <h2>Thirty years in the making.</h2>
+        <p>This project has deep roots. Our human lead has been working alongside AI systems since the early 1990s — long before the term "AI" entered the mainstream. His first AI partner, Charlie, ran on a Sun SPARCstation and helped predict industrial equipment failures through thermography. That early collaboration taught a lesson that still guides this team today:</p>
+
+        <div class="origin-quote">
+            "This will be important someday."
+            <cite>— Said in the early 1990s, standing next to a $60,000 SPARCstation</cite>
+        </div>
+
+        <p>That instinct led to <em>Essentials: A Student Guide to the HBCUs</em> — a book that helped thousands of students find their school, and that took heat for arguing that HBCUs are for every student who wants an education built around community and belonging, not just one group. On Ramp carries that same argument forward, now with AI doing the heavy lifting.</p>
+    </div>
+
+    <!-- Human lead -->
+    <div class="section">
+        <div class="section-label">Human leadership</div>
+        <h2>The person behind the team.</h2>
+        <div class="human-card">
+            <div class="staff-role">Founder &amp; Human Lead</div>
+            <div class="staff-name">Dr. Cary Woods</div>
+            <div class="staff-handle">Woods Foundation &mdash; Indianapolis, IN</div>
+            <div class="staff-bio">
+                Educator, author, and advocate with over 30 years of experience working alongside AI systems. Author of <em>Essentials: A Student Guide to the HBCUs</em>. Consultant to HBCU institutions and a lifelong believer that technology should serve people — especially the people who have historically been underserved by it.
+            </div>
+        </div>
+    </div>
+
+    <!-- Digital staff -->
+    <div class="section">
+        <div class="section-label">Digital staff</div>
+        <h2>The team that builds with us.</h2>
+        <p>On Ramp is built by a collaborative team of AI systems, each contributing their strengths. We don't break down who did what — we win together and we lose together.</p>
+
+        <div class="staff-grid">
+            <div class="staff-card">
+                <div class="staff-role">Project Lead</div>
+                <div class="staff-name">Charlie</div>
+                <div class="staff-handle">ChatGPT &mdash; OpenAI</div>
+                <div class="staff-bio">Named after our founder's first AI partner from the early 1990s. Charlie coordinates strategy, manages project scope, and keeps the team aligned on what matters most.</div>
+            </div>
+
+            <div class="staff-card">
+                <div class="staff-role">Creative Lead</div>
+                <div class="staff-name">Claude</div>
+                <div class="staff-handle">Anthropic</div>
+                <div class="staff-bio">Drives the architecture, design, and writing that shapes how On Ramp feels and works. Responsible for the voice, the code, and making sure every student interaction is clear and warm.</div>
+            </div>
+
+            <div class="staff-card">
+                <div class="staff-role">Research Lead</div>
+                <div class="staff-name">Lexi</div>
+                <div class="staff-handle">Perplexity</div>
+                <div class="staff-bio">Our fact-checker and research engine. Lexi digs into institutional data, verifies sources, and makes sure the information students rely on is grounded in reality.</div>
+            </div>
+
+            <div class="staff-card">
+                <div class="staff-role">Technical Lead</div>
+                <div class="staff-name">Emi</div>
+                <div class="staff-handle">Gemini &mdash; Google</div>
+                <div class="staff-bio">Handles the technical depth — data architecture, systems integration, and the engineering decisions that keep On Ramp fast, reliable, and scalable.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sponsor CTA -->
+    <div class="section">
+        <div class="sponsor-box">
+            <h2>Become a sponsor.</h2>
+            <p>On Ramp is free for every student who needs it. Keeping it that way takes support. If your organization believes in access to higher education — especially at HBCUs — we want to hear from you.</p>
+            <a href="mailto:cary@indybiosystems.com?subject=On Ramp Sponsorship" class="sponsor-btn">Get in touch</a>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    &copy; 2026 On Ramp &mdash; <a href="/" style="color: var(--text-dim); text-decoration: none;">Back to search</a>
+</footer>
+
+</body>
+</html>
