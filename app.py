@@ -15,7 +15,10 @@ Environment variables:
 """
 
 import os
+import smtplib
+import ssl
 from datetime import datetime
+from email.mime.text import MIMEText
 from pathlib import Path
 
 from flask import Flask, jsonify, render_template, request
@@ -39,6 +42,13 @@ BASE_URL         = os.environ.get("BASE_URL", OPENROUTER_BASE_URL)
 CLASSIFIER_MODEL = os.environ.get("CLASSIFIER_MODEL", DEFAULT_MODEL)
 ANSWER_MODEL     = os.environ.get("ANSWER_MODEL",     DEFAULT_MODEL)
 TOP_K            = int(os.environ.get("TOP_K", 5))
+
+SMTP_HOST        = os.environ.get("SMTP_HOST", "")
+SMTP_PORT        = int(os.environ.get("SMTP_PORT", 465))
+SMTP_USER        = os.environ.get("SMTP_USER", "")
+SMTP_PASS        = os.environ.get("SMTP_PASS", "")
+SUGGEST_FROM     = os.environ.get("SUGGEST_FROM", SMTP_USER)
+SUGGEST_TO       = os.environ.get("SUGGEST_TO", "")
 
 
 @app.route("/health")
@@ -176,6 +186,43 @@ def answer():
         "answer_model":      answer_model,
         "classification":    classification,
     })
+
+
+@app.route("/api/suggest", methods=["POST"])
+def suggest():
+    data        = request.json
+    school      = (data.get("school") or "").strip()
+    field       = (data.get("field") or "").strip()
+    correction  = (data.get("correction") or "").strip()
+    submitter   = (data.get("email") or "").strip()
+
+    if not school or not correction:
+        return jsonify({"error": "School name and correction are required."}), 400
+
+    body = f"""On Ramp — Data Correction Submission
+{'=' * 50}
+School:      {school}
+Field:       {field or 'Not specified'}
+Correction:  {correction}
+Submitted by: {submitter or 'Anonymous'}
+Timestamp:   {datetime.now().isoformat(timespec='seconds')}
+"""
+
+    try:
+        msg = MIMEText(body)
+        msg["Subject"] = f"On Ramp correction: {school}"
+        msg["From"]    = SUGGEST_FROM
+        msg["To"]      = SUGGEST_TO
+
+        ctx = ssl.create_default_context()
+        with smtplib.SMTP_SSL(SMTP_HOST, SMTP_PORT, context=ctx) as server:
+            server.login(SMTP_USER, SMTP_PASS)
+            server.sendmail(SUGGEST_FROM, SUGGEST_TO, msg.as_string())
+    except Exception as e:
+        print(f"[suggest] email error: {e}")
+        return jsonify({"error": "Could not send submission. Please try again later."}), 500
+
+    return jsonify({"ok": True})
 
 
 if __name__ == "__main__":

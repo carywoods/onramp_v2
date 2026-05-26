@@ -338,6 +338,80 @@
         .badge-warning   { background: var(--yellow-bg); color: var(--yellow); border: 1px solid rgba(245,158,11,0.3); }
         .badge-danger    { background: var(--red-bg);    color: var(--red);    border: 1px solid rgba(239,68,68,0.3); }
 
+        /* ---- Disclaimer ---- */
+        .disclaimer {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--text-dim);
+            border-radius: 0.5rem;
+            padding: 0.9rem 1.25rem;
+            margin-top: 1.75rem;
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+        .disclaimer strong { color: var(--text); }
+
+        /* ---- Suggest form ---- */
+        .suggest-section {
+            margin-top: 2.5rem;
+            border-top: 1px solid var(--border);
+            padding-top: 2rem;
+        }
+        .suggest-title {
+            font-size: 0.72rem;
+            font-weight: 700;
+            color: var(--text-dim);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+        }
+        .suggest-form {
+            display: flex;
+            flex-direction: column;
+            gap: 0.65rem;
+        }
+        .suggest-form input,
+        .suggest-form textarea {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+            padding: 0.7rem 1rem;
+            font-size: 0.9rem;
+            color: var(--text);
+            font-family: inherit;
+            outline: none;
+            transition: border-color 0.2s;
+            resize: vertical;
+        }
+        .suggest-form input:focus,
+        .suggest-form textarea:focus {
+            border-color: var(--primary);
+        }
+        .suggest-form input::placeholder,
+        .suggest-form textarea::placeholder { color: var(--text-dim); }
+        .suggest-btn {
+            align-self: flex-start;
+            padding: 0.65rem 1.5rem;
+            font-size: 0.85rem;
+            font-weight: 700;
+            background: transparent;
+            color: var(--primary);
+            border: 1px solid var(--primary);
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+        .suggest-btn:hover { background: var(--primary); color: #0a0a0a; }
+        .suggest-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+        .suggest-feedback {
+            font-size: 0.82rem;
+            padding: 0.5rem 0;
+            display: none;
+        }
+
         /* ---- Footer ---- */
         footer {
             text-align: center;
@@ -397,6 +471,22 @@
     <div class="sources-section" id="sources-section">
         <div class="sources-label">Schools referenced</div>
         <div class="school-grid" id="school-grid"></div>
+    </div>
+
+    <div class="disclaimer">
+        <strong>About this data</strong> — On Ramp compiles information from the U.S. Department of Education's official HBCU list, institutional websites, and other public sources. There is no single authoritative database for all HBCU data — tuition, enrollment, programs, and accreditation status change frequently. We make our best effort to keep this information current and accurate, but we cannot guarantee completeness. Always verify critical details directly with the institution. <strong>You can ask in English, Spanish, French, or Haitian Creole.</strong>
+    </div>
+
+    <div class="suggest-section">
+        <div class="suggest-title">Submit a correction</div>
+        <form class="suggest-form" id="suggest-form">
+            <input type="text" id="sug-school" placeholder="School name *" required>
+            <input type="text" id="sug-field" placeholder="What needs correcting? (e.g. tuition, programs, status)">
+            <textarea id="sug-correction" rows="3" placeholder="Describe the correction *" required></textarea>
+            <input type="email" id="sug-email" placeholder="Your email (optional — if you'd like a follow-up)">
+            <button type="submit" class="suggest-btn" id="suggest-btn">Submit</button>
+            <div class="suggest-feedback" id="suggest-feedback"></div>
+        </form>
     </div>
 </div>
 
@@ -531,6 +621,42 @@
         }).join('');
         return html;
     }
+
+    // Suggestion form
+    document.getElementById('suggest-form').addEventListener('submit', async e => {
+        e.preventDefault();
+        const btn      = document.getElementById('suggest-btn');
+        const feedback = document.getElementById('suggest-feedback');
+        btn.disabled   = true;
+        btn.textContent = 'Sending…';
+        feedback.style.display = 'none';
+
+        try {
+            const resp = await fetch('/api/suggest', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    school:     document.getElementById('sug-school').value.trim(),
+                    field:      document.getElementById('sug-field').value.trim(),
+                    correction: document.getElementById('sug-correction').value.trim(),
+                    email:      document.getElementById('sug-email').value.trim(),
+                }),
+            });
+            const data = await resp.json();
+            if (!resp.ok) throw new Error(data.error || 'Submission failed.');
+            feedback.textContent   = 'Thank you — we received your correction and will review it.';
+            feedback.style.color   = 'var(--green)';
+            feedback.style.display = 'block';
+            e.target.reset();
+        } catch (err) {
+            feedback.textContent   = err.message;
+            feedback.style.color   = 'var(--red)';
+            feedback.style.display = 'block';
+        } finally {
+            btn.disabled    = false;
+            btn.textContent = 'Submit';
+        }
+    });
 
     function esc(str) {
         return String(str || '')
