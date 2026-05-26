@@ -44,8 +44,8 @@
   },
   "_conflicts": [],
   "_resolution": "perplexity_verified",
-  "federally_recognized": false,
-  "hbcu_designation_note": "Operates as an HBCU and is recognized by the HBCU community, but does not currently appear on the U.S. Dept of Education official list.",
+  "federally_recognized": true,
+  "hbcu_designation_note": "Officially recognized by the U.S. Department of Education as one of the 105 HBCUs. Listed as #100 on the White House Initiative on HBCUs federal list.",
   "coordinates": {
     "lat": 37.4138,
     "lon": -79.1422

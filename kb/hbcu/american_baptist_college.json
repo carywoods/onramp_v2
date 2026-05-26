@@ -45,8 +45,8 @@
   },
   "_conflicts": [],
   "_resolution": "stub_no_reliable_data",
-  "federally_recognized": false,
-  "hbcu_designation_note": "A historically Black theological college recognized by the HBCU community. Not on the U.S. Dept of Education official HBCU designation list.",
+  "federally_recognized": true,
+  "hbcu_designation_note": "Officially recognized by the U.S. Department of Education as one of the 105 HBCUs.",
   "coordinates": {
     "lat": 36.199,
     "lon": -86.758
