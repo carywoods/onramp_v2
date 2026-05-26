@@ -358,10 +358,92 @@ def filter_by_enrollment(kb_dir: Path, enrollment_min=None, enrollment_max=None,
     return blocks
 
 
+def _haversine_miles(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
+    import math
+    R = 3958.8
+    phi1, phi2 = math.radians(lat1), math.radians(lat2)
+    dphi = math.radians(lat2 - lat1)
+    dlam = math.radians(lon2 - lon1)
+    a = math.sin(dphi / 2) ** 2 + math.cos(phi1) * math.cos(phi2) * math.sin(dlam / 2) ** 2
+    return R * 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
+
+
+def filter_by_proximity(kb_dir: Path, lat: float, lon: float,
+                         nearby_states: list = None, top_k: int = 5,
+                         type_filter: str = None, program_filter: str = None) -> list:
+    """Return open schools sorted by distance from (lat, lon), optionally filtered to nearby_states."""
+    results = []
+    state_set = {s.lower() for s in nearby_states} if nearby_states else None
+
+    for path in sorted(kb_dir.glob("*.json")):
+        data = json.loads(path.read_text(encoding="utf-8"))
+        if data.get("status") == "closed":
+            continue
+
+        coords = data.get("coordinates", {})
+        slat, slon = coords.get("lat"), coords.get("lon")
+        if slat is None or slon is None:
+            continue
+
+        if state_set:
+            school_state = data.get("state", "").lower()
+            if not any(s in school_state for s in state_set):
+                continue
+
+        if type_filter and data.get("type", "").lower() != type_filter.lower():
+            continue
+
+        if program_filter:
+            programs = " ".join(data.get("academics", {}).get("programs", [])).lower()
+            if program_filter.lower() not in programs:
+                continue
+
+        distance = _haversine_miles(lat, lon, slat, slon)
+        results.append((distance, path, data))
+
+    results.sort(key=lambda x: x[0])
+
+    blocks = []
+    for distance, path, data in results[:top_k]:
+        blocks.append({
+            "filename":             path.name,
+            "school_id":            data.get("school_id", path.stem),
+            "name":                 data.get("name", ""),
+            "state":                data.get("state", ""),
+            "type":                 data.get("type", ""),
+            "programs":             ", ".join(data.get("academics", {}).get("programs", [])),
+            "website":              data.get("contacts", {}).get("website", ""),
+            "status":               data.get("status", "open"),
+            "snippet":              f"Approximately {int(distance)} miles away.",
+            "excerpt":              school_to_text(data),
+            "federally_recognized": data.get("federally_recognized"),
+            "hbcu_designation_note":data.get("hbcu_designation_note", ""),
+            "region":               data.get("region", ""),
+            "institution_level":    data.get("institution_level", ""),
+            "coordinates":          data.get("coordinates", {}),
+            "enrollment":           data.get("enrollment"),
+            "tuition":              data.get("tuition", {}),
+            "distance_miles":       int(distance),
+        })
+    return blocks
+
+
 def build_context_blocks(kb_dir: Path, query: str, top_k: int, max_chars: int = 2200,
                           classification: dict = None):
-    # If classifier detected enrollment bounds, use direct JSON filtering
     if classification:
+        # Proximity query — sort by distance from referenced location
+        if classification.get("proximity_query") and classification.get("proximity_lat") and classification.get("proximity_lon"):
+            return filter_by_proximity(
+                kb_dir=kb_dir,
+                lat=classification["proximity_lat"],
+                lon=classification["proximity_lon"],
+                nearby_states=classification.get("nearby_states"),
+                top_k=top_k,
+                type_filter=classification.get("type_filter"),
+                program_filter=classification.get("program_filter"),
+            )
+
+        # Enrollment bounds — direct JSON filtering
         enroll_max = classification.get("enrollment_max")
         enroll_min = classification.get("enrollment_min")
         if enroll_max is not None or enroll_min is not None:
@@ -452,11 +534,13 @@ def classify_query(query: str, base_url: str, model: str, api_key: str,
       1. Rewrite the student's natural-language question into a terse
          retrieval query optimised for FTS keyword search
       2. Identify key search dimensions (state, type, programs, size)
-      3. Detect language
+      3. Detect proximity intent ("near X", "close to Y", "within driving distance")
+      4. Detect language
 
     Returns a dict with: retrieval_query, detected_language, confidence,
     state_filter, type_filter, program_filter,
-    enrollment_max, enrollment_min
+    enrollment_max, enrollment_min,
+    proximity_query, proximity_lat, proximity_lon, nearby_states
     """
     system = """You are a query understanding assistant for an HBCU (Historically Black College and University) database.
 
@@ -469,6 +553,10 @@ Given a student's question, return ONLY valid JSON with these exact keys:
   program_filter    - main academic program/major mentioned, else null
   enrollment_max    - integer upper bound on enrollment if mentioned (e.g. "under 2000" → 2000), else null
   enrollment_min    - integer lower bound on enrollment if mentioned (e.g. "over 5000" → 5000), else null
+  proximity_query   - true if the question asks about proximity/location ("near", "close to", "within driving distance", "around", "in the area of"), else false
+  proximity_lat     - decimal latitude of the referenced city/state if proximity_query is true, else null
+  proximity_lon     - decimal longitude of the referenced city/state if proximity_query is true, else null
+  nearby_states     - list of US state names that border or are very close to the referenced location (include the state itself if named), else null
 
 Example input: "What affordable HBCUs in Virginia offer nursing?"
 Example output:
@@ -480,7 +568,28 @@ Example output:
   "type_filter": null,
   "program_filter": "Nursing",
   "enrollment_max": null,
-  "enrollment_min": null
+  "enrollment_min": null,
+  "proximity_query": false,
+  "proximity_lat": null,
+  "proximity_lon": null,
+  "nearby_states": null
+}
+
+Example input: "HBCUs near Indiana"
+Example output:
+{
+  "retrieval_query": "HBCU Midwest",
+  "detected_language": "English",
+  "confidence": "high",
+  "state_filter": null,
+  "type_filter": null,
+  "program_filter": null,
+  "enrollment_max": null,
+  "enrollment_min": null,
+  "proximity_query": true,
+  "proximity_lat": 39.7684,
+  "proximity_lon": -86.1581,
+  "nearby_states": ["Indiana", "Illinois", "Ohio", "Kentucky", "Michigan"]
 }
 
 Example input: "Small HBCUs under 2000 students"
@@ -493,7 +602,11 @@ Example output:
   "type_filter": null,
   "program_filter": null,
   "enrollment_max": 2000,
-  "enrollment_min": null
+  "enrollment_min": null,
+  "proximity_query": false,
+  "proximity_lat": null,
+  "proximity_lon": null,
+  "nearby_states": null
 }
 
 Return ONLY the JSON object. No explanation, no markdown."""
@@ -529,6 +642,10 @@ Return ONLY the JSON object. No explanation, no markdown."""
         "program_filter":    data.get("program_filter"),
         "enrollment_max":    data.get("enrollment_max"),
         "enrollment_min":    data.get("enrollment_min"),
+        "proximity_query":   bool(data.get("proximity_query", False)),
+        "proximity_lat":     data.get("proximity_lat"),
+        "proximity_lon":     data.get("proximity_lon"),
+        "nearby_states":     data.get("nearby_states"),
         "raw":               raw,
     }
 
