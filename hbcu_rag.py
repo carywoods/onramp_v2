@@ -75,6 +75,7 @@ def normalize_search_query(query: str) -> str:
         "give", "show", "list", "find", "get", "want", "need",
         "looking", "look", "can", "you", "i", "my", "all", "every",
         "some", "which", "where", "how", "who", "any", "have", "has",
+        "schools", "colleges", "universities",
     }
     terms = [t for t in query.split() if t not in stopwords and len(t) > 1]
     return " ".join(terms)
