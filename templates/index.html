@@ -472,7 +472,7 @@
             : '';
 
         const websiteHtml = school.website
-            ? `<div class="school-website"><a href="${esc(school.website)}" target="_blank" rel="noopener">${esc(school.website.replace(/^https?:\/\//, ''))}</a></div>`
+            ? `<div class="school-website"><a href="${school.website}" target="_blank" rel="noopener">${esc(school.website.replace(/^https?:\/\//, ''))}</a></div>`
             : '';
 
         const badge = statusBadge(school);
