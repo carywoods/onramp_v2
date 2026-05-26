@@ -14,9 +14,11 @@ Environment variables:
     OPENROUTER_API_KEY  overrides openrouter_api_key.txt
 """
 
+import json
 import os
 import smtplib
 import ssl
+import urllib.request
 from datetime import datetime
 from email.mime.text import MIMEText
 from pathlib import Path
@@ -70,11 +72,31 @@ def index():
     return render_template("index.html", profile=session["profile"])
 
 
+def geocode_zip(zip_code: str):
+    """Return (lat, lon, city, state) for a US ZIP, or None on failure."""
+    try:
+        url = f"https://api.zippopotam.us/us/{zip_code.strip()}"
+        with urllib.request.urlopen(url, timeout=5) as resp:
+            data = json.loads(resp.read())
+        place = data["places"][0]
+        return {
+            "lat":   float(place["latitude"]),
+            "lon":   float(place["longitude"]),
+            "city":  place["place name"],
+            "state": place["state"],
+        }
+    except Exception:
+        return None
+
+
 @app.route("/profile", methods=["GET", "POST"])
 def profile():
     if request.method == "POST":
+        zip_code = request.form.get("zip_code", "").strip()
+        geo      = geocode_zip(zip_code) if zip_code else None
         session["profile"] = {
-            "zip_code":            request.form.get("zip_code", "").strip(),
+            "zip_code":            zip_code,
+            "zip_geo":             geo,
             "close_to_home":       int(request.form.get("close_to_home", 3)),
             "affordability":       int(request.form.get("affordability", 3)),
             "online_hybrid":       int(request.form.get("online_hybrid", 3)),
@@ -159,7 +181,29 @@ def answer():
 
     # --- Stage 2: FTS retrieval (or enrollment filter) using classifier output ---
     if classification.get("return_all"):
-        top_k = 120  # return full KB when user asks for "all"
+        top_k = 120
+
+    # If proximity query and profile has a geocoded ZIP, use that as the anchor
+    profile = session.get("profile", {})
+    if classification.get("proximity_query") and not classification.get("proximity_lat"):
+        geo = profile.get("zip_geo")
+        if geo:
+            classification["proximity_lat"] = geo["lat"]
+            classification["proximity_lon"] = geo["lon"]
+
+    # Also treat "close to home" as a proximity query when profile ZIP is set
+    # and the student's close_to_home priority is high (4-5) even without
+    # explicit proximity words in the query
+    if (not classification.get("proximity_query")
+            and profile.get("zip_geo")
+            and profile.get("close_to_home", 0) >= 4
+            and not classification.get("state_filter")
+            and not classification.get("enrollment_max")):
+        geo = profile["zip_geo"]
+        classification["proximity_query"] = True
+        classification["proximity_lat"]   = geo["lat"]
+        classification["proximity_lon"]   = geo["lon"]
+
     try:
         context_blocks = build_context_blocks(KB_DIR, retrieval_query, top_k,
                                               classification=classification)
