@@ -441,7 +441,12 @@
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ query, top_k: 5 }),
             });
-            const data = await resp.json();
+            let data;
+            try {
+                data = await resp.json();
+            } catch {
+                throw new Error('The server returned an unexpected response. Please try again.');
+            }
             if (!resp.ok) throw new Error(data.error || 'Something went wrong.');
 
             answerText.innerHTML = renderMarkdown(data.answer);

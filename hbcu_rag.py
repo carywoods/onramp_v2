@@ -72,6 +72,9 @@ def normalize_search_query(query: str) -> str:
         "these", "those", "does", "do", "did", "about", "tell",
         "me", "explain", "hbcu", "hbcus", "college", "university",
         "school", "historically", "black",
+        "give", "show", "list", "find", "get", "want", "need",
+        "looking", "look", "can", "you", "i", "my", "all", "some",
+        "which", "where", "how", "who", "any", "have", "has",
     }
     terms = [t for t in query.split() if t not in stopwords and len(t) > 1]
     return " ".join(terms)
