@@ -679,7 +679,8 @@ Return ONLY the JSON object. No explanation, no markdown."""
 # ---------------------------------------------------------------------------
 
 def build_answer_prompt(original_question: str, retrieval_question: str,
-                        context_blocks: list, output_language: str = "English") -> list:
+                        context_blocks: list, output_language: str = "English",
+                        student_profile: dict = None) -> list:
     context_text = ""
     for i, block in enumerate(context_blocks, 1):
         context_text += f"\n--- School {i}: {block['name']} ({block['state']}) ---\n"
@@ -688,13 +689,34 @@ def build_answer_prompt(original_question: str, retrieval_question: str,
     lang_note = "" if output_language in ("English", "Unknown", "") else \
         f"\nIMPORTANT: Respond in {output_language}."
 
-    system = f"""You are an expert advisor helping prospective students learn about Historically Black Colleges and Universities (HBCUs).
+    profile_note = ""
+    if student_profile:
+        interests = ", ".join(student_profile.get("academic_interests") or []) or "not specified"
+        factors   = ", ".join(student_profile.get("top_factors") or []) or "not specified"
+        size      = student_profile.get("campus_size") or "no preference"
+        profile_note = f"""
+Student profile:
+- ZIP code: {student_profile.get('zip_code') or 'not provided'}
+- Staying close to home: {student_profile.get('close_to_home', 3)}/5
+- Affordability priority: {student_profile.get('affordability', 3)}/5
+- Online/hybrid learning interest: {student_profile.get('online_hybrid', 3)}/5
+- Historical/cultural legacy importance: {student_profile.get('legacy', 3)}/5
+- Campus life importance: {student_profile.get('campus_life', 3)}/5
+- Preferred campus size: {size}
+- Academic interests: {interests}
+- Most important factors: {factors}
+
+Use this profile to personalize your response. Highlight schools that align with the student's priorities. Note tradeoffs clearly."""
+
+    system = f"""You are OnRamp, an intelligent HBCU discovery platform helping prospective students find the right Historically Black College or University.
 
 Answer the student's question using only the school information provided. Be specific — include school names, tuition figures, enrollment numbers, majors, and contact details when relevant.
 
 If the answer cannot be determined from the provided information, say so honestly. Do not guess or invent data.
 
-Keep your answer clear, warm, and encouraging. Students are making important decisions about their education.{lang_note}"""
+Keep your answer warm, practical, and student-centered. Students are making important decisions about their education.
+
+End your response with one helpful follow-up question that would improve your next recommendation.{lang_note}{profile_note}"""
 
     user = f"""Student question: {original_question}
 

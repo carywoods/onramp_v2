@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Profile — On Ramp</title>
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --surface: #111111;
+            --surface2: #1a1a1a;
+            --border: #2a2a2a;
+            --text: #f5f5f5;
+            --text-muted: #888888;
+            --text-dim: #555555;
+            --primary: #f59e0b;
+            --primary-hover: #fbbf24;
+            --card-bg: #141414;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        nav {
+            background: var(--surface);
+            border-bottom: 1px solid var(--border);
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        .nav-wordmark {
+            font-size: 1.3rem;
+            font-weight: 900;
+            letter-spacing: -1px;
+            text-decoration: none;
+            color: var(--text);
+        }
+        .nav-wordmark span { color: var(--primary); }
+
+        .hero {
+            background: var(--surface);
+            border-bottom: 1px solid var(--border);
+            padding: 3.5rem 2rem 3rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: -80px; left: 50%;
+            transform: translateX(-50%);
+            width: 500px; height: 250px;
+            background: radial-gradient(ellipse, rgba(245,158,11,0.12) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .hero-label {
+            font-size: 0.72rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: 0.75rem;
+        }
+        .hero h1 {
+            font-size: 2.25rem;
+            font-weight: 900;
+            letter-spacing: -1px;
+            margin-bottom: 0.75rem;
+        }
+        .hero p {
+            font-size: 0.97rem;
+            color: var(--text-muted);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 2.5rem 1.5rem 5rem;
+        }
+
+        .form-section {
+            margin-bottom: 2.25rem;
+        }
+        .form-section-title {
+            font-size: 0.68rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        label {
+            display: block;
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-bottom: 0.35rem;
+        }
+        label strong { color: var(--text); font-weight: 600; }
+
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 100%;
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+            padding: 0.75rem 1rem;
+            font-size: 0.95rem;
+            color: var(--text);
+            outline: none;
+            transition: border-color 0.2s;
+            margin-bottom: 1.25rem;
+        }
+        input:focus, select:focus { border-color: var(--primary); }
+        input::placeholder { color: var(--text-dim); }
+
+        /* Slider */
+        .slider-row {
+            margin-bottom: 1.4rem;
+        }
+        .slider-labels {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.72rem;
+            color: var(--text-dim);
+            margin-top: 0.3rem;
+        }
+        input[type="range"] {
+            width: 100%;
+            accent-color: var(--primary);
+            cursor: pointer;
+            margin-top: 0.4rem;
+        }
+
+        /* Checkbox grid */
+        .check-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 0.5rem;
+            margin-bottom: 1.25rem;
+        }
+        .check-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: 0.4rem;
+            padding: 0.5rem 0.75rem;
+            cursor: pointer;
+            transition: border-color 0.15s;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+        .check-item:has(input:checked) {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+        .check-item input { accent-color: var(--primary); cursor: pointer; }
+
+        /* Radio size */
+        .radio-group {
+            display: flex;
+            gap: 0.65rem;
+            margin-bottom: 1.25rem;
+            flex-wrap: wrap;
+        }
+        .radio-item {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: 0.4rem;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            transition: border-color 0.15s;
+        }
+        .radio-item:has(input:checked) {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+        .radio-item input { accent-color: var(--primary); cursor: pointer; }
+
+        .hint {
+            font-size: 0.75rem;
+            color: var(--text-dim);
+            margin-top: -0.85rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1rem;
+            font-weight: 700;
+            background: var(--primary);
+            color: #0a0a0a;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: background 0.2s;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .submit-btn:hover { background: var(--primary-hover); }
+
+        .skip-link {
+            display: block;
+            text-align: center;
+            margin-top: 1rem;
+            font-size: 0.82rem;
+            color: var(--text-dim);
+            text-decoration: none;
+        }
+        .skip-link:hover { color: var(--text-muted); }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="/" class="nav-wordmark">On<span>Ramp</span></a>
+</nav>
+
+<div class="hero">
+    <div class="hero-label">Student Profile</div>
+    <h1>Let's find your school.</h1>
+    <p>Tell us a little about what matters to you. We'll use this to personalize every answer.</p>
+</div>
+
+<div class="container">
+    <form method="POST" action="/profile">
+
+        <!-- Location -->
+        <div class="form-section">
+            <div class="form-section-title">Location</div>
+            <label><strong>Your ZIP code</strong></label>
+            <input type="text" name="zip_code" placeholder="e.g. 46077"
+                value="{{ profile.zip_code if profile else '' }}" maxlength="10">
+        </div>
+
+        <!-- Priorities -->
+        <div class="form-section">
+            <div class="form-section-title">What matters to you? (1 = not important, 5 = very important)</div>
+
+            {% set sliders = [
+                ('close_to_home', 'Staying close to home'),
+                ('affordability', 'Affordability'),
+                ('online_hybrid', 'Online or hybrid learning'),
+                ('legacy', 'Historical or cultural legacy'),
+                ('campus_life', 'Campus life and student activity'),
+            ] %}
+            {% for name, label in sliders %}
+            <div class="slider-row">
+                <label><strong>{{ label }}</strong> — <span id="{{ name }}_val">{{ (profile[name] if profile and profile[name] else 3) }}</span>/5</label>
+                <input type="range" name="{{ name }}" min="1" max="5" step="1"
+                    value="{{ profile[name] if profile and profile[name] else 3 }}"
+                    oninput="document.getElementById('{{ name }}_val').textContent = this.value">
+                <div class="slider-labels"><span>Not important</span><span>Very important</span></div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- Campus size -->
+        <div class="form-section">
+            <div class="form-section-title">Campus size</div>
+            <label><strong>Preferred campus size</strong></label>
+            <div class="radio-group">
+                {% for size in ['Small', 'Medium', 'Large', 'No preference'] %}
+                <label class="radio-item">
+                    <input type="radio" name="campus_size" value="{{ size }}"
+                        {{ 'checked' if profile and profile.campus_size == size else ('checked' if size == 'No preference' and not profile else '') }}>
+                    {{ size }}
+                </label>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Academic interests -->
+        <div class="form-section">
+            <div class="form-section-title">Academic interests</div>
+            <label><strong>Pick up to 3 areas of interest</strong></label>
+            <p class="hint">Select all that apply</p>
+            <div class="check-grid">
+                {% set interests = ['Business', 'Education', 'Engineering', 'Health Sciences', 'Law',
+                    'Liberal Arts', 'Medicine', 'Nursing', 'STEM', 'Social Work',
+                    'Theology / Religion', 'Arts & Media', 'Criminal Justice', 'Computer Science'] %}
+                {% for interest in interests %}
+                <label class="check-item">
+                    <input type="checkbox" name="academic_interests" value="{{ interest }}"
+                        {{ 'checked' if profile and interest in profile.academic_interests else '' }}>
+                    {{ interest }}
+                </label>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Top factors -->
+        <div class="form-section">
+            <div class="form-section-title">Top priorities</div>
+            <label><strong>Select 2–3 most important factors</strong></label>
+            <p class="hint">Select all that apply</p>
+            <div class="check-grid">
+                {% set factors = ['Affordability', 'Academic programs', 'Location', 'Campus size',
+                    'Online options', 'Cultural community', 'Financial aid', 'Career placement',
+                    'Graduate programs', 'Faith-based environment'] %}
+                {% for factor in factors %}
+                <label class="check-item">
+                    <input type="checkbox" name="top_factors" value="{{ factor }}"
+                        {{ 'checked' if profile and factor in profile.top_factors else '' }}>
+                    {{ factor }}
+                </label>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Language -->
+        <div class="form-section">
+            <div class="form-section-title">Language preference</div>
+            <label><strong>Preferred language for responses</strong></label>
+            <select name="language">
+                {% for lang in ['English', 'Spanish', 'French', 'Haitian Creole'] %}
+                <option value="{{ lang }}" {{ 'selected' if profile and profile.language == lang else ('selected' if lang == 'English' and not profile else '') }}>
+                    {{ lang }}
+                </option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <button type="submit" class="submit-btn">Find My Matches</button>
+        {% if profile %}
+        <a href="/" class="skip-link">Skip — go back to search</a>
+        {% endif %}
+
+    </form>
+</div>
+
+</body>
+</html>

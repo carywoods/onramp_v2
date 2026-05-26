@@ -21,7 +21,7 @@ from datetime import datetime
 from email.mime.text import MIMEText
 from pathlib import Path
 
-from flask import Flask, jsonify, render_template, request
+from flask import Flask, jsonify, redirect, render_template, request, session, url_for
 
 from hbcu_rag import (
     OPENROUTER_BASE_URL,
@@ -36,6 +36,7 @@ from hbcu_rag import (
 )
 
 app = Flask(__name__)
+app.secret_key = os.environ.get("SECRET_KEY", "onramp-dev-secret-change-in-prod")
 
 KB_DIR           = Path(os.environ.get("KB_DIR", "kb/hbcu"))
 BASE_URL         = os.environ.get("BASE_URL", OPENROUTER_BASE_URL)
@@ -64,7 +65,34 @@ def health():
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    if "profile" not in session:
+        return redirect(url_for("profile"))
+    return render_template("index.html", profile=session["profile"])
+
+
+@app.route("/profile", methods=["GET", "POST"])
+def profile():
+    if request.method == "POST":
+        session["profile"] = {
+            "zip_code":            request.form.get("zip_code", "").strip(),
+            "close_to_home":       int(request.form.get("close_to_home", 3)),
+            "affordability":       int(request.form.get("affordability", 3)),
+            "online_hybrid":       int(request.form.get("online_hybrid", 3)),
+            "legacy":              int(request.form.get("legacy", 3)),
+            "campus_life":         int(request.form.get("campus_life", 3)),
+            "campus_size":         request.form.get("campus_size", "No preference"),
+            "academic_interests":  request.form.getlist("academic_interests"),
+            "top_factors":         request.form.getlist("top_factors"),
+            "language":            request.form.get("language", "English"),
+        }
+        return redirect(url_for("index"))
+    return render_template("profile.html", profile=session.get("profile"))
+
+
+@app.route("/profile/clear")
+def profile_clear():
+    session.pop("profile", None)
+    return redirect(url_for("profile"))
 
 
 @app.route("/team")
@@ -151,6 +179,7 @@ def answer():
         retrieval_question=retrieval_query,
         context_blocks=context_blocks,
         output_language=detected_language,
+        student_profile=session.get("profile"),
     )
 
     try:
