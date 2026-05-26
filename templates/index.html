@@ -15,7 +15,6 @@
             --text-dim: #555555;
             --primary: #f59e0b;
             --primary-hover: #fbbf24;
-            --primary-dark: #92400e;
             --card-bg: #141414;
             --green: #10b981;
             --green-bg: #052e16;
@@ -33,145 +32,308 @@
             color: var(--text);
             line-height: 1.6;
             min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
+
+        /* ---- Nav ---- */
+        nav {
+            background: var(--surface);
+            border-bottom: 1px solid var(--border);
+            padding: 0.85rem 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            flex-shrink: 0;
+        }
+        .nav-wordmark {
+            font-size: 1.2rem;
+            font-weight: 900;
+            letter-spacing: -1px;
+            text-decoration: none;
+            color: var(--text);
+            margin-right: auto;
+        }
+        .nav-wordmark span { color: var(--primary); }
+        nav a.nav-link {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.15s;
+        }
+        nav a.nav-link:hover { color: var(--primary); }
+        .nav-btn {
+            font-size: 0.78rem;
+            font-weight: 700;
+            color: var(--text-dim);
+            background: transparent;
+            border: 1px solid var(--border);
+            border-radius: 0.35rem;
+            padding: 0.3rem 0.75rem;
+            cursor: pointer;
+            transition: border-color 0.15s, color 0.15s;
+            white-space: nowrap;
+        }
+        .nav-btn:hover { border-color: var(--primary); color: var(--primary); }
 
         /* ---- Header ---- */
         header {
             background: var(--surface);
             border-bottom: 1px solid var(--border);
-            padding: 4rem 2rem 3.5rem;
+            padding: 2rem 1.5rem 1.75rem;
             text-align: center;
             position: relative;
             overflow: hidden;
+            flex-shrink: 0;
         }
-
         header::before {
             content: "";
             position: absolute;
-            top: -80px; left: 50%;
+            top: -60px; left: 50%;
             transform: translateX(-50%);
-            width: 600px; height: 300px;
-            background: radial-gradient(ellipse, rgba(245,158,11,0.15) 0%, transparent 70%);
+            width: 500px; height: 200px;
+            background: radial-gradient(ellipse, rgba(245,158,11,0.12) 0%, transparent 70%);
             pointer-events: none;
         }
-
         .wordmark {
             display: inline-flex;
             align-items: baseline;
-            gap: 0.15em;
-            margin-bottom: 1rem;
+            gap: 0.1em;
+            margin-bottom: 0.5rem;
         }
+        .wordmark-on   { font-size: 2.5rem; font-weight: 900; color: var(--text); letter-spacing: -2px; line-height: 1; }
+        .wordmark-ramp { font-size: 2.5rem; font-weight: 900; color: var(--primary); letter-spacing: -2px; line-height: 1; }
+        .wordmark-dot  { width: 8px; height: 8px; background: var(--primary); border-radius: 50%; margin-bottom: 5px; margin-left: 2px; flex-shrink: 0; }
+        header .tagline    { font-size: 0.95rem; color: var(--text-muted); margin-bottom: 0.4rem; }
+        header .mission    { font-size: 0.85rem; max-width: 520px; margin: 0 auto 0.4rem; color: var(--text-muted); line-height: 1.65; }
+        header .attribution { font-size: 0.72rem; color: var(--text-dim); font-style: italic; }
+        header .attribution em { color: var(--primary); }
 
-        .wordmark-on {
-            font-size: 3.5rem;
-            font-weight: 900;
-            color: var(--text);
-            letter-spacing: -2px;
-            line-height: 1;
+        /* ---- Profile bar ---- */
+        .profile-bar {
+            max-width: 860px;
+            margin: 0.85rem auto 0;
+            padding: 0 1.5rem;
         }
-
-        .wordmark-ramp {
-            font-size: 3.5rem;
-            font-weight: 900;
-            color: var(--primary);
-            letter-spacing: -2px;
-            line-height: 1;
+        .profile-nudge {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--primary);
+            border-radius: 0.5rem;
+            padding: 0.7rem 1.1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            flex-wrap: wrap;
+            font-size: 0.83rem;
+            color: var(--text-muted);
         }
-
-        .wordmark-dot {
-            width: 10px; height: 10px;
+        .profile-nudge strong { color: var(--text); }
+        .nudge-btn {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #0a0a0a;
             background: var(--primary);
-            border-radius: 50%;
-            margin-bottom: 8px;
-            margin-left: 2px;
-            flex-shrink: 0;
+            border: none;
+            border-radius: 0.35rem;
+            padding: 0.35rem 0.85rem;
+            cursor: pointer;
+            text-decoration: none;
+            white-space: nowrap;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
         }
-
-        header .tagline {
-            font-size: 1.15rem;
-            color: var(--text-muted);
-            margin-bottom: 1rem;
-            font-weight: 400;
-            letter-spacing: 0.01em;
-        }
-
-        header .mission {
-            font-size: 0.95rem;
-            max-width: 560px;
-            margin: 0 auto 1rem;
-            color: var(--text-muted);
-            line-height: 1.7;
-        }
-
-        header .attribution {
+        .nudge-btn:hover { background: var(--primary-hover); }
+        .profile-set {
             font-size: 0.78rem;
             color: var(--text-dim);
-            font-style: italic;
+            text-align: right;
         }
+        .profile-set a { color: var(--primary); text-decoration: none; }
+        .profile-set a:hover { text-decoration: underline; }
 
-        header .attribution em {
-            color: var(--primary);
-            font-style: italic;
-        }
-
-        /* ---- Layout ---- */
-        .container {
-            max-width: 900px;
+        /* ---- Main layout ---- */
+        .main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            max-width: 860px;
+            width: 100%;
             margin: 0 auto;
-            padding: 2.5rem 1.5rem 6rem;
+            padding: 0 1.5rem;
         }
 
-        /* ---- Search card ---- */
-        .search-card {
-            background: var(--card-bg);
-            border: 1px solid var(--border);
-            border-radius: 0.75rem;
-            padding: 1.75rem 2rem;
-            margin-top: -1rem;
+        /* ---- Chips ---- */
+        .chips-area {
+            padding: 1rem 0 0.5rem;
         }
-
         .chip-label {
-            font-size: 0.72rem;
+            font-size: 0.68rem;
             font-weight: 700;
             color: var(--text-dim);
             text-transform: uppercase;
             letter-spacing: 0.1em;
-            margin-bottom: 0.7rem;
+            margin-bottom: 0.5rem;
         }
-
         .chip-group {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.45rem;
-            margin-bottom: 1.4rem;
+            gap: 0.4rem;
         }
-
         .chip {
             background: transparent;
             color: var(--text-muted);
             border: 1px solid var(--border);
             border-radius: 999px;
-            padding: 0.3rem 0.9rem;
-            font-size: 0.82rem;
+            padding: 0.25rem 0.8rem;
+            font-size: 0.78rem;
             cursor: pointer;
             transition: border-color 0.15s, color 0.15s;
             white-space: nowrap;
             user-select: none;
         }
-        .chip:hover {
-            border-color: var(--primary);
-            color: var(--primary);
+        .chip:hover { border-color: var(--primary); color: var(--primary); }
+
+        /* ---- Conversation area ---- */
+        .conversation {
+            flex: 1;
+            overflow-y: auto;
+            padding: 1rem 0;
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            min-height: 200px;
         }
 
+        .turn { display: flex; flex-direction: column; gap: 0.5rem; }
+
+        .bubble-user {
+            align-self: flex-end;
+            background: var(--primary);
+            color: #0a0a0a;
+            border-radius: 1rem 1rem 0.2rem 1rem;
+            padding: 0.65rem 1rem;
+            max-width: 75%;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        .bubble-onramp {
+            align-self: flex-start;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--primary);
+            border-radius: 0.2rem 1rem 1rem 1rem;
+            padding: 1rem 1.25rem;
+            max-width: 100%;
+            font-size: 0.97rem;
+            line-height: 1.75;
+            color: var(--text);
+        }
+        .bubble-onramp p  { margin: 0 0 0.65rem; }
+        .bubble-onramp p:last-child { margin-bottom: 0; }
+        .bubble-onramp ul, .bubble-onramp ol { margin: 0 0 0.65rem 1.25rem; }
+        .bubble-onramp li { margin-bottom: 0.3rem; }
+        .bubble-onramp strong { font-weight: 700; color: var(--primary); }
+        .bubble-onramp a { color: var(--primary); }
+
+        .bubble-label {
+            font-size: 0.65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--text-dim);
+            padding: 0 0.25rem;
+        }
+        .bubble-label.right { text-align: right; }
+
+        .meta-line {
+            font-size: 0.68rem;
+            color: var(--text-dim);
+            padding: 0.25rem 0.25rem 0;
+            letter-spacing: 0.02em;
+        }
+
+        /* School cards within bubble */
+        .school-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 0.65rem;
+            margin-top: 0.85rem;
+        }
+        .school-card {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+            padding: 0.85rem 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.35rem;
+            transition: border-color 0.15s;
+        }
+        .school-card:hover { border-color: var(--primary); }
+        .school-card h3 { font-size: 0.9rem; font-weight: 700; color: var(--text); line-height: 1.3; }
+        .school-meta    { font-size: 0.75rem; color: var(--text-muted); }
+        .school-programs { font-size: 0.75rem; color: var(--text-muted); line-height: 1.4; }
+        .school-website a { font-size: 0.75rem; color: var(--primary); text-decoration: none; word-break: break-all; }
+        .school-website a:hover { text-decoration: underline; }
+
+        .badge {
+            display: inline-block;
+            font-size: 0.62rem;
+            font-weight: 700;
+            padding: 0.12rem 0.45rem;
+            border-radius: 999px;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+        .badge-federal { background: var(--green-bg);  color: var(--green);      border: 1px solid rgba(16,185,129,0.3); }
+        .badge-notfed  { background: var(--surface2);  color: var(--text-muted); border: 1px solid var(--border); }
+        .badge-closed  { background: var(--surface2);  color: var(--text-dim);   border: 1px solid var(--border); }
+        .badge-warning { background: var(--yellow-bg); color: var(--yellow);     border: 1px solid rgba(245,158,11,0.3); }
+        .badge-danger  { background: var(--red-bg);    color: var(--red);        border: 1px solid rgba(239,68,68,0.3); }
+
+        /* ---- Loader ---- */
+        .loader {
+            display: none;
+            padding: 1.5rem 0;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            display: none;
+            align-items: center;
+            gap: 0.65rem;
+        }
+        .loader-spinner {
+            width: 20px; height: 20px;
+            border: 2px solid var(--border);
+            border-top-color: var(--primary);
+            border-radius: 50%;
+            animation: spin 0.7s linear infinite;
+            flex-shrink: 0;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* ---- Input area ---- */
+        .input-area {
+            padding: 1rem 0 1.5rem;
+            border-top: 1px solid var(--border);
+            flex-shrink: 0;
+        }
+        .privacy-note {
+            font-size: 0.7rem;
+            color: var(--text-dim);
+            margin-bottom: 0.6rem;
+            text-align: center;
+        }
         .input-row {
             display: flex;
-            gap: 0.75rem;
+            gap: 0.65rem;
         }
-
-        input[type="text"] {
+        .input-row input[type="text"] {
             flex: 1;
-            padding: 0.85rem 1rem;
-            font-size: 1rem;
+            padding: 0.8rem 1rem;
+            font-size: 0.97rem;
             background: var(--surface2);
             border: 1.5px solid var(--border);
             border-radius: 0.5rem;
@@ -179,15 +341,14 @@
             color: var(--text);
             transition: border-color 0.2s, box-shadow 0.2s;
         }
-        input[type="text"]:focus {
+        .input-row input[type="text"]:focus {
             border-color: var(--primary);
             box-shadow: 0 0 0 3px rgba(245,158,11,0.1);
         }
-        input[type="text"]::placeholder { color: var(--text-dim); }
-
+        .input-row input::placeholder { color: var(--text-dim); }
         button.ask-btn {
-            padding: 0.85rem 1.75rem;
-            font-size: 0.95rem;
+            padding: 0.8rem 1.5rem;
+            font-size: 0.92rem;
             font-weight: 700;
             background: var(--primary);
             color: #0a0a0a;
@@ -196,188 +357,50 @@
             cursor: pointer;
             transition: background 0.2s;
             white-space: nowrap;
-            letter-spacing: 0.02em;
             text-transform: uppercase;
+            letter-spacing: 0.03em;
         }
         button.ask-btn:hover { background: var(--primary-hover); }
         button.ask-btn:disabled { background: var(--text-dim); cursor: not-allowed; color: var(--bg); }
 
-        /* ---- Loader ---- */
-        .loader {
-            display: none;
-            text-align: center;
-            padding: 2.5rem;
-            color: var(--text-muted);
-            font-size: 0.9rem;
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
-        }
-        .loader::before {
-            content: "";
-            display: block;
-            width: 32px; height: 32px;
-            border: 2px solid var(--border);
-            border-top-color: var(--primary);
-            border-radius: 50%;
-            animation: spin 0.7s linear infinite;
-            margin: 0 auto 1rem;
-        }
-        @keyframes spin { to { transform: rotate(360deg); } }
-
-        /* ---- Error ---- */
-        .error-box {
-            display: none;
-            background: var(--red-bg);
-            color: var(--red);
-            border: 1px solid rgba(239,68,68,0.3);
-            border-radius: 0.5rem;
-            padding: 1rem 1.25rem;
-            margin-top: 1.5rem;
-            font-size: 0.9rem;
-        }
-
-        /* ---- Answer ---- */
-        .answer-box {
-            display: none;
-            background: var(--card-bg);
-            border: 1px solid var(--border);
-            border-left: 3px solid var(--primary);
-            border-radius: 0.5rem;
-            padding: 1.75rem 2rem;
-            margin-top: 1.75rem;
-        }
-        .answer-label {
-            font-size: 0.68rem;
-            font-weight: 700;
-            color: var(--primary);
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            margin-bottom: 1rem;
-        }
-        .answer-text {
-            font-size: 1rem;
-            line-height: 1.8;
-            color: var(--text);
-        }
-        .answer-text p  { margin: 0 0 0.75rem; }
-        .answer-text ul, .answer-text ol { margin: 0 0 0.75rem 1.25rem; padding: 0; }
-        .answer-text li { margin-bottom: 0.35rem; }
-        .answer-text strong { font-weight: 700; color: var(--primary); }
-        .answer-text a { color: var(--primary); }
-
-        .meta-line {
-            margin-top: 1.25rem;
-            padding-top: 0.85rem;
+        /* ---- Disclaimer + Suggest ---- */
+        .bottom-section {
             border-top: 1px solid var(--border);
-            font-size: 0.72rem;
-            color: var(--text-dim);
-            letter-spacing: 0.02em;
+            padding: 1.5rem 1.5rem 3rem;
+            max-width: 860px;
+            width: 100%;
+            margin: 0 auto;
         }
-
-        /* ---- Schools ---- */
-        .sources-section { display: none; margin-top: 2rem; }
-        .sources-label {
-            font-size: 0.72rem;
-            font-weight: 700;
-            color: var(--text-dim);
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            margin-bottom: 0.85rem;
-        }
-        .school-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-            gap: 0.85rem;
-        }
-        .school-card {
-            background: var(--card-bg);
-            border: 1px solid var(--border);
-            border-radius: 0.5rem;
-            padding: 1.1rem 1.25rem;
-            display: flex;
-            flex-direction: column;
-            gap: 0.45rem;
-            transition: border-color 0.15s;
-        }
-        .school-card:hover { border-color: var(--primary); }
-        .school-card h3 {
-            font-size: 0.95rem;
-            font-weight: 700;
-            color: var(--text);
-            line-height: 1.3;
-        }
-        .school-meta {
-            font-size: 0.78rem;
-            color: var(--text-muted);
-        }
-        .school-programs {
-            font-size: 0.78rem;
-            color: var(--text-muted);
-            line-height: 1.45;
-        }
-        .school-website a {
-            font-size: 0.78rem;
-            color: var(--primary);
-            text-decoration: none;
-            word-break: break-all;
-        }
-        .school-website a:hover { text-decoration: underline; }
-
-        .badge {
-            display: inline-block;
-            font-size: 0.65rem;
-            font-weight: 700;
-            padding: 0.15rem 0.5rem;
-            border-radius: 999px;
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-        }
-        .badge-federal   { background: var(--green-bg);  color: var(--green);  border: 1px solid rgba(16,185,129,0.3); }
-        .badge-notfed    { background: var(--surface2);  color: var(--text-muted); border: 1px solid var(--border); }
-        .badge-closed    { background: var(--surface2);  color: var(--text-dim);   border: 1px solid var(--border); }
-        .badge-warning   { background: var(--yellow-bg); color: var(--yellow); border: 1px solid rgba(245,158,11,0.3); }
-        .badge-danger    { background: var(--red-bg);    color: var(--red);    border: 1px solid rgba(239,68,68,0.3); }
-
-        /* ---- Disclaimer ---- */
         .disclaimer {
             background: var(--surface2);
             border: 1px solid var(--border);
             border-left: 3px solid var(--text-dim);
             border-radius: 0.5rem;
-            padding: 0.9rem 1.25rem;
-            margin-top: 1.75rem;
-            font-size: 0.82rem;
+            padding: 0.85rem 1.1rem;
+            font-size: 0.8rem;
             color: var(--text-muted);
             line-height: 1.6;
+            margin-bottom: 1.5rem;
         }
         .disclaimer strong { color: var(--text); }
 
-        /* ---- Suggest form ---- */
-        .suggest-section {
-            margin-top: 2.5rem;
-            border-top: 1px solid var(--border);
-            padding-top: 2rem;
-        }
+        .suggest-section { }
         .suggest-title {
-            font-size: 0.72rem;
+            font-size: 0.68rem;
             font-weight: 700;
             color: var(--text-dim);
             text-transform: uppercase;
             letter-spacing: 0.1em;
-            margin-bottom: 1rem;
+            margin-bottom: 0.75rem;
         }
-        .suggest-form {
-            display: flex;
-            flex-direction: column;
-            gap: 0.65rem;
-        }
+        .suggest-form { display: flex; flex-direction: column; gap: 0.55rem; }
         .suggest-form input,
         .suggest-form textarea {
             background: var(--surface2);
             border: 1px solid var(--border);
             border-radius: 0.5rem;
-            padding: 0.7rem 1rem;
-            font-size: 0.9rem;
+            padding: 0.65rem 0.9rem;
+            font-size: 0.88rem;
             color: var(--text);
             font-family: inherit;
             outline: none;
@@ -385,15 +408,13 @@
             resize: vertical;
         }
         .suggest-form input:focus,
-        .suggest-form textarea:focus {
-            border-color: var(--primary);
-        }
+        .suggest-form textarea:focus { border-color: var(--primary); }
         .suggest-form input::placeholder,
         .suggest-form textarea::placeholder { color: var(--text-dim); }
         .suggest-btn {
             align-self: flex-start;
-            padding: 0.65rem 1.5rem;
-            font-size: 0.85rem;
+            padding: 0.55rem 1.25rem;
+            font-size: 0.82rem;
             font-weight: 700;
             background: transparent;
             color: var(--primary);
@@ -405,72 +426,24 @@
             letter-spacing: 0.04em;
         }
         .suggest-btn:hover { background: var(--primary); color: #0a0a0a; }
-        .suggest-btn:disabled { opacity: 0.4; cursor: not-allowed; }
-        .suggest-feedback {
-            font-size: 0.82rem;
-            padding: 0.5rem 0;
-            display: none;
-        }
+        .suggest-feedback { font-size: 0.8rem; padding: 0.4rem 0; display: none; }
 
-        /* ---- Profile nudge ---- */
-        .profile-nudge {
-            background: var(--surface2);
-            border: 1px solid var(--border);
-            border-left: 3px solid var(--primary);
-            border-radius: 0.5rem;
-            padding: 0.85rem 1.25rem;
-            margin-bottom: 1.25rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-        .nudge-text {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-        }
-        .nudge-text strong { color: var(--text); }
-        .nudge-btn {
-            font-size: 0.8rem;
-            font-weight: 700;
-            color: #0a0a0a;
-            background: var(--primary);
-            border: none;
-            border-radius: 0.4rem;
-            padding: 0.45rem 1rem;
-            cursor: pointer;
-            text-decoration: none;
-            white-space: nowrap;
-            text-transform: uppercase;
-            letter-spacing: 0.04em;
-        }
-        .nudge-btn:hover { background: var(--primary-hover); }
-        .profile-set {
-            font-size: 0.78rem;
-            color: var(--text-dim);
-            margin-bottom: 1rem;
-        }
-        .profile-set a { color: var(--primary); text-decoration: none; }
-        .profile-set a:hover { text-decoration: underline; }
-
-        /* ---- Footer ---- */
         footer {
             text-align: center;
-            padding: 2rem;
+            padding: 1.25rem;
             border-top: 1px solid var(--border);
-            font-size: 0.75rem;
+            font-size: 0.72rem;
             color: var(--text-dim);
         }
     </style>
 </head>
 <body>
 
-<nav style="background:#111111;border-bottom:1px solid #2a2a2a;padding:1rem 2rem;display:flex;align-items:center;gap:1.5rem;">
-    <a href="/" style="font-size:1.3rem;font-weight:900;letter-spacing:-1px;text-decoration:none;color:#f5f5f5;">On<span style="color:#f59e0b;">Ramp</span></a>
-    <a href="/" style="font-size:0.85rem;color:#888;text-decoration:none;">Search</a>
-    <a href="/profile" style="font-size:0.85rem;color:#888;text-decoration:none;">My Profile</a>
-    <a href="/team" style="font-size:0.85rem;color:#888;text-decoration:none;">Our Team</a>
+<nav>
+    <a href="/" class="nav-wordmark">On<span>Ramp</span></a>
+    <a href="/profile" class="nav-link">My Profile</a>
+    <a href="/team" class="nav-link">Our Team</a>
+    <button class="nav-btn" id="clear-conv-btn">Clear Chat</button>
 </nav>
 
 <header>
@@ -480,62 +453,62 @@
         <div class="wordmark-dot"></div>
     </div>
     <p class="tagline">AI-powered guidance for HBCU students</p>
-    <p class="mission">HBCUs have always welcomed students who want an education built around community, purpose, and belonging — students of all backgrounds who are looking for a school that truly sees them. This tool is for you.</p>
+    <p class="mission">HBCUs have always welcomed students who want an education built around community, purpose, and belonging — students of all backgrounds looking for a school that truly sees them.</p>
     <p class="attribution">From the team behind <em>Essentials: A Student Guide to the HBCUs</em></p>
 </header>
 
-<div class="container">
-
+<div class="profile-bar">
     {% if not profile %}
     <div class="profile-nudge">
-        <div class="nudge-text"><strong>Get better results.</strong> Tell us your location, priorities, and interests — we'll personalize every answer for you.</div>
+        <span><strong>Get better results.</strong> Tell us your location, priorities, and interests — we'll personalize every answer.</span>
         <a href="/profile" class="nudge-btn">Build My Profile</a>
     </div>
     {% else %}
     <div class="profile-set">
-        Personalized for {{ profile.zip_geo.city ~ ', ' ~ profile.zip_geo.state if profile.zip_geo else profile.zip_code or 'your profile' }} &mdash; <a href="/profile">update profile</a>
+        Personalized for {{ profile.zip_geo.city ~ ', ' ~ profile.zip_geo.state if profile.zip_geo else profile.zip_code or 'your profile' }}
+        &mdash; <a href="/profile">update</a> &middot; <a href="/profile/clear">clear profile</a>
     </div>
     {% endif %}
+</div>
 
-    <div class="search-card">
+<div class="main">
+
+    <div class="chips-area" id="chips-area">
         <div class="chip-label">Try asking</div>
         <div class="chip-group" id="chips">
             <span class="chip">HBCUs with nursing programs</span>
             <span class="chip">HBCUs with engineering degrees</span>
-            <span class="chip">HBCUs with pharmacy programs</span>
             <span class="chip">Affordable public HBCUs in the South</span>
             <span class="chip">Small HBCUs under 2,000 students</span>
             <span class="chip">HBCUs in Texas</span>
             <span class="chip">HBCUs near Atlanta</span>
             <span class="chip">HBCUs for first-generation students</span>
-            <span class="chip">What is the most affordable HBCU?</span>
+            <span class="chip">Give me all the law schools</span>
         </div>
+    </div>
 
+    <div class="conversation" id="conversation"></div>
+
+    <div class="loader" id="loader">
+        <div class="loader-spinner"></div>
+        <span>OnRamp is thinking…</span>
+    </div>
+
+    <div class="input-area">
+        <div class="privacy-note">Your profile and conversation are saved only on this device. No login required.</div>
         <form id="ask-form">
             <div class="input-row">
-                <input type="text" id="query"
-                    placeholder="Ask about majors, cost, location, size, campus life…" required>
+                <input type="text" id="query" placeholder="Ask about majors, cost, location, size, campus life…" autocomplete="off">
                 <button type="submit" class="ask-btn" id="submit-btn">Ask</button>
             </div>
         </form>
     </div>
 
-    <div id="error-box" class="error-box"></div>
-    <div id="loader" class="loader">Thinking…</div>
+</div>
 
-    <div class="answer-box" id="answer-box">
-        <div class="answer-label">Answer</div>
-        <div class="answer-text" id="answer-text"></div>
-        <div class="meta-line" id="meta-line"></div>
-    </div>
-
-    <div class="sources-section" id="sources-section">
-        <div class="sources-label">Schools referenced</div>
-        <div class="school-grid" id="school-grid"></div>
-    </div>
-
+<div class="bottom-section">
     <div class="disclaimer">
-        <strong>About this data</strong> — On Ramp compiles information from the U.S. Department of Education's official HBCU list, institutional websites, and other public sources. There is no single authoritative database for all HBCU data — tuition, enrollment, programs, and accreditation status change frequently. We make our best effort to keep this information current and accurate, but we cannot guarantee completeness. Always verify critical details directly with the institution. <strong>You can ask in English, Spanish, French, or Haitian Creole.</strong>
+        <strong>About this data</strong> — On Ramp compiles information from the U.S. Department of Education's official HBCU list, institutional websites, and other public sources. There is no single authoritative database for all HBCU data — tuition, enrollment, programs, and accreditation status change frequently. We make our best effort to keep this accurate, but always verify critical details directly with the institution. <strong>You can ask in English, Spanish, French, or Haitian Creole.</strong>
     </div>
 
     <div class="suggest-section">
@@ -544,7 +517,7 @@
             <input type="text" id="sug-school" placeholder="School name *" required>
             <input type="text" id="sug-field" placeholder="What needs correcting? (e.g. tuition, programs, status)">
             <textarea id="sug-correction" rows="3" placeholder="Describe the correction *" required></textarea>
-            <input type="email" id="sug-email" placeholder="Your email (optional — if you'd like a follow-up)">
+            <input type="email" id="sug-email" placeholder="Your email (optional)">
             <button type="submit" class="suggest-btn" id="suggest-btn">Submit</button>
             <div class="suggest-feedback" id="suggest-feedback"></div>
         </form>
@@ -556,16 +529,97 @@
 </footer>
 
 <script>
-    const form           = document.getElementById('ask-form');
-    const queryInput     = document.getElementById('query');
-    const submitBtn      = document.getElementById('submit-btn');
-    const loader         = document.getElementById('loader');
-    const errorBox       = document.getElementById('error-box');
-    const answerBox      = document.getElementById('answer-box');
-    const answerText     = document.getElementById('answer-text');
-    const sourcesSection = document.getElementById('sources-section');
-    const schoolGrid     = document.getElementById('school-grid');
-    const metaLine       = document.getElementById('meta-line');
+    // ---- localStorage conversation history ----
+    // To switch to sessionStorage, change localStorage → sessionStorage everywhere below
+    const STORAGE_KEY = 'onramp_conversation';
+    const MAX_HISTORY = 8; // turns sent to backend (each turn = user + onramp)
+
+    function loadHistory() {
+        try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'); }
+        catch { return []; }
+    }
+
+    function saveHistory(history) {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(history));
+    }
+
+    function clearHistory() {
+        localStorage.removeItem(STORAGE_KEY);
+    }
+
+    // ---- Render conversation from storage on page load ----
+    let history = loadHistory();
+
+    function renderHistory() {
+        const conv = document.getElementById('conversation');
+        conv.innerHTML = '';
+        history.forEach(turn => addTurnToUI(turn.user, turn.onramp, turn.context, turn.meta, false));
+        if (history.length > 0) {
+            document.getElementById('chips-area').style.display = 'none';
+            conv.scrollTop = conv.scrollHeight;
+        }
+    }
+
+    renderHistory();
+
+    // ---- UI helpers ----
+    function addTurnToUI(userMsg, onrampMsg, context, meta, scroll = true) {
+        const conv = document.getElementById('conversation');
+
+        // Hide chips once conversation starts
+        document.getElementById('chips-area').style.display = 'none';
+
+        const turn = document.createElement('div');
+        turn.className = 'turn';
+
+        // User bubble
+        turn.innerHTML += `
+            <div class="bubble-label right">You</div>
+            <div class="bubble-user">${esc(userMsg)}</div>
+        `;
+
+        // OnRamp bubble
+        const onrampDiv = document.createElement('div');
+        onrampDiv.innerHTML = `<div class="bubble-label">OnRamp</div>`;
+        const bubble = document.createElement('div');
+        bubble.className = 'bubble-onramp';
+        bubble.innerHTML = renderMarkdown(onrampMsg);
+
+        // School cards
+        if (context && context.length > 0) {
+            const grid = document.createElement('div');
+            grid.className = 'school-grid';
+            context.forEach(school => grid.appendChild(renderSchoolCard(school)));
+            bubble.appendChild(grid);
+        }
+
+        onrampDiv.appendChild(bubble);
+
+        // Meta line
+        if (meta) {
+            const metaEl = document.createElement('div');
+            metaEl.className = 'meta-line';
+            metaEl.textContent = meta;
+            onrampDiv.appendChild(metaEl);
+        }
+
+        turn.appendChild(onrampDiv);
+        conv.appendChild(turn);
+
+        if (scroll) conv.scrollTop = conv.scrollHeight;
+    }
+
+    // ---- Build conversation history string for prompt ----
+    function buildHistoryString() {
+        const recent = history.slice(-MAX_HISTORY);
+        return recent.map(t => `User: ${t.user}\nOnRamp: ${t.onramp}`).join('\n');
+    }
+
+    // ---- Form submit ----
+    const form      = document.getElementById('ask-form');
+    const queryInput = document.getElementById('query');
+    const submitBtn  = document.getElementById('submit-btn');
+    const loader     = document.getElementById('loader');
 
     document.getElementById('chips').addEventListener('click', e => {
         if (e.target.classList.contains('chip')) {
@@ -579,76 +633,79 @@
         const query = queryInput.value.trim();
         if (!query) return;
 
-        errorBox.style.display       = 'none';
-        answerBox.style.display      = 'none';
-        sourcesSection.style.display = 'none';
-        schoolGrid.innerHTML         = '';
-        loader.style.display         = 'block';
-        submitBtn.disabled           = true;
+        queryInput.value = '';
+        submitBtn.disabled = true;
+        loader.style.display = 'flex';
 
         try {
             const resp = await fetch('/api/answer', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ query, top_k: 5 }),
+                body: JSON.stringify({
+                    query,
+                    top_k: 5,
+                    conversation_history: buildHistoryString(),
+                }),
             });
+
             let data;
-            try {
-                data = await resp.json();
-            } catch {
-                throw new Error('The server returned an unexpected response. Please try again.');
-            }
+            try { data = await resp.json(); }
+            catch { throw new Error('The server returned an unexpected response. Please try again.'); }
             if (!resp.ok) throw new Error(data.error || 'Something went wrong.');
 
-            answerText.innerHTML = renderMarkdown(data.answer);
             const lang = data.detected_language && data.detected_language !== 'English'
-                ? ` · Responding in ${data.detected_language}`
-                : '';
-            metaLine.textContent =
-                `Query understood as: "${data.retrieval_query}" · ${data.classifier_model}${lang}`;
-            answerBox.style.display = 'block';
+                ? ` · Responding in ${data.detected_language}` : '';
+            const meta = `Query: "${data.retrieval_query}" · ${data.classifier_model}${lang}`;
 
-            if (data.context && data.context.length > 0) {
-                data.context.forEach(school => renderSchoolCard(school));
-                sourcesSection.style.display = 'block';
-            }
+            addTurnToUI(query, data.answer, data.context, meta);
+
+            // Save to history (store only text, not full context cards)
+            history.push({ user: query, onramp: data.answer, context: data.context || [], meta });
+            saveHistory(history);
 
         } catch (err) {
-            errorBox.textContent   = err.message;
-            errorBox.style.display = 'block';
+            addTurnToUI(query, `⚠️ ${err.message}`, null, null);
         } finally {
             loader.style.display = 'none';
-            submitBtn.disabled   = false;
+            submitBtn.disabled = false;
+            queryInput.focus();
         }
     });
 
+    // ---- Clear conversation ----
+    document.getElementById('clear-conv-btn').addEventListener('click', () => {
+        clearHistory();
+        history = [];
+        document.getElementById('conversation').innerHTML = '';
+        document.getElementById('chips-area').style.display = 'block';
+    });
+
+    // ---- School card renderer ----
     function renderSchoolCard(school) {
         const card = document.createElement('div');
         card.className = 'school-card';
 
         const programs = school.programs
-            ? school.programs.split(', ').slice(0, 5).join(', ')
+            ? school.programs.split(', ').slice(0, 4).join(', ')
             : '';
-
         const websiteHtml = school.website
             ? `<div class="school-website"><a href="${school.website}" target="_blank" rel="noopener">${esc(school.website.replace(/^https?:\/\//, ''))}</a></div>`
             : '';
-
         const badge = statusBadge(school);
+        const dist = school.distance_miles ? ` · ${school.distance_miles} mi` : '';
 
         card.innerHTML = `
             <h3>${esc(school.name)}</h3>
-            <div class="school-meta">${esc(school.state)} · ${esc(school.type || '')} ${badge}</div>
+            <div class="school-meta">${esc(school.state)} · ${esc(school.type || '')}${dist} ${badge}</div>
             ${programs ? `<div class="school-programs">${esc(programs)}</div>` : ''}
             ${websiteHtml}
         `;
-        schoolGrid.appendChild(card);
+        return card;
     }
 
     function statusBadge(school) {
-        if (school.federally_recognized === false) {
-            return '<span class="badge badge-notfed">Not on federal HBCU list</span>';
-        }
+        if (school.federally_recognized === false)
+            return '<span class="badge badge-notfed">Not on federal list</span>';
         const s = (school.status || '').toLowerCase();
         if (s === 'closed')                return '<span class="badge badge-closed">Closed</span>';
         if (s === 'unaccredited')          return '<span class="badge badge-warning">Unaccredited</span>';
@@ -660,7 +717,6 @@
 
     function renderMarkdown(text) {
         if (!text) return '';
-        // Extract markdown links before escaping so URLs are preserved
         const links = [];
         text = text.replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, (_, label, url) => {
             const i = links.length;
@@ -668,7 +724,6 @@
             return `\x00LINK${i}\x00`;
         });
         let html = esc(text);
-        // Restore links
         html = html.replace(/\x00LINK(\d+)\x00/g, (_, i) => links[parseInt(i)]);
         html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
         html = html.replace(/^[\*\-]\s+(.+)$/gm, '<li>$1</li>');
@@ -683,15 +738,22 @@
         return html;
     }
 
-    // Suggestion form
+    function esc(str) {
+        return String(str || '')
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;');
+    }
+
+    // ---- Suggestion form ----
     document.getElementById('suggest-form').addEventListener('submit', async e => {
         e.preventDefault();
         const btn      = document.getElementById('suggest-btn');
         const feedback = document.getElementById('suggest-feedback');
-        btn.disabled   = true;
+        btn.disabled = true;
         btn.textContent = 'Sending…';
         feedback.style.display = 'none';
-
         try {
             const resp = await fetch('/api/suggest', {
                 method: 'POST',
@@ -705,27 +767,19 @@
             });
             const data = await resp.json();
             if (!resp.ok) throw new Error(data.error || 'Submission failed.');
-            feedback.textContent   = 'Thank you — we received your correction and will review it.';
-            feedback.style.color   = 'var(--green)';
+            feedback.textContent = 'Thank you — we received your correction and will review it.';
+            feedback.style.color = 'var(--green)';
             feedback.style.display = 'block';
             e.target.reset();
         } catch (err) {
-            feedback.textContent   = err.message;
-            feedback.style.color   = 'var(--red)';
+            feedback.textContent = err.message;
+            feedback.style.color = 'var(--red)';
             feedback.style.display = 'block';
         } finally {
-            btn.disabled    = false;
+            btn.disabled = false;
             btn.textContent = 'Submit';
         }
     });
-
-    function esc(str) {
-        return String(str || '')
-            .replace(/&/g, '&amp;')
-            .replace(/</g, '&lt;')
-            .replace(/>/g, '&gt;')
-            .replace(/"/g, '&quot;');
-    }
 </script>
 </body>
 </html>

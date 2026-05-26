@@ -681,7 +681,8 @@ Return ONLY the JSON object. No explanation, no markdown."""
 
 def build_answer_prompt(original_question: str, retrieval_question: str,
                         context_blocks: list, output_language: str = "English",
-                        student_profile: dict = None) -> list:
+                        student_profile: dict = None,
+                        conversation_history: str = "") -> list:
     context_text = ""
     for i, block in enumerate(context_blocks, 1):
         context_text += f"\n--- School {i}: {block['name']} ({block['state']}) ---\n"
@@ -709,6 +710,13 @@ Student profile:
 
 Use this profile to personalize your response. Highlight schools that align with the student's priorities. Note tradeoffs clearly."""
 
+    history_note = ""
+    if conversation_history and conversation_history.strip():
+        history_note = f"""
+
+Recent conversation:
+{conversation_history.strip()}"""
+
     system = f"""You are OnRamp, an intelligent HBCU discovery platform helping prospective students find the right Historically Black College or University.
 
 Answer the student's question using only the school information provided. Be specific — include school names, tuition figures, enrollment numbers, majors, and contact details when relevant.
@@ -717,7 +725,7 @@ If the answer cannot be determined from the provided information, say so honestl
 
 Keep your answer warm, practical, and student-centered. Students are making important decisions about their education.
 
-End your response with one helpful follow-up question that would improve your next recommendation.{lang_note}{profile_note}"""
+End your response with one helpful follow-up question that would improve your next recommendation.{lang_note}{profile_note}{history_note}"""
 
     user = f"""Student question: {original_question}
 

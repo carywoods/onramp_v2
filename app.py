@@ -143,14 +143,15 @@ def search():
 
 @app.route("/api/answer", methods=["POST"])
 def answer():
-    data             = request.json
-    query            = data.get("query", "")
-    classifier_model = data.get("classifier_model", CLASSIFIER_MODEL)
-    answer_model     = data.get("answer_model",     ANSWER_MODEL)
-    base_url         = data.get("base_url",         BASE_URL)
-    top_k            = data.get("top_k",            TOP_K)
-    temperature      = data.get("temperature",      0.2)
-    timeout          = data.get("timeout",          180)
+    data                 = request.json
+    query                = data.get("query", "")
+    classifier_model     = data.get("classifier_model", CLASSIFIER_MODEL)
+    answer_model         = data.get("answer_model",     ANSWER_MODEL)
+    base_url             = data.get("base_url",         BASE_URL)
+    top_k                = data.get("top_k",            TOP_K)
+    temperature          = data.get("temperature",      0.2)
+    timeout              = data.get("timeout",          180)
+    conversation_history = data.get("conversation_history", "")
 
     if not query:
         return jsonify({"error": "Query is required"}), 400
@@ -228,6 +229,7 @@ def answer():
         context_blocks=context_blocks,
         output_language=detected_language,
         student_profile=session.get("profile"),
+        conversation_history=conversation_history,
     )
 
     try:
