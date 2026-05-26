@@ -412,6 +412,48 @@
             display: none;
         }
 
+        /* ---- Profile nudge ---- */
+        .profile-nudge {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--primary);
+            border-radius: 0.5rem;
+            padding: 0.85rem 1.25rem;
+            margin-bottom: 1.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .nudge-text {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+        .nudge-text strong { color: var(--text); }
+        .nudge-btn {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #0a0a0a;
+            background: var(--primary);
+            border: none;
+            border-radius: 0.4rem;
+            padding: 0.45rem 1rem;
+            cursor: pointer;
+            text-decoration: none;
+            white-space: nowrap;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+        .nudge-btn:hover { background: var(--primary-hover); }
+        .profile-set {
+            font-size: 0.78rem;
+            color: var(--text-dim);
+            margin-bottom: 1rem;
+        }
+        .profile-set a { color: var(--primary); text-decoration: none; }
+        .profile-set a:hover { text-decoration: underline; }
+
         /* ---- Footer ---- */
         footer {
             text-align: center;
@@ -443,6 +485,18 @@
 </header>
 
 <div class="container">
+
+    {% if not profile %}
+    <div class="profile-nudge">
+        <div class="nudge-text"><strong>Get better results.</strong> Tell us your location, priorities, and interests — we'll personalize every answer for you.</div>
+        <a href="/profile" class="nudge-btn">Build My Profile</a>
+    </div>
+    {% else %}
+    <div class="profile-set">
+        Personalized for {{ profile.zip_geo.city ~ ', ' ~ profile.zip_geo.state if profile.zip_geo else profile.zip_code or 'your profile' }} &mdash; <a href="/profile">update profile</a>
+    </div>
+    {% endif %}
+
     <div class="search-card">
         <div class="chip-label">Try asking</div>
         <div class="chip-group" id="chips">

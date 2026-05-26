@@ -67,9 +67,7 @@ def health():
 
 @app.route("/")
 def index():
-    if "profile" not in session:
-        return redirect(url_for("profile"))
-    return render_template("index.html", profile=session["profile"])
+    return render_template("index.html", profile=session.get("profile"))
 
 
 def geocode_zip(zip_code: str):
