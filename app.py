@@ -115,6 +115,8 @@ def answer():
         classification    = {"error": str(e), "fallback": True}
 
     # --- Stage 2: FTS retrieval (or enrollment filter) using classifier output ---
+    if classification.get("return_all"):
+        top_k = 120  # return full KB when user asks for "all"
     try:
         context_blocks = build_context_blocks(KB_DIR, retrieval_query, top_k,
                                               classification=classification)

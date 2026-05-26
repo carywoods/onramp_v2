@@ -73,8 +73,8 @@ def normalize_search_query(query: str) -> str:
         "me", "explain", "hbcu", "hbcus", "college", "university",
         "school", "historically", "black",
         "give", "show", "list", "find", "get", "want", "need",
-        "looking", "look", "can", "you", "i", "my", "all", "some",
-        "which", "where", "how", "who", "any", "have", "has",
+        "looking", "look", "can", "you", "i", "my", "all", "every",
+        "some", "which", "where", "how", "who", "any", "have", "has",
     }
     terms = [t for t in query.split() if t not in stopwords and len(t) > 1]
     return " ".join(terms)
@@ -556,6 +556,7 @@ Given a student's question, return ONLY valid JSON with these exact keys:
   program_filter    - main academic program/major mentioned, else null
   enrollment_max    - integer upper bound on enrollment if mentioned (e.g. "under 2000" → 2000), else null
   enrollment_min    - integer lower bound on enrollment if mentioned (e.g. "over 5000" → 5000), else null
+  return_all        - true if the student is asking for ALL schools matching a criterion (e.g. "all law schools", "all schools in Texas", "every HBCU in Virginia"), else false
   proximity_query   - true if the question asks about proximity/location ("near", "close to", "within driving distance", "around", "in the area of"), else false
   proximity_lat     - decimal latitude of the referenced city/state if proximity_query is true, else null
   proximity_lon     - decimal longitude of the referenced city/state if proximity_query is true, else null
@@ -572,6 +573,25 @@ Example output:
   "program_filter": "Nursing",
   "enrollment_max": null,
   "enrollment_min": null,
+  "return_all": false,
+  "proximity_query": false,
+  "proximity_lat": null,
+  "proximity_lon": null,
+  "nearby_states": null
+}
+
+Example input: "Give me all the law schools"
+Example output:
+{
+  "retrieval_query": "law",
+  "detected_language": "English",
+  "confidence": "high",
+  "state_filter": null,
+  "type_filter": null,
+  "program_filter": "Law",
+  "enrollment_max": null,
+  "enrollment_min": null,
+  "return_all": true,
   "proximity_query": false,
   "proximity_lat": null,
   "proximity_lon": null,
@@ -645,6 +665,7 @@ Return ONLY the JSON object. No explanation, no markdown."""
         "program_filter":    data.get("program_filter"),
         "enrollment_max":    data.get("enrollment_max"),
         "enrollment_min":    data.get("enrollment_min"),
+        "return_all":        bool(data.get("return_all", False)),
         "proximity_query":   bool(data.get("proximity_query", False)),
         "proximity_lat":     data.get("proximity_lat"),
         "proximity_lon":     data.get("proximity_lon"),
