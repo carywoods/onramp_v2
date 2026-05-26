@@ -1,0 +1,56 @@
+{
+  "school_id": "chicago_state_university",
+  "name": "Chicago State University",
+  "state": "Illinois",
+  "address": {
+    "street": "9501 S. King Dr",
+    "city": "Chicago",
+    "state_abbr": "IL",
+    "zip": "60628"
+  },
+  "contacts": {
+    "website": "https://www.csu.edu/",
+    "main_phone": "773-995-2000",
+    "admissions_phone": "773-995-2513",
+    "admissions_email": "ug-admissions@csu.edu",
+    "financial_aid_phone": "Not found",
+    "financial_aid_email": "Not found",
+    "fax": "",
+    "email": ""
+  },
+  "type": "public",
+  "year_founded": "1867",
+  "enrollment": 2800,
+  "tuition": {
+    "in_state": 9636,
+    "out_of_state": 19836,
+    "room_board": 12076
+  },
+  "academics": {
+    "programs": [
+      "Nursing",
+      "Business Administration",
+      "Education",
+      "Computer Science",
+      "Biology",
+      "Criminal Justice",
+      "Psychology"
+    ],
+    "student_body": ""
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "",
+    "v2": ""
+  },
+  "_conflicts": [],
+  "_resolution": "stub_no_reliable_data",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 41.7197,
+    "lon": -87.605
+  },
+  "region": "Midwest",
+  "institution_level": "4-year"
+}

@@ -1,0 +1,54 @@
+{
+  "school_id": "arkansas_baptist_college",
+  "name": "Arkansas Baptist College",
+  "state": "Arkansas",
+  "address": {
+    "street": "1600 Bishop St.",
+    "city": "Little Rock",
+    "state_abbr": "AR",
+    "zip": "72202"
+  },
+  "contacts": {
+    "website": "https://www.arkansasbaptist.edu",
+    "main_phone": "(501)-420-1200",
+    "admissions_phone": "501-420-1234",
+    "admissions_email": "crokcett@arkansasbaptist.edu",
+    "financial_aid_phone": "501-420-1226",
+    "financial_aid_email": "finaid@arkansasbaptist.edu",
+    "fax": "501.400.8662",
+    "email": "admissions@arbaptc"
+  },
+  "type": "private",
+  "year_founded": "1884",
+  "enrollment": 320,
+  "tuition": {
+    "in_state": 5074,
+    "out_of_state": 5074,
+    "room_board": 6826
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Liberal Arts",
+      "Religion",
+      "Criminal Justice",
+      "Early Childhood Education"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "arkansas_baptist_college.json",
+    "v2": "174-arkansas-baptist-college.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 34.7518,
+    "lon": -92.2896
+  },
+  "region": "South Central",
+  "institution_level": "4-year"
+}

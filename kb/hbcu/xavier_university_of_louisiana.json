@@ -1,0 +1,57 @@
+{
+  "school_id": "xavier_university_of_louisiana",
+  "name": "Xavier University of Louisiana",
+  "state": "Louisiana",
+  "address": {
+    "street": "1 Drexel Drive, Box 127. New Orleans, LA 70125. Campus Location. 312 St",
+    "city": "New Orleans",
+    "state_abbr": "LA",
+    "zip": "70125"
+  },
+  "contacts": {
+    "website": "https://www.xula.edu",
+    "main_phone": "504-520-7490",
+    "admissions_phone": "504-520-7388",
+    "admissions_email": "apply@xula.edu",
+    "financial_aid_phone": "504-520-7835",
+    "financial_aid_email": "finaid@xula.edu",
+    "fax": "504-520-7922",
+    "email": "apply@xula.edu"
+  },
+  "type": "private",
+  "year_founded": "1915",
+  "enrollment": 3218,
+  "tuition": {
+    "in_state": 28979,
+    "out_of_state": 28979,
+    "room_board": ""
+  },
+  "academics": {
+    "programs": [
+      "Pharmacy",
+      "Biology",
+      "Chemistry",
+      "Business Administration",
+      "Psychology",
+      "Pre-Med",
+      "Computer Science",
+      "Education"
+    ],
+    "student_body": ""
+  },
+  "status": "",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "xavier_university_of_louisiana.json",
+    "v2": ""
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 29.9588,
+    "lon": -90.1204
+  },
+  "region": "South Central",
+  "institution_level": "4-year"
+}

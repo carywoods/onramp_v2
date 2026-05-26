@@ -1,0 +1,56 @@
+{
+  "school_id": "south_carolina_state_university",
+  "name": "South Carolina State University",
+  "state": "South Carolina",
+  "address": {
+    "street": "300 College Street NE",
+    "city": "Orangeburg",
+    "state_abbr": "SC",
+    "zip": "29117"
+  },
+  "contacts": {
+    "website": "https://www2.scsu.edu",
+    "main_phone": "803-536-8103",
+    "admissions_phone": "803-536-7186",
+    "admissions_email": "admissions@scsu.edu",
+    "financial_aid_phone": "803-536-7067",
+    "financial_aid_email": "financialaid@scsu.edu",
+    "fax": "(803) 516-4723",
+    "email": "admissions@scsu.edu"
+  },
+  "type": "public",
+  "year_founded": "1896",
+  "enrollment": 2950,
+  "tuition": {
+    "in_state": 11060,
+    "out_of_state": 20218,
+    "room_board": null
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Engineering Technology",
+      "Education",
+      "Computer Science",
+      "Nursing",
+      "Criminal Justice",
+      "Biology"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "south_carolina_state_university.json",
+    "v2": "233-south-carolina-state-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 33.4957,
+    "lon": -80.8613
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

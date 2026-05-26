@@ -1,0 +1,55 @@
+{
+  "school_id": "trenholm_state_community_college",
+  "name": "H. Councill Trenholm State Community College",
+  "state": "Alabama",
+  "address": {
+    "street": "1225 Air Base Blvd",
+    "city": "Montgomery",
+    "state_abbr": "AL",
+    "zip": "36108"
+  },
+  "contacts": {
+    "website": "https://www.trenholmstate.edu/",
+    "main_phone": "334-420-4200",
+    "admissions_phone": "Not found",
+    "admissions_email": "admissions@trenholmstate.edu",
+    "financial_aid_phone": "Not found",
+    "financial_aid_email": "Not found",
+    "fax": "",
+    "email": ""
+  },
+  "type": "public",
+  "year_founded": "1966",
+  "enrollment": 1900,
+  "tuition": {
+    "in_state": 4800,
+    "out_of_state": 8784,
+    "room_board": null
+  },
+  "academics": {
+    "programs": [
+      "Nursing",
+      "Business Administration",
+      "Information Technology",
+      "Early Childhood Education",
+      "Engineering Technology",
+      "Criminal Justice"
+    ],
+    "student_body": ""
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "",
+    "v2": ""
+  },
+  "_conflicts": [],
+  "_resolution": "stub_no_reliable_data",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 32.3668,
+    "lon": -86.295
+  },
+  "region": "Southeast",
+  "institution_level": "2-year"
+}

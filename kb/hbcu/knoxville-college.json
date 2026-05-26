@@ -1,0 +1,54 @@
+{
+  "school_id": "knoxville-college",
+  "name": "Knoxville College",
+  "state": "TN",
+  "address": {
+    "street": "917 College Street NW",
+    "city": "Knoxville",
+    "state_abbr": "TN",
+    "zip": "37921"
+  },
+  "contacts": {
+    "website": "https://www.knoxvillecollege.edu/",
+    "email": "",
+    "fax": "",
+    "main_phone": "Not found",
+    "admissions_phone": "Not found",
+    "admissions_email": "Not found",
+    "financial_aid_phone": "Not found",
+    "financial_aid_email": "Not found"
+  },
+  "type": "private",
+  "year_founded": "1875",
+  "enrollment": 358,
+  "tuition": {
+    "in_state": 13770,
+    "out_of_state": 13770,
+    "room_board": null
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Liberal Arts",
+      "Education",
+      "Criminal Justice",
+      "Psychology"
+    ],
+    "student_body": "coed"
+  },
+  "status": "unaccredited",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "",
+    "v2": "72-knoxville-college.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 35.9946,
+    "lon": -83.9685
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

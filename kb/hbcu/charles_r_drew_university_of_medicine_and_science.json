@@ -1,0 +1,54 @@
+{
+  "school_id": "charles_r_drew_university_of_medicine_and_science",
+  "name": "Charles R. Drew University of Medicine and Science",
+  "state": "California",
+  "address": {
+    "street": "1731 E. 120th St",
+    "city": "Los Angeles",
+    "state_abbr": "CA",
+    "zip": "90059"
+  },
+  "contacts": {
+    "website": "https://www.cdrewu.edu",
+    "main_phone": "(323) 563-4800",
+    "admissions_phone": "(323) 563-4839",
+    "admissions_email": "admissionsinfo@cdrewu.edu",
+    "financial_aid_phone": "(323) 563-4824",
+    "financial_aid_email": "studentfinance@cdrewu.edu",
+    "fax": "",
+    "email": "admissionsinfo@cdrewu.edu"
+  },
+  "type": "private",
+  "year_founded": "1966",
+  "enrollment": 852,
+  "tuition": {
+    "in_state": 23971,
+    "out_of_state": 23971,
+    "room_board": ""
+  },
+  "academics": {
+    "programs": [
+      "Nursing",
+      "Public Health",
+      "Health Sciences",
+      "Physician Assistant Studies",
+      "Biomedical Sciences"
+    ],
+    "student_body": ""
+  },
+  "status": "",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "charles_r_drew_university_of_medicine_and_science.json",
+    "v2": ""
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 33.9228,
+    "lon": -118.2434
+  },
+  "region": "West",
+  "institution_level": "graduate-only"
+}

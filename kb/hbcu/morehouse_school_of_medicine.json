@@ -1,0 +1,54 @@
+{
+  "school_id": "morehouse_school_of_medicine",
+  "name": "Morehouse School of Medicine",
+  "state": "Georgia",
+  "address": {
+    "street": "720 Westview Drive",
+    "city": "Atlanta",
+    "state_abbr": "GA",
+    "zip": "30310-1495"
+  },
+  "contacts": {
+    "website": "https://www.msm.edu",
+    "main_phone": "(404) 752-1500",
+    "admissions_phone": "(404) 752-1650",
+    "admissions_email": "nanachebe@msm.edu",
+    "financial_aid_phone": "(470) 639-0959",
+    "financial_aid_email": "studfisc@msm.edu",
+    "fax": "(404) 756-1328",
+    "email": "nanachebe@msm.edu"
+  },
+  "type": "private",
+  "year_founded": "1975",
+  "enrollment": 891,
+  "tuition": {
+    "in_state": 54702,
+    "out_of_state": 54702,
+    "room_board": ""
+  },
+  "academics": {
+    "programs": [
+      "Medicine",
+      "Public Health",
+      "Biomedical Sciences",
+      "Physician Assistant Studies",
+      "Nursing"
+    ],
+    "student_body": ""
+  },
+  "status": "",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "morehouse_school_of_medicine.json",
+    "v2": ""
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 33.749,
+    "lon": -84.413
+  },
+  "region": "Southeast",
+  "institution_level": "graduate-only"
+}

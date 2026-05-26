@@ -1,0 +1,56 @@
+{
+  "school_id": "florida_memorial_university",
+  "name": "Florida Memorial University",
+  "state": "Florida",
+  "address": {
+    "street": "15800 NW 42nd Ave.",
+    "city": "Miami",
+    "state_abbr": "FL",
+    "zip": "33054"
+  },
+  "contacts": {
+    "website": "https://www.fmu.edu",
+    "main_phone": "(305) 626-3758",
+    "admissions_phone": "(305) 626-3758",
+    "admissions_email": "fmuadmissions@fmu.edu",
+    "financial_aid_phone": "(305) 626-3623",
+    "financial_aid_email": "hr@fmuniv.edu",
+    "fax": "(305) 273-1338",
+    "email": "admissions@fmc.edu"
+  },
+  "type": "private",
+  "year_founded": "1879",
+  "enrollment": 1277,
+  "tuition": {
+    "in_state": 20174,
+    "out_of_state": 20174,
+    "room_board": 5340
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Computer Science",
+      "Education",
+      "Criminal Justice",
+      "Biology",
+      "Psychology",
+      "Aviation"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "florida_memorial_university.json",
+    "v2": "181-florida-memorial-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 25.942,
+    "lon": -80.2456
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

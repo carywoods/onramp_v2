@@ -1,0 +1,55 @@
+{
+  "school_id": "lemoyne_owen_college",
+  "name": "LeMoyne-Owen College",
+  "state": "Tennessee",
+  "address": {
+    "street": "807 Walker Avenue",
+    "city": "Memphis",
+    "state_abbr": "TN",
+    "zip": "38126"
+  },
+  "contacts": {
+    "website": "https://loc.edu",
+    "main_phone": "(901) 435-1000",
+    "admissions_phone": "(901) 435-1000",
+    "admissions_email": "Admissions@loc.edu",
+    "financial_aid_phone": "(901) 435-1000",
+    "financial_aid_email": "FinancialAid@loc.edu",
+    "fax": "(901) 435-1524",
+    "email": "Admissions@loc.edu"
+  },
+  "type": "private",
+  "year_founded": "1871",
+  "enrollment": 609,
+  "tuition": {
+    "in_state": 12076,
+    "out_of_state": 12076,
+    "room_board": null
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Biology",
+      "Education",
+      "Criminal Justice",
+      "Computer Science",
+      "Psychology"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "lemoyne_owen_college.json",
+    "v2": "237-lemoyne-owen-college.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 35.1049,
+    "lon": -90.049
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

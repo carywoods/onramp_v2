@@ -1,0 +1,57 @@
+{
+  "school_id": "clark_atlanta_university",
+  "name": "Clark Atlanta University",
+  "state": "Georgia",
+  "address": {
+    "street": "223 James P. Brawley Dr., SW",
+    "city": "Atlanta",
+    "state_abbr": "GA",
+    "zip": "30314"
+  },
+  "contacts": {
+    "website": "https://www.cau.edu",
+    "main_phone": "(404) 880-8000",
+    "admissions_phone": "(404) 880-6605",
+    "admissions_email": "admissions@cau.edu",
+    "financial_aid_phone": "404-880-8992",
+    "financial_aid_email": "llanders@cau.edu",
+    "fax": "(404) 880-8440",
+    "email": "admissions@pantthe"
+  },
+  "type": "private",
+  "year_founded": "1988",
+  "enrollment": 4200,
+  "tuition": {
+    "in_state": 15360,
+    "out_of_state": 15360,
+    "room_board": 3000
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Computer Science",
+      "Communications",
+      "Biology",
+      "Criminal Justice",
+      "Political Science",
+      "Social Work",
+      "Psychology"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "clark_atlanta_university.json",
+    "v2": "183-clark-atlanta-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 33.749,
+    "lon": -84.413
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

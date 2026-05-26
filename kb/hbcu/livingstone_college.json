@@ -1,0 +1,55 @@
+{
+  "school_id": "livingstone_college",
+  "name": "Livingstone College",
+  "state": "North Carolina",
+  "address": {
+    "street": "701 W Monroe Street",
+    "city": "Salisbury",
+    "state_abbr": "NC",
+    "zip": "28144"
+  },
+  "contacts": {
+    "website": "https://livingstone.edu",
+    "main_phone": "704.216.6001",
+    "admissions_phone": "(704) 216-6004",
+    "admissions_email": "admissions@livingstone.edu",
+    "financial_aid_phone": "(704) 216-6069",
+    "financial_aid_email": "tyoung@livingstone.edu",
+    "fax": "(704) 216-6278",
+    "email": "admissions@livingstone.edu"
+  },
+  "type": "private",
+  "year_founded": "1870",
+  "enrollment": 924,
+  "tuition": {
+    "in_state": 15917,
+    "out_of_state": 15917,
+    "room_board": 12000
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Education",
+      "Biology",
+      "Criminal Justice",
+      "Computer Science",
+      "Religion"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "livingstone_college.json",
+    "v2": "215-livingstone-college.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 35.6693,
+    "lon": -80.4857
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

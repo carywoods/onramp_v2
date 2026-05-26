@@ -1,0 +1,55 @@
+{
+  "school_id": "gadsden_state_community_college",
+  "name": "Gadsden State Community College",
+  "state": "Alabama",
+  "address": {
+    "street": "1001 George Wallace Drive Gadsden, AL 35903. 256-549-8200. Gadsden State Junior College was established in 1965 by an act",
+    "city": "Gadsden",
+    "state_abbr": "AL",
+    "zip": "36202"
+  },
+  "contacts": {
+    "website": "https://www.gadsdenstate.edu",
+    "main_phone": "256-835-5400",
+    "admissions_phone": "256-549-8210",
+    "admissions_email": "admissions@gadsdenstate.edu",
+    "financial_aid_phone": "256-549-8266",
+    "financial_aid_email": "ifreyberg@gadsdenstate.edu",
+    "fax": "334-242-1926",
+    "email": "admissions@gadsdenstate.edu"
+  },
+  "type": "public",
+  "year_founded": "1925",
+  "enrollment": 5878,
+  "tuition": {
+    "in_state": 4608,
+    "out_of_state": 7756,
+    "room_board": ""
+  },
+  "academics": {
+    "programs": [
+      "Nursing",
+      "Business Administration",
+      "Information Technology",
+      "Early Childhood Education",
+      "Engineering Technology",
+      "Criminal Justice"
+    ],
+    "student_body": ""
+  },
+  "status": "",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "gadsden_state_community_college.json",
+    "v2": ""
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 34.0143,
+    "lon": -86.0066
+  },
+  "region": "Southeast",
+  "institution_level": "2-year"
+}

@@ -1,0 +1,54 @@
+{
+  "school_id": "denmark_technical_college",
+  "name": "Denmark Technical College",
+  "state": "South Carolina",
+  "address": {
+    "street": "1126 Solomon Blatt Blvd. Denmark, South Carolina 29042-0327 Mailing Addr",
+    "city": "Denmark",
+    "state_abbr": "SC",
+    "zip": "29042-0327"
+  },
+  "contacts": {
+    "website": "https://www.denmarktech.edu",
+    "main_phone": "(803) 793-5176",
+    "admissions_phone": "803-793-5174",
+    "admissions_email": "admissions@denmarktech.edu",
+    "financial_aid_phone": "(803) 793-5161",
+    "financial_aid_email": "thompsonc@denmarktech.edu",
+    "fax": "(803) 793-5942",
+    "email": "admissions@denmarktech.edu"
+  },
+  "type": "public",
+  "year_founded": "1947",
+  "enrollment": 675,
+  "tuition": {
+    "in_state": 6116,
+    "out_of_state": 11742,
+    "room_board": ""
+  },
+  "academics": {
+    "programs": [
+      "Information Technology",
+      "Engineering Technology",
+      "Business Administration",
+      "Early Childhood Education",
+      "Criminal Justice"
+    ],
+    "student_body": ""
+  },
+  "status": "",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "denmark_technical_college.json",
+    "v2": ""
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 33.3235,
+    "lon": -81.1434
+  },
+  "region": "Southeast",
+  "institution_level": "2-year"
+}

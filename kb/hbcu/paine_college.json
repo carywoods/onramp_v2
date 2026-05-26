@@ -1,0 +1,55 @@
+{
+  "school_id": "paine_college",
+  "name": "Paine College",
+  "state": "Georgia",
+  "address": {
+    "street": "1235 15th St.",
+    "city": "Augusta",
+    "state_abbr": "GA",
+    "zip": "30901"
+  },
+  "contacts": {
+    "website": "https://paine.edu",
+    "main_phone": "(706) 821-8200",
+    "admissions_phone": "(706) 821-8320",
+    "admissions_email": "Csingley@paine.edu",
+    "financial_aid_phone": "(706) 821-8262",
+    "financial_aid_email": "FinAid2@paine.edu",
+    "fax": "(706) 396-8154",
+    "email": "admissions@paine.edu"
+  },
+  "type": "private",
+  "year_founded": "1882",
+  "enrollment": "155",
+  "tuition": {
+    "in_state": 13467,
+    "out_of_state": 13467,
+    "room_board": ""
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Biology",
+      "Education",
+      "Criminal Justice",
+      "Psychology",
+      "Communications"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "paine_college.json",
+    "v2": "188-paine-college.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 33.4651,
+    "lon": -81.9743
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

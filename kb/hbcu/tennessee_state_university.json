@@ -1,0 +1,57 @@
+{
+  "school_id": "tennessee_state_university",
+  "name": "Tennessee State University",
+  "state": "Tennessee",
+  "address": {
+    "street": "3500 John A. Merritt Boulevard",
+    "city": "Nashville",
+    "state_abbr": "TN",
+    "zip": "37209"
+  },
+  "contacts": {
+    "website": "https://www.tnstate.edu",
+    "main_phone": "615-963-5101",
+    "admissions_phone": "615-963-5101",
+    "admissions_email": "admissions@tnstate.edu",
+    "financial_aid_phone": "(615)963-5701",
+    "financial_aid_email": "loans@tnstate.edu",
+    "fax": "615.963.5436",
+    "email": "admissions@tnstate.edu"
+  },
+  "type": "public",
+  "year_founded": "1912",
+  "enrollment": 6310,
+  "tuition": {
+    "in_state": 8616,
+    "out_of_state": 22416,
+    "room_board": 8806
+  },
+  "academics": {
+    "programs": [
+      "Nursing",
+      "Business Administration",
+      "Engineering",
+      "Computer Science",
+      "Education",
+      "Biology",
+      "Criminal Justice",
+      "Psychology"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "tennessee_state_university.json",
+    "v2": "239-tennessee-state-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 36.1677,
+    "lon": -86.8685
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

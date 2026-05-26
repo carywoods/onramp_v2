@@ -1,0 +1,55 @@
+{
+  "school_id": "bishop_state_community_college",
+  "name": "Bishop State Community College",
+  "state": "Alabama",
+  "address": {
+    "street": "351 N Broad St",
+    "city": "Mobile",
+    "state_abbr": "AL",
+    "zip": "36603"
+  },
+  "contacts": {
+    "website": "https://www.bishop.edu",
+    "main_phone": "(251) 405-7000",
+    "admissions_phone": "(251) 405-7005",
+    "admissions_email": "admiss@bishop.edu",
+    "financial_aid_phone": "251-405-7015",
+    "financial_aid_email": "financialaid@bishop.edu",
+    "fax": "(251) 460-7876",
+    "email": "admiss@bishop.edu"
+  },
+  "type": "public",
+  "year_founded": "1927",
+  "enrollment": 4001,
+  "tuition": {
+    "in_state": 5340,
+    "out_of_state": 9210,
+    "room_board": ""
+  },
+  "academics": {
+    "programs": [
+      "Nursing",
+      "Information Technology",
+      "Business Administration",
+      "Early Childhood Education",
+      "Criminal Justice",
+      "Engineering Technology"
+    ],
+    "student_body": ""
+  },
+  "status": "",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "bishop_state_community_college.json",
+    "v2": ""
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 30.678,
+    "lon": -88.1058
+  },
+  "region": "Southeast",
+  "institution_level": "2-year"
+}

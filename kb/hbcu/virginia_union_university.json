@@ -1,0 +1,56 @@
+{
+  "school_id": "virginia_union_university",
+  "name": "Virginia Union University",
+  "state": "Virginia",
+  "address": {
+    "street": "1500 North Lombardy St.",
+    "city": "Richmond",
+    "state_abbr": "VA",
+    "zip": "23220"
+  },
+  "contacts": {
+    "website": "https://www.vuu.edu",
+    "main_phone": "804-342-3570",
+    "admissions_phone": "804.342.3570",
+    "admissions_email": "admissions@vuu.edu",
+    "financial_aid_phone": "800 368-3227",
+    "financial_aid_email": "finaid@vuu.edu",
+    "fax": "804-342-3511",
+    "email": "admissions@vuu.edu"
+  },
+  "type": "private",
+  "year_founded": "1865",
+  "enrollment": 1344,
+  "tuition": {
+    "in_state": 13154,
+    "out_of_state": 13154,
+    "room_board": 5888
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Biology",
+      "Criminal Justice",
+      "Education",
+      "Computer Science",
+      "Theology",
+      "Psychology"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "virginia_union_university.json",
+    "v2": "165-virginia-union-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 37.5668,
+    "lon": -77.4366
+  },
+  "region": "Mid-Atlantic",
+  "institution_level": "4-year"
+}

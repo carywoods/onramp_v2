@@ -1,0 +1,56 @@
+{
+  "school_id": "wiley_college",
+  "name": "Wiley College",
+  "state": "Texas",
+  "address": {
+    "street": "711 Wiley Avenue",
+    "city": "Marshall",
+    "state_abbr": "TX",
+    "zip": "75670"
+  },
+  "contacts": {
+    "website": "https://www.wileyc.edu",
+    "main_phone": "903.927.3300",
+    "admissions_phone": "(903) 927-3311",
+    "admissions_email": "wileyadmissions1873@gmail.com",
+    "financial_aid_phone": "903-742-4856",
+    "financial_aid_email": "finaid@wileyc.edu",
+    "fax": "(800) 884-6572",
+    "email": "wileyadmissions1873@gmail.com"
+  },
+  "type": "private",
+  "year_founded": "1873",
+  "enrollment": 1000,
+  "tuition": {
+    "in_state": 12500,
+    "out_of_state": 10000,
+    "room_board": 5000
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Biology",
+      "Education",
+      "Criminal Justice",
+      "Computer Science",
+      "Communications",
+      "Religion"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "wiley_college.json",
+    "v2": "159-wiley-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 32.5182,
+    "lon": -94.3627
+  },
+  "region": "South Central",
+  "institution_level": "4-year"
+}

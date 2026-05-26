@@ -1,0 +1,55 @@
+{
+  "school_id": "barber-scotia-college",
+  "name": "Barber-Scotia College",
+  "state": "NC",
+  "address": {
+    "street": "600 Barber Street NE",
+    "city": "Concord",
+    "state_abbr": "NC",
+    "zip": "28025"
+  },
+  "contacts": {
+    "website": "https://b-sc.edu/",
+    "email": "",
+    "fax": "",
+    "main_phone": "Not found",
+    "admissions_phone": "Not found",
+    "admissions_email": "Not found",
+    "financial_aid_phone": "Not found",
+    "financial_aid_email": "Not found"
+  },
+  "type": "private",
+  "year_founded": "Not found",
+  "enrollment": 114,
+  "tuition": {
+    "in_state": 3000,
+    "out_of_state": 3000,
+    "room_board": ""
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Liberal Arts",
+      "Education",
+      "Criminal Justice",
+      "Psychology",
+      "Sociology"
+    ],
+    "student_body": "coed"
+  },
+  "status": "unaccredited",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "",
+    "v2": "208-barber-scotia-college.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 35.396,
+    "lon": -80.5743
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

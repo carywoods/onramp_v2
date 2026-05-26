@@ -1,0 +1,56 @@
+{
+  "school_id": "fort_valley_state_university",
+  "name": "Fort Valley State University",
+  "state": "Georgia",
+  "address": {
+    "street": "1005 State College Dr.",
+    "city": "Fort Valley",
+    "state_abbr": "GA",
+    "zip": "31030"
+  },
+  "contacts": {
+    "website": "https://www.fvsu.edu",
+    "main_phone": "(478) 825-6228",
+    "admissions_phone": "(478) 825-6520",
+    "admissions_email": "admissions@fvsu.edu",
+    "financial_aid_phone": "(478) 825-6605",
+    "financial_aid_email": "Heidi.Pinney@fvsu.edu",
+    "fax": "478.825.6266",
+    "email": "admissap@mail.fvsu"
+  },
+  "type": "public",
+  "year_founded": "1895",
+  "enrollment": 2500,
+  "tuition": {
+    "in_state": 3044,
+    "out_of_state": 10360,
+    "room_board": 4496
+  },
+  "academics": {
+    "programs": [
+      "Agriculture",
+      "Business Administration",
+      "Education",
+      "Computer Science",
+      "Nursing",
+      "Criminal Justice",
+      "Biology"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "fort_valley_state_university.json",
+    "v2": "184-fort-valley-state-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 32.5535,
+    "lon": -83.8849
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

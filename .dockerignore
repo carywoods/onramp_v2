@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Runtime logs and run history
+logs/
+kb/hbcu/runs/
+
+# Secrets — set OPENROUTER_API_KEY as an env var in Coolify instead
+openrouter_api_key.txt
+
+# Dev tools
+.git/
+.gitignore
+*.md
+patch_*.py

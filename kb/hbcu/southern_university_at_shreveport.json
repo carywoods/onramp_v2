@@ -1,0 +1,54 @@
+{
+  "school_id": "southern_university_at_shreveport",
+  "name": "Southern University at Shreveport",
+  "state": "Louisiana",
+  "address": {
+    "street": "3050 Martin Luther King, Jr. Drive Shreveport, LA 71107 318.670.6000 Department Direct",
+    "city": "Luther King",
+    "state_abbr": "LA",
+    "zip": "71107"
+  },
+  "contacts": {
+    "website": "https://www.susla.edu",
+    "main_phone": "(318) 670-6000",
+    "admissions_phone": "318.670.9210",
+    "admissions_email": "sbryant@susla.edu",
+    "financial_aid_phone": "318-670-9369",
+    "financial_aid_email": "financialaid@susla.edu",
+    "fax": "318.670.6344",
+    "email": "sbryant@susla.edu"
+  },
+  "type": "public",
+  "year_founded": "1964",
+  "enrollment": 3013,
+  "tuition": {
+    "in_state": 2618,
+    "out_of_state": 8258,
+    "room_board": ""
+  },
+  "academics": {
+    "programs": [
+      "Nursing",
+      "Business Administration",
+      "Criminal Justice",
+      "Information Technology",
+      "Early Childhood Education"
+    ],
+    "student_body": ""
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "southern_university_at_shreveport.json",
+    "v2": ""
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 32.4907,
+    "lon": -93.7502
+  },
+  "region": "South Central",
+  "institution_level": "2-year"
+}

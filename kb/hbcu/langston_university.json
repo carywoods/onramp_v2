@@ -1,0 +1,56 @@
+{
+  "school_id": "langston_university",
+  "name": "Langston University",
+  "state": "Oklahoma",
+  "address": {
+    "street": "Highway 81",
+    "city": "Langston",
+    "state_abbr": "OK",
+    "zip": "73050"
+  },
+  "contacts": {
+    "website": "https://langston.edu",
+    "main_phone": "405-466-3428",
+    "admissions_phone": "405-466-3428",
+    "admissions_email": "luadmissions@langston.edu",
+    "financial_aid_phone": "405-466-3000",
+    "financial_aid_email": "financial@langston.edu",
+    "fax": "(405) 466-3420",
+    "email": "luadmissions@langston.edu"
+  },
+  "type": "public",
+  "year_founded": "1897",
+  "enrollment": 1750,
+  "tuition": {
+    "in_state": 6930,
+    "out_of_state": 14683,
+    "room_board": 5672
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Nursing",
+      "Education",
+      "Computer Science",
+      "Criminal Justice",
+      "Biology",
+      "Psychology"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "langston_university.json",
+    "v2": "85-langston-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 35.9365,
+    "lon": -97.2628
+  },
+  "region": "South Central",
+  "institution_level": "4-year"
+}

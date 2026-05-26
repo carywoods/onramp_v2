@@ -1,0 +1,57 @@
+{
+  "school_id": "alabama_a_m_university",
+  "name": "Alabama A&M University",
+  "state": "Alabama",
+  "address": {
+    "street": "4900 Meridian St. North",
+    "city": "Normal",
+    "state_abbr": "AL",
+    "zip": "35762"
+  },
+  "contacts": {
+    "website": "https://www.aamu.edu",
+    "main_phone": "(256) 372-5245",
+    "admissions_phone": "(256) 372-5245",
+    "admissions_email": "info@aamu.edu",
+    "financial_aid_phone": "(256) 372-5400",
+    "financial_aid_email": "financialaid@aamu.edu",
+    "fax": "",
+    "email": "info@aamu.edu"
+  },
+  "type": "public",
+  "year_founded": "1875",
+  "enrollment": 7295,
+  "tuition": {
+    "in_state": 10024,
+    "out_of_state": 18634,
+    "room_board": 12240
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Computer Science",
+      "Engineering",
+      "Biology",
+      "Education",
+      "Communications",
+      "Psychology",
+      "Physics"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "alabama_a_m_university.json",
+    "v2": "157-alabama-am-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 34.7831,
+    "lon": -86.5686
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

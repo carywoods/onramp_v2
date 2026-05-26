@@ -1,0 +1,53 @@
+{
+  "school_id": "southwestern_christian_college",
+  "name": "Southwestern Christian College",
+  "state": "Texas",
+  "address": {
+    "street": "200 Bowser Circle",
+    "city": "Terrell",
+    "state_abbr": "TX",
+    "zip": "75160"
+  },
+  "contacts": {
+    "website": "https://www.swcc.edu",
+    "main_phone": "(972) 524-3341",
+    "admissions_phone": "(405)789-7661",
+    "admissions_email": "admissions@swcu.edu",
+    "financial_aid_phone": "682.800.2408",
+    "financial_aid_email": "tdean@swcc.edu",
+    "fax": "",
+    "email": "admissions@swcu.edu"
+  },
+  "type": "private",
+  "year_founded": "1948",
+  "enrollment": 128,
+  "tuition": {
+    "in_state": 12588,
+    "out_of_state": 12588,
+    "room_board": ""
+  },
+  "academics": {
+    "programs": [
+      "Liberal Arts",
+      "Religion",
+      "Business Administration",
+      "Early Childhood Education"
+    ],
+    "student_body": ""
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "southwestern_christian_college.json",
+    "v2": ""
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 33.129,
+    "lon": -96.3527
+  },
+  "region": "South Central",
+  "institution_level": "2-year"
+}

@@ -1,0 +1,57 @@
+{
+  "school_id": "grambling_state_university",
+  "name": "Grambling State University",
+  "state": "Louisiana",
+  "address": {
+    "street": "100 Main St., PO Drawer 1165",
+    "city": "Grambling",
+    "state_abbr": "LA",
+    "zip": "71245"
+  },
+  "contacts": {
+    "website": "https://www.gram.edu",
+    "main_phone": "1-800-569-4714",
+    "admissions_phone": "(318) 247-3811",
+    "admissions_email": "admissions@gram.edu",
+    "financial_aid_phone": "(318)274-3358",
+    "financial_aid_email": "jacksonal@gram.edu",
+    "fax": "(318)274-3115",
+    "email": "admissions@gram.edu"
+  },
+  "type": "public",
+  "year_founded": "1901",
+  "enrollment": 5270,
+  "tuition": {
+    "in_state": 7683,
+    "out_of_state": 7683,
+    "room_board": ""
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Computer Science",
+      "Criminal Justice",
+      "Education",
+      "Nursing",
+      "Communications",
+      "Biology",
+      "Social Work"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "grambling_state_university.json",
+    "v2": "196-grambling-state-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 32.5274,
+    "lon": -92.7157
+  },
+  "region": "South Central",
+  "institution_level": "4-year"
+}

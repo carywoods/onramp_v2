@@ -1,0 +1,55 @@
+{
+  "school_id": "wilberforce_university",
+  "name": "Wilberforce University",
+  "state": "Ohio",
+  "address": {
+    "street": "1055 N. Bickett Rd.",
+    "city": "Wilberforce",
+    "state_abbr": "OH",
+    "zip": "45384"
+  },
+  "contacts": {
+    "website": "https://wilberforce.edu",
+    "main_phone": "(937) 376-2911",
+    "admissions_phone": "(937) 376-2911",
+    "admissions_email": "jtellis@wilberforce.edu",
+    "financial_aid_phone": "(937) 708-5751",
+    "financial_aid_email": "scoleman@wilberforce.edu",
+    "fax": "(937) 716-2305",
+    "email": "jtellis@wilberforce.edu"
+  },
+  "type": "private",
+  "year_founded": "1856",
+  "enrollment": 617,
+  "tuition": {
+    "in_state": 14718,
+    "out_of_state": 14718,
+    "room_board": ""
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Computer Science",
+      "Criminal Justice",
+      "Education",
+      "Biology",
+      "Communications"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "wilberforce_university.json",
+    "v2": "225-wilberforce-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 39.7157,
+    "lon": -83.881
+  },
+  "region": "Midwest",
+  "institution_level": "4-year"
+}

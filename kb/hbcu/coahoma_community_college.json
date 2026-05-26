@@ -1,0 +1,55 @@
+{
+  "school_id": "coahoma_community_college",
+  "name": "Coahoma Community College",
+  "state": "Mississippi",
+  "address": {
+    "street": "3240 Friars Point Rd",
+    "city": "Coahoma County",
+    "state_abbr": "MS",
+    "zip": "19883"
+  },
+  "contacts": {
+    "website": "https://www.coahomacc.edu/index.html",
+    "main_phone": "(662) 627-2571",
+    "admissions_phone": "662-621-4696",
+    "admissions_email": "mhouston@coahomacc.edu",
+    "financial_aid_phone": "662-627-9871",
+    "financial_aid_email": "financialaid@coahomacc.edu",
+    "fax": "662-621-4297",
+    "email": "admissions@coahomacc.edu"
+  },
+  "type": "public",
+  "year_founded": "1949",
+  "enrollment": 1711,
+  "tuition": {
+    "in_state": 3400,
+    "out_of_state": 3240,
+    "room_board": ""
+  },
+  "academics": {
+    "programs": [
+      "Nursing",
+      "Business Administration",
+      "Early Childhood Education",
+      "Information Technology",
+      "Criminal Justice",
+      "Liberal Arts"
+    ],
+    "student_body": ""
+  },
+  "status": "",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "coahoma_community_college.json",
+    "v2": ""
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 34.3645,
+    "lon": -90.5743
+  },
+  "region": "Southeast",
+  "institution_level": "2-year"
+}

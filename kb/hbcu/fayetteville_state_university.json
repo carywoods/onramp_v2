@@ -1,0 +1,57 @@
+{
+  "school_id": "fayetteville_state_university",
+  "name": "Fayetteville State University",
+  "state": "North Carolina",
+  "address": {
+    "street": "1200 Murchison Road",
+    "city": "Fayetteville",
+    "state_abbr": "NC",
+    "zip": "28301"
+  },
+  "contacts": {
+    "website": "https://www.uncfsu.edu",
+    "main_phone": "910-672-1111",
+    "admissions_phone": "(910) 672-1371",
+    "admissions_email": "admissions@uncfsu.edu",
+    "financial_aid_phone": "(910) 672-1423",
+    "financial_aid_email": "vharrisjr@uncfsu.edu",
+    "fax": "(910) 672-1414",
+    "email": "admissions@uncfsu.edu"
+  },
+  "type": "public",
+  "year_founded": "1867",
+  "enrollment": 6726,
+  "tuition": {
+    "in_state": 6778,
+    "out_of_state": 10778,
+    "room_board": 11449
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Criminal Justice",
+      "Nursing",
+      "Education",
+      "Psychology",
+      "Computer Science",
+      "Biology",
+      "Social Work"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "fayetteville_state_university.json",
+    "v2": "214-fayetteville-state-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 35.0419,
+    "lon": -78.9014
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

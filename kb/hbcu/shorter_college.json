@@ -1,0 +1,53 @@
+{
+  "school_id": "shorter_college",
+  "name": "Shorter College",
+  "state": "Arkansas",
+  "address": {
+    "street": "604 N Locust St",
+    "city": "North Little Rock",
+    "state_abbr": "AR",
+    "zip": "72114"
+  },
+  "contacts": {
+    "website": "https://shortercollege.edu",
+    "main_phone": "(501) 374-6305",
+    "admissions_phone": "(800) 868-6980",
+    "admissions_email": "Arnella.carter@shortercollege.edu",
+    "financial_aid_phone": "(706) 233-7227",
+    "financial_aid_email": "audra.hinton@shortercollege.edu",
+    "fax": "(501) 374-9333",
+    "email": "info@shortercollege.edu"
+  },
+  "type": "private",
+  "year_founded": "1886",
+  "enrollment": 290,
+  "tuition": {
+    "in_state": 4800,
+    "out_of_state": 4800,
+    "room_board": ""
+  },
+  "academics": {
+    "programs": [
+      "Liberal Arts",
+      "Business Administration",
+      "Religion",
+      "Early Childhood Education"
+    ],
+    "student_body": ""
+  },
+  "status": "",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "shorter_college.json",
+    "v2": ""
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 35.2787,
+    "lon": -92.4432
+  },
+  "region": "South Central",
+  "institution_level": "2-year"
+}

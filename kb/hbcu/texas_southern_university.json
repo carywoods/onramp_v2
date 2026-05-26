@@ -1,0 +1,57 @@
+{
+  "school_id": "texas_southern_university",
+  "name": "Texas Southern University",
+  "state": "Texas",
+  "address": {
+    "street": "3100 Cleburne Street",
+    "city": "Houston",
+    "state_abbr": "TX",
+    "zip": "77004"
+  },
+  "contacts": {
+    "website": "https://www.tsu.edu",
+    "main_phone": "(713) 313-7011",
+    "admissions_phone": "713-313-7011",
+    "admissions_email": "admissions@tsu.edu",
+    "financial_aid_phone": "(713) 313-1858",
+    "financial_aid_email": "admissions@tsu.edu",
+    "fax": "(713) 313-7851",
+    "email": "graduateadmissions@tsu.edu"
+  },
+  "type": "public",
+  "year_founded": "1927",
+  "enrollment": 8600,
+  "tuition": {
+    "in_state": 10274,
+    "out_of_state": 23984,
+    "room_board": null
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Law",
+      "Pharmacy",
+      "Computer Science",
+      "Criminal Justice",
+      "Education",
+      "Communications",
+      "Engineering"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "texas_southern_university.json",
+    "v2": "158-texas-southern-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 29.7218,
+    "lon": -95.3496
+  },
+  "region": "South Central",
+  "institution_level": "4-year"
+}

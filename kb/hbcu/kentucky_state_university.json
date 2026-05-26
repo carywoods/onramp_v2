@@ -1,0 +1,56 @@
+{
+  "school_id": "kentucky_state_university",
+  "name": "Kentucky State University",
+  "state": "Kentucky",
+  "address": {
+    "street": "400 East Main St.",
+    "city": "Frankfort",
+    "state_abbr": "KY",
+    "zip": "40601"
+  },
+  "contacts": {
+    "website": "https://www.kysu.edu",
+    "main_phone": "(502) 597-6000",
+    "admissions_phone": "(502) 597-6813",
+    "admissions_email": "admissions@kysu.edu",
+    "financial_aid_phone": "(502) 597-5960",
+    "financial_aid_email": "finaidmail@kysu.edu",
+    "fax": "(502) 597-6321",
+    "email": "wewantyou@kysu.edu"
+  },
+  "type": "public",
+  "year_founded": "1886",
+  "enrollment": 2400,
+  "tuition": {
+    "in_state": 9807,
+    "out_of_state": 14148,
+    "room_board": 8210
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Nursing",
+      "Education",
+      "Criminal Justice",
+      "Computer Science",
+      "Biology",
+      "Psychology"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "kentucky_state_university.json",
+    "v2": "194-kentucky-state-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 38.1968,
+    "lon": -84.8733
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

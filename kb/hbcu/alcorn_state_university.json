@@ -1,0 +1,57 @@
+{
+  "school_id": "alcorn_state_university",
+  "name": "Alcorn State University",
+  "state": "Mississippi",
+  "address": {
+    "street": "1000 ASU Dr., #300",
+    "city": "Alcorn State",
+    "state_abbr": "MS",
+    "zip": "39096"
+  },
+  "contacts": {
+    "website": "https://www.alcorn.edu",
+    "main_phone": "(601) 877-6321",
+    "admissions_phone": "(601) 877-6148",
+    "admissions_email": "admissions@alcorn.edu",
+    "financial_aid_phone": "601.877.6702",
+    "financial_aid_email": "weir@alcorn.edu",
+    "fax": "(601) 304-4245",
+    "email": "admissions@alcorn.edu"
+  },
+  "type": "public",
+  "year_founded": "1871",
+  "enrollment": 2900,
+  "tuition": {
+    "in_state": 8785,
+    "out_of_state": 8785,
+    "room_board": 10255
+  },
+  "academics": {
+    "programs": [
+      "Nursing",
+      "Biology",
+      "Agriculture",
+      "Business Administration",
+      "Computer Science",
+      "Education",
+      "Criminal Justice",
+      "Psychology"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "alcorn_state_university.json",
+    "v2": "203-alcorn-state-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 31.544,
+    "lon": -91.0463
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

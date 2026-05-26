@@ -1,0 +1,57 @@
+{
+  "school_id": "tuskegee_university",
+  "name": "Tuskegee University",
+  "state": "Alabama",
+  "address": {
+    "street": "102 Old Administration Building",
+    "city": "Tuskegee",
+    "state_abbr": "AL",
+    "zip": "36088"
+  },
+  "contacts": {
+    "website": "https://www.tuskegee.edu",
+    "main_phone": "334-727-8011",
+    "admissions_phone": "334-727-8580",
+    "admissions_email": "cgriffin@tuskegee.edu",
+    "financial_aid_phone": "(334) 727-8088",
+    "financial_aid_email": "faid@tuskegee.edu",
+    "fax": "(334) 727-5750",
+    "email": "admissions@tuskege"
+  },
+  "type": "private",
+  "year_founded": "1881",
+  "enrollment": 2170,
+  "tuition": {
+    "in_state": 22614,
+    "out_of_state": 22614,
+    "room_board": 7887
+  },
+  "academics": {
+    "programs": [
+      "Engineering",
+      "Veterinary Medicine",
+      "Architecture",
+      "Nursing",
+      "Business Administration",
+      "Agriculture",
+      "Computer Science",
+      "Biology"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "tuskegee_university.json",
+    "v2": "173-tuskegee-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 32.4324,
+    "lon": -85.708
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

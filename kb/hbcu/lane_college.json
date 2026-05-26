@@ -1,0 +1,55 @@
+{
+  "school_id": "lane_college",
+  "name": "Lane College",
+  "state": "Tennessee",
+  "address": {
+    "street": "545 Lane Avenue",
+    "city": "Jackson",
+    "state_abbr": "TN",
+    "zip": "38301"
+  },
+  "contacts": {
+    "website": "https://www.lanecollege.edu",
+    "main_phone": "731.426.7533",
+    "admissions_phone": "(731) 426-7537",
+    "admissions_email": "admissions@lanecollege.edu",
+    "financial_aid_phone": "731-426-7602",
+    "financial_aid_email": "kbiggs@lanecollege.edu",
+    "fax": "(731) 426-7594",
+    "email": "housing@lanecollege.edu"
+  },
+  "type": "private",
+  "year_founded": "1882",
+  "enrollment": 1095,
+  "tuition": {
+    "in_state": 10229,
+    "out_of_state": 10229,
+    "room_board": 8158
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Biology",
+      "Education",
+      "Criminal Justice",
+      "Computer Science",
+      "Communications"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "lane_college.json",
+    "v2": "236-lane-college.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 35.6151,
+    "lon": -88.834
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

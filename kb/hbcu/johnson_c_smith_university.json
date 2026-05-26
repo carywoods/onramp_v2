@@ -1,0 +1,56 @@
+{
+  "school_id": "johnson_c_smith_university",
+  "name": "Johnson C. Smith University",
+  "state": "North Carolina",
+  "address": {
+    "street": "100 Beatties Ford Road",
+    "city": "Charlotte",
+    "state_abbr": "NC",
+    "zip": "28216"
+  },
+  "contacts": {
+    "website": "https://www.jcsu.edu",
+    "main_phone": "704.378.1000",
+    "admissions_phone": "704.378.1010",
+    "admissions_email": "svpaa@jcsu.edu",
+    "financial_aid_phone": "704.378.1035",
+    "financial_aid_email": "financialaid@jcsu.edu",
+    "fax": "704.330.1330",
+    "email": "svpaa@jcsu.edu"
+  },
+  "type": "private",
+  "year_founded": "1867",
+  "enrollment": 1252,
+  "tuition": {
+    "in_state": 22150,
+    "out_of_state": 22150,
+    "room_board": 8950
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Computer Science",
+      "Communications",
+      "Criminal Justice",
+      "Biology",
+      "Education",
+      "Psychology"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "johnson_c_smith_university.json",
+    "v2": "84-johnson-c-smith-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 35.2271,
+    "lon": -80.8631
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

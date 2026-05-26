@@ -1,0 +1,57 @@
+{
+  "school_id": "bethune_cookman_university",
+  "name": "Bethune-Cookman University",
+  "state": "Florida",
+  "address": {
+    "street": "640 Dr. Mary McLeod Bethune Blvd.",
+    "city": "Daytona Beach",
+    "state_abbr": "FL",
+    "zip": "32114"
+  },
+  "contacts": {
+    "website": "https://www.cookman.edu",
+    "main_phone": "386-481-2600",
+    "admissions_phone": "386-481-2600",
+    "admissions_email": "admissions@cookman.edu",
+    "financial_aid_phone": "(386) 481-2000",
+    "financial_aid_email": "admissions@cookman.edu",
+    "fax": "386-481-2601",
+    "email": "admission@bethune."
+  },
+  "type": "private",
+  "year_founded": "1872",
+  "enrollment": 2750,
+  "tuition": {
+    "in_state": 13844,
+    "out_of_state": 13844,
+    "room_board": 7206
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Nursing",
+      "Computer Science",
+      "Criminal Justice",
+      "Biology",
+      "Communications",
+      "Education",
+      "Psychology"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "bethune_cookman_university.json",
+    "v2": "178-bethune-cookman-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 29.2163,
+    "lon": -81.0228
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

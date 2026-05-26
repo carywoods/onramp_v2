@@ -1,0 +1,55 @@
+{
+  "school_id": "bennett_college",
+  "name": "Bennett College",
+  "state": "North Carolina",
+  "address": {
+    "street": "1200 North Benbow Road",
+    "city": "Greensboro",
+    "state_abbr": "NC",
+    "zip": "27401"
+  },
+  "contacts": {
+    "website": "https://www.bennett.edu",
+    "main_phone": "(336) 517-2100",
+    "admissions_phone": "(336) 370-8624",
+    "admissions_email": "admissions@bennett.edu",
+    "financial_aid_phone": "888-370-8678",
+    "financial_aid_email": "financial_aid@bennett.edu",
+    "fax": "336-517-2204",
+    "email": "admissions@bennett.edu"
+  },
+  "type": "private",
+  "year_founded": "1873",
+  "enrollment": 180,
+  "tuition": {
+    "in_state": 19140,
+    "out_of_state": 19140,
+    "room_board": ""
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Biology",
+      "Psychology",
+      "Education",
+      "Communications",
+      "Social Work"
+    ],
+    "student_body": "women"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "bennett_college.json",
+    "v2": "50-bennett-college.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 36.0598,
+    "lon": -79.7884
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

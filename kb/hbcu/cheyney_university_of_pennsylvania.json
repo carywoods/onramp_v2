@@ -1,0 +1,55 @@
+{
+  "school_id": "cheyney_university_of_pennsylvania",
+  "name": "Cheyney University of Pennsylvania",
+  "state": "Pennsylvania",
+  "address": {
+    "street": "1837 E. Lincoln Hwy.",
+    "city": "Cheyney",
+    "state_abbr": "PA",
+    "zip": "19319"
+  },
+  "contacts": {
+    "website": "https://cheyney.edu",
+    "main_phone": "610.399.2000",
+    "admissions_phone": "610-399-2275",
+    "admissions_email": "admissions@cheyney.edu",
+    "financial_aid_phone": "(610) 399-2302",
+    "financial_aid_email": "financialaid@cheyney.edu",
+    "fax": "610-399-2283",
+    "email": "admissions@cheyney.edu"
+  },
+  "type": "public",
+  "year_founded": "1837",
+  "enrollment": 724,
+  "tuition": {
+    "in_state": 11200,
+    "out_of_state": 19452,
+    "room_board": 12000
+  },
+  "academics": {
+    "programs": [
+      "Education",
+      "Business Administration",
+      "Criminal Justice",
+      "Computer Science",
+      "Communications",
+      "Psychology"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "cheyney_university_of_pennsylvania.json",
+    "v2": "227-cheyney-university-of-pennsylvania.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 39.9318,
+    "lon": -75.5185
+  },
+  "region": "Mid-Atlantic",
+  "institution_level": "4-year"
+}

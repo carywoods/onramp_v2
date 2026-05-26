@@ -1,0 +1,57 @@
+{
+  "school_id": "hampton_university",
+  "name": "Hampton University",
+  "state": "Virginia",
+  "address": {
+    "street": "East Queen Street",
+    "city": "Hampton",
+    "state_abbr": "VA",
+    "zip": "23668"
+  },
+  "contacts": {
+    "website": "https://home.hamptonu.edu",
+    "main_phone": "(757) 727.5000",
+    "admissions_phone": "(757) 727.5000",
+    "admissions_email": "applicationstatus@hamptonu.edu",
+    "financial_aid_phone": "757.727.5635",
+    "financial_aid_email": "FInancialaid@hamptonu.edu",
+    "fax": "757.728.6612",
+    "email": "admissions@hampton"
+  },
+  "type": "private",
+  "year_founded": "1868",
+  "enrollment": 5325,
+  "tuition": {
+    "in_state": 14818,
+    "out_of_state": 14818,
+    "room_board": 6746
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Nursing",
+      "Computer Science",
+      "Communications",
+      "Engineering",
+      "Biology",
+      "Architecture",
+      "Psychology"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "hampton_university.json",
+    "v2": "161-hampton-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 37.0241,
+    "lon": -76.3458
+  },
+  "region": "Mid-Atlantic",
+  "institution_level": "4-year"
+}

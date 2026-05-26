@@ -1,0 +1,57 @@
+{
+  "school_id": "jackson_state_university",
+  "name": "Jackson State University",
+  "state": "Mississippi",
+  "address": {
+    "street": "1400 John R. Lynch St.",
+    "city": "Jackson",
+    "state_abbr": "MS",
+    "zip": "39217"
+  },
+  "contacts": {
+    "website": "https://www.jsums.edu",
+    "main_phone": "601-979-2121",
+    "admissions_phone": "1-866-843-3578",
+    "admissions_email": "janieth.w.adams@jsums.edu",
+    "financial_aid_phone": "(866-843-3578",
+    "financial_aid_email": "finaid@jsums.edu",
+    "fax": "601-979-8701",
+    "email": "janieth.w.adams@jsums.edu"
+  },
+  "type": "public",
+  "year_founded": "1877",
+  "enrollment": 7700,
+  "tuition": {
+    "in_state": 9635,
+    "out_of_state": 9635,
+    "room_board": ""
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Computer Science",
+      "Criminal Justice",
+      "Education",
+      "Biology",
+      "Communications",
+      "Engineering",
+      "Social Work"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "jackson_state_university.json",
+    "v2": "204-jackson-state-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 32.2988,
+    "lon": -90.1848
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

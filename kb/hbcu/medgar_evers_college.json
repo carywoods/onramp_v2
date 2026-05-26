@@ -1,0 +1,56 @@
+{
+  "school_id": "medgar_evers_college",
+  "name": "Medgar Evers College (CUNY)",
+  "state": "New York",
+  "address": {
+    "street": "1650 Bedford Ave",
+    "city": "Brooklyn",
+    "state_abbr": "NY",
+    "zip": "11225"
+  },
+  "contacts": {
+    "website": "https://www.mec.cuny.edu/",
+    "main_phone": "718-270-4900",
+    "admissions_phone": "718-270-6024",
+    "admissions_email": "admissions@mec.cuny.edu",
+    "financial_aid_phone": "Not found",
+    "financial_aid_email": "Not found",
+    "fax": "",
+    "email": ""
+  },
+  "type": "public",
+  "year_founded": "1969",
+  "enrollment": 5800,
+  "tuition": {
+    "in_state": 7530,
+    "out_of_state": 15030,
+    "room_board": null
+  },
+  "academics": {
+    "programs": [
+      "Nursing",
+      "Business Administration",
+      "Computer Science",
+      "Criminal Justice",
+      "Biology",
+      "Education",
+      "Public Administration"
+    ],
+    "student_body": ""
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "",
+    "v2": ""
+  },
+  "_conflicts": [],
+  "_resolution": "stub_no_reliable_data",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 40.6501,
+    "lon": -73.9496
+  },
+  "region": "Northeast",
+  "institution_level": "4-year"
+}

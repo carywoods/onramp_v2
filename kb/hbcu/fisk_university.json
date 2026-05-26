@@ -1,0 +1,57 @@
+{
+  "school_id": "fisk_university",
+  "name": "Fisk University",
+  "state": "Tennessee",
+  "address": {
+    "street": "1000 17th Avenue North",
+    "city": "Nashville",
+    "state_abbr": "TN",
+    "zip": "37208"
+  },
+  "contacts": {
+    "website": "https://www.fisk.edu",
+    "main_phone": "615.329.8666",
+    "admissions_phone": "615.329.8666",
+    "admissions_email": "admit@fisk.edu",
+    "financial_aid_phone": "615.329.8735",
+    "financial_aid_email": "webmaster@fisk.edu",
+    "fax": "615-329-8802",
+    "email": "admissions@fisk.edu"
+  },
+  "type": "private",
+  "year_founded": "1865",
+  "enrollment": 1096,
+  "tuition": {
+    "in_state": 23880,
+    "out_of_state": 23880,
+    "room_board": 11908
+  },
+  "academics": {
+    "programs": [
+      "Biology",
+      "Psychology",
+      "Business Administration",
+      "Chemistry",
+      "Physics",
+      "Education",
+      "Music",
+      "Sociology"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "fisk_university.json",
+    "v2": "235-fisk-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 36.168,
+    "lon": -86.8104
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

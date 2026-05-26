@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBCU AI — Find Your School</title>
+    <style>
+        :root {
+            --bg: #f9fafb;
+            --text: #111827;
+            --primary: #7c3aed;
+            --primary-hover: #6d28d9;
+            --primary-light: #ede9fe;
+            --card-bg: #ffffff;
+            --border: #e5e7eb;
+            --muted: #6b7280;
+            --green: #059669;
+            --green-bg: #ecfdf5;
+            --yellow: #b45309;
+            --yellow-bg: #fffbeb;
+            --red: #b91c1c;
+            --red-bg: #fee2e2;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.08), 0 2px 4px -2px rgb(0 0 0 / 0.06);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* ---- Header ---- */
+        header {
+            background: linear-gradient(135deg, #3b0764, #7c3aed);
+            color: white;
+            text-align: center;
+            padding: 3rem 2rem 3rem;
+        }
+        header h1 {
+            font-size: 2.75rem;
+            font-weight: 800;
+            margin: 0 0 0.4rem;
+            letter-spacing: -0.5px;
+        }
+        header .tagline {
+            font-size: 1.1rem;
+            margin: 0;
+            opacity: 0.9;
+        }
+        header .mission {
+            font-size: 0.92rem;
+            max-width: 600px;
+            margin: 1rem auto 0;
+            opacity: 0.78;
+            line-height: 1.65;
+        }
+        header .attribution {
+            font-size: 0.78rem;
+            margin-top: 0.75rem;
+            opacity: 0.55;
+            font-style: italic;
+        }
+
+        /* ---- Layout ---- */
+        .container {
+            max-width: 880px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 5rem;
+        }
+
+        /* ---- Search card ---- */
+        .search-card {
+            background: var(--card-bg);
+            border-radius: 0.75rem;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow-lg);
+            padding: 1.75rem 2rem;
+            margin-top: -1.5rem;
+        }
+
+        .chip-label {
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-bottom: 0.6rem;
+        }
+
+        .chip-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.45rem;
+            margin-bottom: 1.4rem;
+        }
+
+        .chip {
+            background: var(--primary-light);
+            color: var(--primary);
+            border: 1px solid #c4b5fd;
+            border-radius: 999px;
+            padding: 0.28rem 0.85rem;
+            font-size: 0.82rem;
+            cursor: pointer;
+            transition: background 0.15s;
+            white-space: nowrap;
+            user-select: none;
+        }
+        .chip:hover { background: #ddd6fe; }
+
+        .input-row {
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            padding: 0.8rem 1rem;
+            font-size: 1rem;
+            border: 1.5px solid var(--border);
+            border-radius: 0.5rem;
+            outline: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            color: var(--text);
+        }
+        input[type="text"]:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(124,58,237,0.12);
+        }
+        input[type="text"]::placeholder { color: #9ca3af; }
+
+        button.ask-btn {
+            padding: 0.8rem 1.75rem;
+            font-size: 1rem;
+            font-weight: 600;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: background 0.2s;
+            white-space: nowrap;
+        }
+        button.ask-btn:hover { background: var(--primary-hover); }
+        button.ask-btn:disabled { background: #9ca3af; cursor: not-allowed; }
+
+        /* ---- Loader ---- */
+        .loader {
+            display: none;
+            text-align: center;
+            padding: 2.5rem;
+            color: var(--muted);
+        }
+        .loader::before {
+            content: "";
+            display: block;
+            width: 36px; height: 36px;
+            border: 3px solid #e5e7eb;
+            border-top-color: var(--primary);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin: 0 auto 1rem;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* ---- Error ---- */
+        .error-box {
+            display: none;
+            background: var(--red-bg);
+            color: var(--red);
+            border: 1px solid #fca5a5;
+            border-radius: 0.5rem;
+            padding: 1rem 1.25rem;
+            margin-top: 1.5rem;
+        }
+
+        /* ---- Answer ---- */
+        .answer-box {
+            display: none;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--primary);
+            border-radius: 0.5rem;
+            box-shadow: var(--shadow);
+            padding: 1.75rem 2rem;
+            margin-top: 1.75rem;
+        }
+        .answer-label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.07em;
+            margin: 0 0 0.85rem;
+        }
+        .answer-text {
+            font-size: 1.02rem;
+            line-height: 1.75;
+            color: var(--text);
+        }
+        /* Markdown-ish rendering */
+        .answer-text p  { margin: 0 0 0.75rem; }
+        .answer-text ul, .answer-text ol { margin: 0 0 0.75rem 1.25rem; padding: 0; }
+        .answer-text li { margin-bottom: 0.35rem; }
+        .answer-text strong { font-weight: 600; }
+        .answer-text a { color: var(--primary); }
+
+        .meta-line {
+            margin-top: 1.25rem;
+            padding-top: 0.85rem;
+            border-top: 1px solid var(--border);
+            font-size: 0.75rem;
+            color: #9ca3af;
+        }
+
+        /* ---- Schools ---- */
+        .sources-section { display: none; margin-top: 2rem; }
+        .sources-label {
+            font-size: 0.78rem;
+            font-weight: 700;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-bottom: 0.85rem;
+        }
+        .school-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+            gap: 0.85rem;
+        }
+        .school-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+            padding: 1.1rem 1.25rem;
+            box-shadow: 0 1px 3px rgb(0 0 0 / 0.05);
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+        .school-card h3 {
+            margin: 0;
+            font-size: 0.97rem;
+            font-weight: 700;
+            color: var(--text);
+            line-height: 1.3;
+        }
+        .school-meta {
+            font-size: 0.8rem;
+            color: var(--muted);
+        }
+        .school-programs {
+            font-size: 0.8rem;
+            color: #374151;
+            line-height: 1.45;
+        }
+        .school-website a {
+            font-size: 0.8rem;
+            color: var(--primary);
+            text-decoration: none;
+            word-break: break-all;
+        }
+        .school-website a:hover { text-decoration: underline; }
+
+        /* Status / federal badges */
+        .badge {
+            display: inline-block;
+            font-size: 0.68rem;
+            font-weight: 600;
+            padding: 0.15rem 0.5rem;
+            border-radius: 999px;
+            letter-spacing: 0.03em;
+        }
+        .badge-federal   { background: var(--green-bg);  color: var(--green); border: 1px solid #a7f3d0; }
+        .badge-notfed    { background: #f3f4f6;           color: #4b5563;      border: 1px solid #d1d5db; }
+        .badge-closed    { background: #f3f4f6;           color: #6b7280;      border: 1px solid #d1d5db; }
+        .badge-warning   { background: var(--yellow-bg); color: var(--yellow); border: 1px solid #fde68a; }
+        .badge-danger    { background: var(--red-bg);    color: var(--red);    border: 1px solid #fca5a5; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>HBCU AI</h1>
+    <p class="tagline">Your guide to Historically Black Colleges and Universities</p>
+    <p class="mission">HBCUs have always welcomed students who want an education built around community, purpose, and belonging — students of all backgrounds who are looking for a school that truly sees them. This tool is for you.</p>
+    <p class="attribution">From the team behind <em>Essentials: A Student Guide to the HBCUs</em></p>
+</header>
+
+<div class="container">
+    <div class="search-card">
+        <div class="chip-label">Try asking</div>
+        <div class="chip-group" id="chips">
+            <span class="chip">HBCUs with nursing programs</span>
+            <span class="chip">HBCUs with engineering degrees</span>
+            <span class="chip">HBCUs with pharmacy programs</span>
+            <span class="chip">Affordable public HBCUs in the South</span>
+            <span class="chip">Small HBCUs under 2,000 students</span>
+            <span class="chip">HBCUs in Texas</span>
+            <span class="chip">HBCUs near Atlanta</span>
+            <span class="chip">HBCUs for first-generation students</span>
+            <span class="chip">What is the most affordable HBCU?</span>
+        </div>
+
+        <form id="ask-form">
+            <div class="input-row">
+                <input type="text" id="query"
+                    placeholder="Ask about majors, cost, location, size, campus life…" required>
+                <button type="submit" class="ask-btn" id="submit-btn">Ask</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="error-box" class="error-box"></div>
+    <div id="loader" class="loader">Thinking…</div>
+
+    <div class="answer-box" id="answer-box">
+        <div class="answer-label">Answer</div>
+        <div class="answer-text" id="answer-text"></div>
+        <div class="meta-line" id="meta-line"></div>
+    </div>
+
+    <div class="sources-section" id="sources-section">
+        <div class="sources-label">Schools referenced</div>
+        <div class="school-grid" id="school-grid"></div>
+    </div>
+</div>
+
+<script>
+    const form         = document.getElementById('ask-form');
+    const queryInput   = document.getElementById('query');
+    const submitBtn    = document.getElementById('submit-btn');
+    const loader       = document.getElementById('loader');
+    const errorBox     = document.getElementById('error-box');
+    const answerBox    = document.getElementById('answer-box');
+    const answerText   = document.getElementById('answer-text');
+    const sourcesSection = document.getElementById('sources-section');
+    const schoolGrid   = document.getElementById('school-grid');
+    const metaLine     = document.getElementById('meta-line');
+
+    // Chips
+    document.getElementById('chips').addEventListener('click', e => {
+        if (e.target.classList.contains('chip')) {
+            queryInput.value = e.target.textContent.trim();
+            form.dispatchEvent(new Event('submit'));
+        }
+    });
+
+    // Submit
+    form.addEventListener('submit', async e => {
+        e.preventDefault();
+        const query = queryInput.value.trim();
+        if (!query) return;
+
+        errorBox.style.display    = 'none';
+        answerBox.style.display   = 'none';
+        sourcesSection.style.display = 'none';
+        schoolGrid.innerHTML      = '';
+        loader.style.display      = 'block';
+        submitBtn.disabled        = true;
+
+        try {
+            const resp = await fetch('/api/answer', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ query, top_k: 5 }),
+            });
+            const data = await resp.json();
+            if (!resp.ok) throw new Error(data.error || 'Something went wrong.');
+
+            answerText.innerHTML = renderMarkdown(data.answer);
+            metaLine.textContent =
+                `Query understood as: "${data.retrieval_query}" · ${data.classifier_model}`;
+            answerBox.style.display = 'block';
+
+            if (data.context && data.context.length > 0) {
+                data.context.forEach(school => renderSchoolCard(school));
+                sourcesSection.style.display = 'block';
+            }
+
+        } catch (err) {
+            errorBox.textContent  = err.message;
+            errorBox.style.display = 'block';
+        } finally {
+            loader.style.display  = 'none';
+            submitBtn.disabled    = false;
+        }
+    });
+
+    function renderSchoolCard(school) {
+        const card = document.createElement('div');
+        card.className = 'school-card';
+
+        const programs = school.programs
+            ? school.programs.split(', ').slice(0, 5).join(', ')
+            : '';
+
+        const websiteHtml = school.website
+            ? `<div class="school-website"><a href="${esc(school.website)}" target="_blank" rel="noopener">${esc(school.website.replace(/^https?:\/\//, ''))}</a></div>`
+            : '';
+
+        const badge = statusBadge(school);
+
+        card.innerHTML = `
+            <h3>${esc(school.name)}</h3>
+            <div class="school-meta">${esc(school.state)} · ${esc(school.type || '')} ${badge}</div>
+            ${programs ? `<div class="school-programs">${esc(programs)}</div>` : ''}
+            ${websiteHtml}
+        `;
+        schoolGrid.appendChild(card);
+    }
+
+    function statusBadge(school) {
+        // Non-federal first — most important disclosure
+        if (school.federally_recognized === false) {
+            return '<span class="badge badge-notfed">Not on federal HBCU list</span>';
+        }
+        const s = (school.status || '').toLowerCase();
+        if (s === 'closed')               return '<span class="badge badge-closed">Closed</span>';
+        if (s === 'unaccredited')         return '<span class="badge badge-warning">Unaccredited</span>';
+        if (s === 'accreditation_at_risk')return '<span class="badge badge-warning">Accreditation at risk</span>';
+        if (s === 'threatened')           return '<span class="badge badge-warning">Accreditation threatened</span>';
+        if (school.federally_recognized) return '<span class="badge badge-federal">Federally recognized</span>';
+        return '';
+    }
+
+    // Minimal markdown: bold, bullets, line breaks
+    function renderMarkdown(text) {
+        if (!text) return '';
+        let html = esc(text);
+        // Bold **text**
+        html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+        // Bullet lines starting with * or -
+        html = html.replace(/^[\*\-]\s+(.+)$/gm, '<li>$1</li>');
+        html = html.replace(/(<li>.*<\/li>\n?)+/g, m => `<ul>${m}</ul>`);
+        // Numbered list
+        html = html.replace(/^\d+\.\s+(.+)$/gm, '<li>$1</li>');
+        // Paragraphs from double newlines
+        html = html.split(/\n{2,}/).map(p => {
+            p = p.trim();
+            if (!p) return '';
+            if (p.startsWith('<ul>') || p.startsWith('<li>')) return p;
+            return `<p>${p.replace(/\n/g, '<br>')}</p>`;
+        }).join('');
+        return html;
+    }
+
+    function esc(str) {
+        return String(str || '')
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;');
+    }
+</script>
+</body>
+</html>

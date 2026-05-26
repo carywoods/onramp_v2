@@ -1,0 +1,53 @@
+{
+  "school_id": "martin-university",
+  "name": "Martin University",
+  "state": "IN",
+  "address": {
+    "street": "2171 Avondale Pl.",
+    "city": "Indianapolis",
+    "state_abbr": "IN",
+    "zip": "46218"
+  },
+  "contacts": {
+    "website": "https://www.martin.edu/",
+    "email": "",
+    "fax": ""
+  },
+  "type": "private",
+  "year_founded": "1977",
+  "enrollment": 0,
+  "tuition": {
+    "in_state": 11100,
+    "out_of_state": 11100,
+    "room_board": ""
+  },
+  "academics": {
+    "programs": [
+      "Business & Management",
+      "Fine Arts",
+      "Human Sciences",
+      "Sciences & Liberal Arts"
+    ],
+    "student_body": "coed"
+  },
+  "status": "closed",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "",
+    "v2": "193-martin-university.json"
+  },
+  "_conflicts": [],
+  "closed_year": 2025,
+  "flags": {
+    "not_official_hbcu": true
+  },
+  "_resolution": "perplexity_verified",
+  "federally_recognized": false,
+  "hbcu_designation_note": "Closed 2025. Was never on the U.S. Dept of Education official HBCU list, though it served a predominantly Black urban population in Indianapolis.",
+  "coordinates": {
+    "lat": 39.7823,
+    "lon": -86.1052
+  },
+  "region": "Midwest",
+  "institution_level": "4-year"
+}

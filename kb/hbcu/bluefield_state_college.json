@@ -1,0 +1,55 @@
+{
+  "school_id": "bluefield_state_college",
+  "name": "Bluefield State University",
+  "state": "West Virginia",
+  "address": {
+    "street": "219 Rock St, Bluefield, West Virginia, United St",
+    "city": "Bluefield",
+    "state_abbr": "WV",
+    "zip": "24701"
+  },
+  "contacts": {
+    "website": "https://bluefieldstate.edu",
+    "main_phone": "304.327.4000",
+    "admissions_phone": "(304) 327-4065",
+    "admissions_email": "admissions@bluefieldstate.edu",
+    "financial_aid_phone": "(304) 327-4020",
+    "financial_aid_email": "tmartin@bluefieldstate.edu",
+    "fax": "304.325.7747",
+    "email": "admissions@bluefieldstate.edu"
+  },
+  "type": "public",
+  "year_founded": "1895",
+  "enrollment": 1442,
+  "tuition": {
+    "in_state": 10648,
+    "out_of_state": 18376,
+    "room_board": ""
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Engineering Technology",
+      "Nursing",
+      "Education",
+      "Criminal Justice",
+      "Computer Science"
+    ],
+    "student_body": ""
+  },
+  "status": "",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "bluefield_state_college.json",
+    "v2": ""
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 37.2698,
+    "lon": -81.2215
+  },
+  "region": "Mid-Atlantic",
+  "institution_level": "4-year"
+}

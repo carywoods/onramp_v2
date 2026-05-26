@@ -1,0 +1,57 @@
+{
+  "school_id": "prairie_view_a_m_university",
+  "name": "Prairie View A&M University",
+  "state": "Texas",
+  "address": {
+    "street": "PO Box 519",
+    "city": "Prairie View",
+    "state_abbr": "TX",
+    "zip": "77446"
+  },
+  "contacts": {
+    "website": "https://www.pvamu.edu",
+    "main_phone": "936-261-1000",
+    "admissions_phone": "936-261-1000",
+    "admissions_email": "admissions@pvamu.edu",
+    "financial_aid_phone": "936-261-1000",
+    "financial_aid_email": "finaidscholarships@pvamu.edu",
+    "fax": "(936) 261-3188",
+    "email": "admissions@pvamu.edu"
+  },
+  "type": "public",
+  "year_founded": "1876",
+  "enrollment": 10085,
+  "tuition": {
+    "in_state": 7386,
+    "out_of_state": 16032,
+    "room_board": 9640
+  },
+  "academics": {
+    "programs": [
+      "Nursing",
+      "Engineering",
+      "Business Administration",
+      "Computer Science",
+      "Architecture",
+      "Education",
+      "Biology",
+      "Criminal Justice"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "prairie_view_a_m_university.json",
+    "v2": "156-prairie-view-am-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 30.0888,
+    "lon": -95.9835
+  },
+  "region": "South Central",
+  "institution_level": "4-year"
+}

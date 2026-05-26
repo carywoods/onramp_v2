@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.pyo
+logs/
+kb/hbcu/runs/
+kb/hbcu/index/
+openrouter_api_key.txt
+.env

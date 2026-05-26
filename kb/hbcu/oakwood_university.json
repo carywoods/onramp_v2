@@ -1,0 +1,56 @@
+{
+  "school_id": "oakwood_university",
+  "name": "Oakwood University",
+  "state": "Alabama",
+  "address": {
+    "street": "7000 Adventist Blvd.",
+    "city": "Huntsville",
+    "state_abbr": "AL",
+    "zip": "35896"
+  },
+  "contacts": {
+    "website": "https://oakwood.edu",
+    "main_phone": "(256) 726-7000",
+    "admissions_phone": "256.726.8091",
+    "admissions_email": "gradadmissions@oakwood.edu",
+    "financial_aid_phone": "256-726-7379",
+    "financial_aid_email": "finaid@oakwood.edu",
+    "fax": "(256) 726-7404",
+    "email": "gradadmissions@oakwood.edu"
+  },
+  "type": "private",
+  "year_founded": "1896",
+  "enrollment": 1319,
+  "tuition": {
+    "in_state": 21344,
+    "out_of_state": 21344,
+    "room_board": 9510
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Biology",
+      "Nursing",
+      "Education",
+      "Computer Science",
+      "Religion",
+      "Psychology"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "oakwood_university.json",
+    "v2": "226-oakwood-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 34.7696,
+    "lon": -86.7291
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

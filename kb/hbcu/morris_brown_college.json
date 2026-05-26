@@ -1,0 +1,59 @@
+{
+  "school_id": "morris_brown_college",
+  "name": "Morris Brown College",
+  "state": "Georgia",
+  "address": {
+    "street": "643 Martin Luther King, Jr., Drive, NW",
+    "city": "Atlanta",
+    "state_abbr": "GA",
+    "zip": "30314"
+  },
+  "contacts": {
+    "website": "https://morrisbrown.edu",
+    "main_phone": "404-458-6085",
+    "admissions_phone": "404-458-6085",
+    "admissions_email": "Not found",
+    "financial_aid_phone": "404-458-6085",
+    "financial_aid_email": "teresa.crowe@morrisbrown.edu",
+    "fax": "678-585-6678",
+    "email": "serena.wilson@morr"
+  },
+  "type": "private",
+  "year_founded": "1881",
+  "enrollment": 150,
+  "tuition": {
+    "in_state": 9558,
+    "out_of_state": 9558,
+    "room_board": 5870
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Liberal Arts",
+      "Criminal Justice",
+      "Education",
+      "Psychology"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "morris_brown_college.json",
+    "v2": "187-morris-brown-college.json"
+  },
+  "_conflicts": [],
+  "flags": {
+    "reaccredited": true,
+    "reaccreditation_year": 2022,
+    "accrediting_body": "TRACS"
+  },
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 33.7557,
+    "lon": -84.4152
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

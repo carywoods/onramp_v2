@@ -1,0 +1,55 @@
+{
+  "school_id": "edward_waters_university",
+  "name": "Edward Waters University",
+  "state": "Florida",
+  "address": {
+    "street": "1658 Kings Road",
+    "city": "Jacksonville",
+    "state_abbr": "FL",
+    "zip": "32209"
+  },
+  "contacts": {
+    "website": "https://www.ew.edu",
+    "main_phone": "1 (904) 470-8000",
+    "admissions_phone": "888-898-3191",
+    "admissions_email": "online@ew.edu",
+    "financial_aid_phone": "904-470-8192",
+    "financial_aid_email": "FinAid@ewc.edu",
+    "fax": "(904)470-8039",
+    "email": "online@ew.edu"
+  },
+  "type": "private",
+  "year_founded": "1866",
+  "enrollment": 1210,
+  "tuition": {
+    "in_state": 16054,
+    "out_of_state": 16054,
+    "room_board": ""
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Criminal Justice",
+      "Education",
+      "Biology",
+      "Computer Science",
+      "Psychology"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "edward_waters_university.json",
+    "v2": "179-edward-waters-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 30.3322,
+    "lon": -81.6557
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

@@ -1,0 +1,55 @@
+{
+  "school_id": "texas_college",
+  "name": "Texas College",
+  "state": "Texas",
+  "address": {
+    "street": "2404 N. Grand Avenue, PO Box 4500",
+    "city": "Tyler",
+    "state_abbr": "TX",
+    "zip": "75702"
+  },
+  "contacts": {
+    "website": "https://www.texascollege.edu",
+    "main_phone": "903-593-8311",
+    "admissions_phone": "(903) 593-8311",
+    "admissions_email": "admissions1@texascollege.edu",
+    "financial_aid_phone": "(903) 593-2299",
+    "financial_aid_email": "gjohnson@texascollege.edu",
+    "fax": "903-572-6712",
+    "email": "admissions@texasco"
+  },
+  "type": "private",
+  "year_founded": "1894",
+  "enrollment": 1035,
+  "tuition": {
+    "in_state": 7680,
+    "out_of_state": 7680,
+    "room_board": 4730
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Biology",
+      "Education",
+      "Criminal Justice",
+      "Computer Science",
+      "Religion"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "texas_college.json",
+    "v2": "172-texas-college.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 32.3207,
+    "lon": -95.301
+  },
+  "region": "South Central",
+  "institution_level": "4-year"
+}

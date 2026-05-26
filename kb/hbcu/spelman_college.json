@@ -1,0 +1,57 @@
+{
+  "school_id": "spelman_college",
+  "name": "Spelman College",
+  "state": "Georgia",
+  "address": {
+    "street": "350 Spelman Ln., SW",
+    "city": "Atlanta",
+    "state_abbr": "GA",
+    "zip": "30314"
+  },
+  "contacts": {
+    "website": "https://www.spelman.edu",
+    "main_phone": "404-270-5193",
+    "admissions_phone": "404-270-5193",
+    "admissions_email": "jordynknight@spelman.edu",
+    "financial_aid_phone": "(404) 270-5222",
+    "financial_aid_email": "webteam@spelman.edu",
+    "fax": "404-270-5884",
+    "email": "admis@spelman.edu"
+  },
+  "type": "private",
+  "year_founded": "1881",
+  "enrollment": 3417,
+  "tuition": {
+    "in_state": 31556,
+    "out_of_state": 31556,
+    "room_board": 22042
+  },
+  "academics": {
+    "programs": [
+      "Biology",
+      "Psychology",
+      "Computer Science",
+      "Business Administration",
+      "English",
+      "Pre-Med",
+      "Political Science",
+      "Economics"
+    ],
+    "student_body": "women only"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "spelman_college.json",
+    "v2": "190-spelman-college.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 33.7468,
+    "lon": -84.4135
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

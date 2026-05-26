@@ -1,0 +1,57 @@
+{
+  "school_id": "norfolk_state_university",
+  "name": "Norfolk State University",
+  "state": "Virginia",
+  "address": {
+    "street": "700 Park Ave.",
+    "city": "Norfolk",
+    "state_abbr": "VA",
+    "zip": "23504"
+  },
+  "contacts": {
+    "website": "https://www.nsu.edu",
+    "main_phone": "(757) 823-8600",
+    "admissions_phone": "(800) 274-1821",
+    "admissions_email": "admissions@nsu.edu",
+    "financial_aid_phone": "(757) 823-8381",
+    "financial_aid_email": "financialaid@nsu.edu",
+    "fax": "(757) 823-8907",
+    "email": "admissions@nsu.edu"
+  },
+  "type": "public",
+  "year_founded": "1868",
+  "enrollment": 6800,
+  "tuition": {
+    "in_state": 11153,
+    "out_of_state": 23152,
+    "room_board": 6250
+  },
+  "academics": {
+    "programs": [
+      "Computer Science",
+      "Nursing",
+      "Business Administration",
+      "Criminal Justice",
+      "Education",
+      "Engineering Technology",
+      "Psychology",
+      "Social Work"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "norfolk_state_university.json",
+    "v2": "7-norfolk-state-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 36.8468,
+    "lon": -76.2791
+  },
+  "region": "Mid-Atlantic",
+  "institution_level": "4-year"
+}

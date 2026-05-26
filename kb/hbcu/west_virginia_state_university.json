@@ -1,0 +1,56 @@
+{
+  "school_id": "west_virginia_state_university",
+  "name": "West Virginia State University",
+  "state": "West Virginia",
+  "address": {
+    "street": "Campus Box 197, PO Box 1000",
+    "city": "Institute",
+    "state_abbr": "WV",
+    "zip": "25112"
+  },
+  "contacts": {
+    "website": "https://wvstateu.edu",
+    "main_phone": "(304) 204-4345",
+    "admissions_phone": "304-204-4343",
+    "admissions_email": "admissions@wvstateu.edu",
+    "financial_aid_phone": "304-558-4614",
+    "financial_aid_email": "ksmith54@mail.wvu.edu",
+    "fax": "(304) 766-5193",
+    "email": "admissions@wvsc.ed"
+  },
+  "type": "public",
+  "year_founded": "1891",
+  "enrollment": 4992,
+  "tuition": {
+    "in_state": 3776,
+    "out_of_state": 20990,
+    "room_board": 6000
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Education",
+      "Criminal Justice",
+      "Computer Science",
+      "Biology",
+      "Communications",
+      "Psychology"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "west_virginia_state_university.json",
+    "v2": "167-west-virginia-state-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 38.4185,
+    "lon": -81.7957
+  },
+  "region": "Mid-Atlantic",
+  "institution_level": "4-year"
+}

@@ -1,0 +1,54 @@
+{
+  "school_id": "clinton_college",
+  "name": "Clinton College",
+  "state": "South Carolina",
+  "address": {
+    "street": "1029 Crawford Road",
+    "city": "Rock Hill",
+    "state_abbr": "SC",
+    "zip": "29730"
+  },
+  "contacts": {
+    "website": "https://www.clintoncollege.edu",
+    "main_phone": "(803) 327-7402",
+    "admissions_phone": "803-327-7402",
+    "admissions_email": "mknox@clintoncollege.edu",
+    "financial_aid_phone": "803-909-8163",
+    "financial_aid_email": "csmith@clintoncollege.edu",
+    "fax": "(803) 327-3261",
+    "email": "communications@clintoncollege.edu"
+  },
+  "type": "private",
+  "year_founded": "1894",
+  "enrollment": 151,
+  "tuition": {
+    "in_state": 10936,
+    "out_of_state": 10936,
+    "room_board": ""
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Liberal Arts",
+      "Religion",
+      "Early Childhood Education",
+      "Criminal Justice"
+    ],
+    "student_body": ""
+  },
+  "status": "",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "clinton_college.json",
+    "v2": ""
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 34.9249,
+    "lon": -81.0251
+  },
+  "region": "Southeast",
+  "institution_level": "2-year"
+}

@@ -1,0 +1,56 @@
+{
+  "school_id": "winston_salem_state_university",
+  "name": "Winston-Salem State University",
+  "state": "North Carolina",
+  "address": {
+    "street": "1200 Martin Luther King Jr. Dr.",
+    "city": "Winston-Salem",
+    "state_abbr": "NC",
+    "zip": "27110"
+  },
+  "contacts": {
+    "website": "https://www.wssu.edu",
+    "main_phone": "(336) 750-2540",
+    "admissions_phone": "336-750-2074",
+    "admissions_email": "admissions@wssu.edu",
+    "financial_aid_phone": "336-750-3296",
+    "financial_aid_email": "financial.aid@wssu.edu",
+    "fax": "",
+    "email": "admissions@wssu.edu"
+  },
+  "type": "public",
+  "year_founded": "1892",
+  "enrollment": 4962,
+  "tuition": {
+    "in_state": 6126,
+    "out_of_state": 18849,
+    "room_board": ""
+  },
+  "academics": {
+    "programs": [
+      "Nursing",
+      "Business Administration",
+      "Computer Science",
+      "Criminal Justice",
+      "Education",
+      "Biology",
+      "Psychology"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "winston_salem_state_university.json",
+    "v2": "223-winston-salem-state-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 36.0932,
+    "lon": -80.2651
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

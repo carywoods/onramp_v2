@@ -1,0 +1,56 @@
+{
+  "school_id": "dillard_university",
+  "name": "Dillard University",
+  "state": "Louisiana",
+  "address": {
+    "street": "2601 Gentilly Blvd.",
+    "city": "New Orleans",
+    "state_abbr": "LA",
+    "zip": "70122"
+  },
+  "contacts": {
+    "website": "https://www.dillard.edu",
+    "main_phone": "(504) 816-4024",
+    "admissions_phone": "504.816.4670",
+    "admissions_email": "admissions@dillard.edu",
+    "financial_aid_phone": "(504)816-4677",
+    "financial_aid_email": "financialaid@dillard.edu",
+    "fax": "504.816.4889",
+    "email": "admissions@dillard.edu"
+  },
+  "type": "private",
+  "year_founded": "1930",
+  "enrollment": 1187,
+  "tuition": {
+    "in_state": 20118,
+    "out_of_state": 20118,
+    "room_board": 13192
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Nursing",
+      "Biology",
+      "Education",
+      "Criminal Justice",
+      "Psychology",
+      "Communications"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "dillard_university.json",
+    "v2": "195-dillard-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 29.9871,
+    "lon": -90.0715
+  },
+  "region": "South Central",
+  "institution_level": "4-year"
+}

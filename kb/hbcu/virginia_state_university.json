@@ -1,0 +1,56 @@
+{
+  "school_id": "virginia_state_university",
+  "name": "Virginia State University",
+  "state": "Virginia",
+  "address": {
+    "street": "P. O. Box 9018",
+    "city": "Petersburg",
+    "state_abbr": "VA",
+    "zip": "23806"
+  },
+  "contacts": {
+    "website": "https://www.vsu.edu",
+    "main_phone": "804-524-5000",
+    "admissions_phone": "(804) 524-5902",
+    "admissions_email": "admissions@vsu.edu",
+    "financial_aid_phone": "804-524-5616",
+    "financial_aid_email": "finaid@vsu.edu",
+    "fax": "804-524-5733",
+    "email": "ilogan@vsu.edu"
+  },
+  "type": "public",
+  "year_founded": "1882",
+  "enrollment": 4648,
+  "tuition": {
+    "in_state": 10804,
+    "out_of_state": 12512,
+    "room_board": 6884
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Computer Science",
+      "Education",
+      "Engineering Technology",
+      "Biology",
+      "Criminal Justice",
+      "Psychology"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "virginia_state_university.json",
+    "v2": "164-virginia-state-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 37.2324,
+    "lon": -77.4052
+  },
+  "region": "Mid-Atlantic",
+  "institution_level": "4-year"
+}

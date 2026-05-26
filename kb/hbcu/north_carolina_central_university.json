@@ -1,0 +1,57 @@
+{
+  "school_id": "north_carolina_central_university",
+  "name": "North Carolina Central University",
+  "state": "North Carolina",
+  "address": {
+    "street": "1801 Fayetteville St.",
+    "city": "Durham",
+    "state_abbr": "NC",
+    "zip": "27707"
+  },
+  "contacts": {
+    "website": "https://www.nccu.edu",
+    "main_phone": "919-530-6298",
+    "admissions_phone": "919-530-6298",
+    "admissions_email": "admissions@nccu.edu",
+    "financial_aid_phone": "919-530-6180",
+    "financial_aid_email": "financialaid@nccu.edu",
+    "fax": "919-530-7975",
+    "email": "eaglepreview@nccu.edu"
+  },
+  "type": "public",
+  "year_founded": "1910",
+  "enrollment": 9281,
+  "tuition": {
+    "in_state": 6699,
+    "out_of_state": 19735,
+    "room_board": 11000
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Law",
+      "Nursing",
+      "Criminal Justice",
+      "Computer Science",
+      "Biology",
+      "Education",
+      "Psychology"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "north_carolina_central_university.json",
+    "v2": "219-north-carolina-central-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 35.9779,
+    "lon": -78.8997
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

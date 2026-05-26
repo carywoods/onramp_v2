@@ -1,0 +1,55 @@
+{
+  "school_id": "stillman_college",
+  "name": "Stillman College",
+  "state": "Alabama",
+  "address": {
+    "street": "3600 Stillman Blvd. PO Box 1430",
+    "city": "Tuscaloosa",
+    "state_abbr": "AL",
+    "zip": "35403"
+  },
+  "contacts": {
+    "website": "https://stillman.edu",
+    "main_phone": "(205) 349-4240",
+    "admissions_phone": "(205) 349-4240",
+    "admissions_email": "admissions@stillman.edu",
+    "financial_aid_phone": "205-349-4240",
+    "financial_aid_email": "financialaid@stillman.edu",
+    "fax": "(205) 247-8156",
+    "email": "admissions@stillma"
+  },
+  "type": "private",
+  "year_founded": "1876",
+  "enrollment": 731,
+  "tuition": {
+    "in_state": 10026,
+    "out_of_state": 10026,
+    "room_board": 5500
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Biology",
+      "Education",
+      "Criminal Justice",
+      "Computer Science",
+      "Psychology"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "stillman_college.json",
+    "v2": "166-stillman-college.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 33.1893,
+    "lon": -87.5686
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

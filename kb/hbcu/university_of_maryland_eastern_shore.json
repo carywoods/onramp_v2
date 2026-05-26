@@ -1,0 +1,56 @@
+{
+  "school_id": "university_of_maryland_eastern_shore",
+  "name": "University of Maryland Eastern Shore",
+  "state": "Maryland",
+  "address": {
+    "street": "College Backbone Road",
+    "city": "Princess Anne",
+    "state_abbr": "MD",
+    "zip": "21853"
+  },
+  "contacts": {
+    "website": "https://www.umes.edu",
+    "main_phone": "(410) 651-7747",
+    "admissions_phone": "410-651-6181",
+    "admissions_email": "umesadmissions@umes.edu",
+    "financial_aid_phone": "410-651-6172",
+    "financial_aid_email": "umdfinaid@umd.edu",
+    "fax": "(410) 651-6105",
+    "email": "umesadmissions@umes.edu"
+  },
+  "type": "public",
+  "year_founded": "1886",
+  "enrollment": 2476,
+  "tuition": {
+    "in_state": 8624,
+    "out_of_state": 16271,
+    "room_board": ""
+  },
+  "academics": {
+    "programs": [
+      "Agriculture",
+      "Business Administration",
+      "Engineering Technology",
+      "Computer Science",
+      "Nursing",
+      "Criminal Justice",
+      "Biology"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "university_of_maryland_eastern_shore.json",
+    "v2": "200-university-of-maryland-eastern-shore.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 38.2107,
+    "lon": -75.7152
+  },
+  "region": "Mid-Atlantic",
+  "institution_level": "4-year"
+}

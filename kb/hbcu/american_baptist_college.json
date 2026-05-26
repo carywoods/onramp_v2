@@ -1,0 +1,56 @@
+{
+  "school_id": "american_baptist_college",
+  "name": "American Baptist College",
+  "state": "Tennessee",
+  "address": {
+    "street": "1800 Baptist World Center Dr",
+    "city": "Nashville",
+    "state_abbr": "TN",
+    "zip": "37207"
+  },
+  "contacts": {
+    "website": "https://abcnash.edu/",
+    "main_phone": "615-228-7877",
+    "admissions_phone": "Not found",
+    "admissions_email": "admissions@abcnash.edu",
+    "financial_aid_phone": "Not found",
+    "financial_aid_email": "Not found",
+    "fax": "",
+    "email": ""
+  },
+  "type": "private",
+  "year_founded": "1924",
+  "enrollment": 110,
+  "tuition": {
+    "in_state": 11500,
+    "out_of_state": 11500,
+    "room_board": 8200
+  },
+  "academics": {
+    "programs": [
+      "Theology",
+      "Religion",
+      "Liberal Arts",
+      "Social Work",
+      "Education",
+      "Business Administration"
+    ],
+    "student_body": ""
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "",
+    "v2": ""
+  },
+  "_conflicts": [],
+  "_resolution": "stub_no_reliable_data",
+  "federally_recognized": false,
+  "hbcu_designation_note": "A historically Black theological college recognized by the HBCU community. Not on the U.S. Dept of Education official HBCU designation list.",
+  "coordinates": {
+    "lat": 36.199,
+    "lon": -86.758
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

@@ -1,0 +1,52 @@
+{
+  "school_id": "southern_university_law_center",
+  "name": "Southern University Law Center",
+  "state": "Louisiana",
+  "address": {
+    "street": "2 Roosevelt Steptoe Dr",
+    "city": "Baton Rouge",
+    "state_abbr": "LA",
+    "zip": "70813"
+  },
+  "contacts": {
+    "website": "https://www.sulc.edu/",
+    "main_phone": "225-771-5340",
+    "admissions_phone": "Not found",
+    "admissions_email": "admissions@sulc.edu",
+    "financial_aid_phone": "Not found",
+    "financial_aid_email": "Not found",
+    "fax": "",
+    "email": ""
+  },
+  "type": "public",
+  "year_founded": "1947",
+  "enrollment": 400,
+  "tuition": {
+    "in_state": 14000,
+    "out_of_state": 26000,
+    "room_board": null
+  },
+  "academics": {
+    "programs": [
+      "Law",
+      "Juris Doctor",
+      "Legal Studies"
+    ],
+    "student_body": ""
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "",
+    "v2": ""
+  },
+  "_conflicts": [],
+  "_resolution": "stub_no_reliable_data",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 30.5266,
+    "lon": -91.1871
+  },
+  "region": "South Central",
+  "institution_level": "law-only"
+}

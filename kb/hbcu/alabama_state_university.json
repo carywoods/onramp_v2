@@ -1,0 +1,57 @@
+{
+  "school_id": "alabama_state_university",
+  "name": "Alabama State University",
+  "state": "Alabama",
+  "address": {
+    "street": "915 South Jackson St. PO Box 271",
+    "city": "Montgomery",
+    "state_abbr": "AL",
+    "zip": "36101"
+  },
+  "contacts": {
+    "website": "https://www.alasu.edu",
+    "main_phone": "334-229-4667",
+    "admissions_phone": "(334) 229-4291",
+    "admissions_email": "admissions@alasu.edu",
+    "financial_aid_phone": "334-604-8061",
+    "financial_aid_email": "admissions@alasu.edu",
+    "fax": "334-229-8752",
+    "email": "admissions@asunet."
+  },
+  "type": "public",
+  "year_founded": "1867",
+  "enrollment": 4081,
+  "tuition": {
+    "in_state": 11068,
+    "out_of_state": 19576,
+    "room_board": 3800
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Education",
+      "Biology",
+      "Criminal Justice",
+      "Computer Science",
+      "Communications",
+      "Nursing",
+      "Music"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "alabama_state_university.json",
+    "v2": "176-alabama-state-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 32.3668,
+    "lon": -86.295
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

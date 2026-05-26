@@ -1,0 +1,55 @@
+{
+  "school_id": "shelton_state_community_college",
+  "name": "Shelton State Community College",
+  "state": "Alabama",
+  "address": {
+    "street": "9500 Old Greensboro Rd",
+    "city": "Tuscaloosa",
+    "state_abbr": "AL",
+    "zip": "35405"
+  },
+  "contacts": {
+    "website": "https://www.sheltonstate.edu",
+    "main_phone": "205.391.2211",
+    "admissions_phone": "205.391.2214",
+    "admissions_email": "admissions@sheltonstate.edu",
+    "financial_aid_phone": "205.391.2214",
+    "financial_aid_email": "deanofstudents@sheltonstate.edu",
+    "fax": "(205) 391-2372",
+    "email": "admissions@sheltonstate.edu"
+  },
+  "type": "public",
+  "year_founded": "1979",
+  "enrollment": 4200,
+  "tuition": {
+    "in_state": 4992,
+    "out_of_state": 8136,
+    "room_board": ""
+  },
+  "academics": {
+    "programs": [
+      "Nursing",
+      "Business Administration",
+      "Information Technology",
+      "Early Childhood Education",
+      "Engineering Technology",
+      "Criminal Justice"
+    ],
+    "student_body": ""
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "shelton_state_community_college.json",
+    "v2": ""
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 33.1845,
+    "lon": -87.5558
+  },
+  "region": "Southeast",
+  "institution_level": "2-year"
+}

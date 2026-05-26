@@ -1,0 +1,56 @@
+{
+  "school_id": "university_of_the_virgin_islands",
+  "name": "University of the Virgin Islands",
+  "state": "Virgin Islands",
+  "address": {
+    "street": "#2 John Brewer's Bay",
+    "city": "St. Thomas",
+    "state_abbr": "VI",
+    "zip": "00802"
+  },
+  "contacts": {
+    "website": "https://www.uvi.edu",
+    "main_phone": "(340) 693-1437",
+    "admissions_phone": "(340) 693-1400",
+    "admissions_email": "ap@myuvi.net",
+    "financial_aid_phone": "(340) 693-1090",
+    "financial_aid_email": "ap@myuvi.net",
+    "fax": "(340) 693-1055",
+    "email": "admissions@uvi.edu"
+  },
+  "type": "public",
+  "year_founded": "1962",
+  "enrollment": 3000,
+  "tuition": {
+    "in_state": 5956,
+    "out_of_state": 5956,
+    "room_board": 2200
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Computer Science",
+      "Education",
+      "Nursing",
+      "Biology",
+      "Marine Science",
+      "Psychology"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "university_of_the_virgin_islands.json",
+    "v2": "2-university-of-the-virgin-islands.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 18.3419,
+    "lon": -64.9307
+  },
+  "region": "Caribbean",
+  "institution_level": "4-year"
+}

@@ -1,0 +1,56 @@
+{
+  "school_id": "claflin_university",
+  "name": "Claflin University",
+  "state": "South Carolina",
+  "address": {
+    "street": "400 Magnolia St.",
+    "city": "Orangeburg",
+    "state_abbr": "SC",
+    "zip": "29117"
+  },
+  "contacts": {
+    "website": "https://www.claflin.edu",
+    "main_phone": "(803) 535-5000",
+    "admissions_phone": "1-800-922-1276",
+    "admissions_email": "admissions@claflin.edu",
+    "financial_aid_phone": "1-800-922-1276",
+    "financial_aid_email": "admissions@claflin.edu",
+    "fax": "803-535-5391",
+    "email": "admissions@claflin.edu"
+  },
+  "type": "private",
+  "year_founded": "1869",
+  "enrollment": 2100,
+  "tuition": {
+    "in_state": 22500,
+    "out_of_state": 22500,
+    "room_board": ""
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Biology",
+      "Education",
+      "Computer Science",
+      "Communications",
+      "Criminal Justice",
+      "Chemistry"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "claflin_university.json",
+    "v2": "231-claflin-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 33.4957,
+    "lon": -80.8567
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

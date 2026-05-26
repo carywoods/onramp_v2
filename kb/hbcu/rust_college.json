@@ -1,0 +1,55 @@
+{
+  "school_id": "rust_college",
+  "name": "Rust College",
+  "state": "Mississippi",
+  "address": {
+    "street": "150 Rust Ave.",
+    "city": "Holly Springs",
+    "state_abbr": "MS",
+    "zip": "38635"
+  },
+  "contacts": {
+    "website": "https://rustcollege.edu",
+    "main_phone": "662-252-8000",
+    "admissions_phone": "662-252-8000",
+    "admissions_email": "CThomas@rustcollege.edu",
+    "financial_aid_phone": "662 252-8000",
+    "financial_aid_email": "financialaid@rustcollege.edu",
+    "fax": "662-252-6107",
+    "email": "rconline@rustcollege.edu"
+  },
+  "type": "private",
+  "year_founded": "1866",
+  "enrollment": 755,
+  "tuition": {
+    "in_state": 13385,
+    "out_of_state": 13385,
+    "room_board": ""
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Biology",
+      "Education",
+      "Communications",
+      "Computer Science",
+      "Social Work"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "rust_college.json",
+    "v2": "206-rust-college.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 34.8454,
+    "lon": -89.0145
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

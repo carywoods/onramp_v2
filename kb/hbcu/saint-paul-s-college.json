@@ -1,0 +1,50 @@
+{
+  "school_id": "saint-paul-s-college",
+  "name": "Saint Paul's College",
+  "state": "VA",
+  "address": {
+    "street": "115 College Dr.",
+    "city": "Lawrenceville",
+    "state_abbr": "VA",
+    "zip": "23868"
+  },
+  "contacts": {
+    "website": null,
+    "email": "admissions@saintpa",
+    "fax": "(434) 848-6474"
+  },
+  "type": "private",
+  "year_founded": "1888",
+  "enrollment": 750,
+  "tuition": {
+    "in_state": 10240,
+    "out_of_state": 10240,
+    "room_board": 5530
+  },
+  "academics": {
+    "programs": [
+      "Business",
+      "Humanities &",
+      "Education",
+      "Natural Sciences &",
+      "Continuing"
+    ],
+    "student_body": "coed"
+  },
+  "status": "closed",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "",
+    "v2": "163-saint-paul-s-college.json"
+  },
+  "_conflicts": [],
+  "closed_year": 2013,
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 36.7057,
+    "lon": -78.1003
+  },
+  "region": "Mid-Atlantic",
+  "institution_level": "4-year"
+}

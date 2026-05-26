@@ -1,0 +1,54 @@
+{
+  "school_id": "simmons_college_of_kentucky",
+  "name": "Simmons College of Kentucky",
+  "state": "Kentucky",
+  "address": {
+    "street": "1018 S 7th St",
+    "city": "Louisville",
+    "state_abbr": "KY",
+    "zip": "40203"
+  },
+  "contacts": {
+    "website": "https://www.simmonscollegekentucky.com/",
+    "main_phone": "502-776-1443",
+    "admissions_phone": "Not found",
+    "admissions_email": "admissions@simmonscollegekentucky.com",
+    "financial_aid_phone": "Not found",
+    "financial_aid_email": "Not found",
+    "fax": "",
+    "email": ""
+  },
+  "type": "private",
+  "year_founded": "1879",
+  "enrollment": 200,
+  "tuition": {
+    "in_state": 9800,
+    "out_of_state": 9800,
+    "room_board": null
+  },
+  "academics": {
+    "programs": [
+      "Theology",
+      "Religion",
+      "Liberal Arts",
+      "Business Administration",
+      "Education"
+    ],
+    "student_body": ""
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "",
+    "v2": ""
+  },
+  "_conflicts": [],
+  "_resolution": "stub_no_reliable_data",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 38.2374,
+    "lon": -85.7408
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

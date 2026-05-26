@@ -1,0 +1,57 @@
+{
+  "school_id": "southern_university_and_a_m_college",
+  "name": "Southern University and A&M College",
+  "state": "Louisiana",
+  "address": {
+    "street": "PO Box 9901",
+    "city": "Baton Rouge",
+    "state_abbr": "LA",
+    "zip": "70813"
+  },
+  "contacts": {
+    "website": "https://www.subr.edu",
+    "main_phone": "225-771-4500",
+    "admissions_phone": "504.286.5117",
+    "admissions_email": "admissions@subr.edu",
+    "financial_aid_phone": "(225) 771-2790",
+    "financial_aid_email": "taishieka.davis@sus.edu",
+    "fax": "225-771-5898",
+    "email": "admissions@subr.ed"
+  },
+  "type": "public",
+  "year_founded": "1880",
+  "enrollment": 9904,
+  "tuition": {
+    "in_state": 3592,
+    "out_of_state": 9384,
+    "room_board": 4646
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Nursing",
+      "Engineering",
+      "Computer Science",
+      "Criminal Justice",
+      "Education",
+      "Biology",
+      "Law"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "southern_university_and_a_m_college.json",
+    "v2": "171-southern-university-and-a-m-college.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 30.5266,
+    "lon": -91.1871
+  },
+  "region": "South Central",
+  "institution_level": "4-year"
+}

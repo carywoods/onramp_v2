@@ -1,0 +1,57 @@
+{
+  "school_id": "morehouse_college",
+  "name": "Morehouse College",
+  "state": "Georgia",
+  "address": {
+    "street": "830 Westview Dr., SW",
+    "city": "Atlanta",
+    "state_abbr": "GA",
+    "zip": "30314"
+  },
+  "contacts": {
+    "website": "https://morehouse.edu",
+    "main_phone": "(470) 639-0999",
+    "admissions_phone": "(470) 639-0999",
+    "admissions_email": "admissions@morehouse.edu",
+    "financial_aid_phone": "(470) 639-0959",
+    "financial_aid_email": "records@morehouse.edu",
+    "fax": "404-752-8686",
+    "email": "admissions@morehou"
+  },
+  "type": "private",
+  "year_founded": "1867",
+  "enrollment": 2897,
+  "tuition": {
+    "in_state": 31725,
+    "out_of_state": 31725,
+    "room_board": null
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Computer Science",
+      "Biology",
+      "Political Science",
+      "Psychology",
+      "Pre-Med",
+      "Engineering",
+      "Economics"
+    ],
+    "student_body": "men only"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "morehouse_college.json",
+    "v2": "185-morehouse-college.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 33.749,
+    "lon": -84.4174
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

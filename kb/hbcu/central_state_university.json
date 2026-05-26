@@ -1,0 +1,57 @@
+{
+  "school_id": "central_state_university",
+  "name": "Central State University",
+  "state": "Ohio",
+  "address": {
+    "street": "1400 Brush Row Rd.",
+    "city": "Wilberforce",
+    "state_abbr": "OH",
+    "zip": "45384"
+  },
+  "contacts": {
+    "website": "https://www.centralstate.edu",
+    "main_phone": "937-376-6348",
+    "admissions_phone": "937-376-6348",
+    "admissions_email": "admissions@centralstate.edu",
+    "financial_aid_phone": "937-376-6348",
+    "financial_aid_email": "financialaid@centralstate.edu",
+    "fax": "937-376-6083",
+    "email": "admissions@centralstate.edu"
+  },
+  "type": "public",
+  "year_founded": "1887",
+  "enrollment": 2708,
+  "tuition": {
+    "in_state": 8058,
+    "out_of_state": 10058,
+    "room_board": ""
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Education",
+      "Biology",
+      "Computer Science",
+      "Communications",
+      "Agriculture",
+      "Engineering",
+      "Music"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "central_state_university.json",
+    "v2": "224-central-state-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 39.8017,
+    "lon": -83.981
+  },
+  "region": "Midwest",
+  "institution_level": "4-year"
+}

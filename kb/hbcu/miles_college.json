@@ -1,0 +1,55 @@
+{
+  "school_id": "miles_college",
+  "name": "Miles College",
+  "state": "Alabama",
+  "address": {
+    "street": "3800 5th Avenue South",
+    "city": "Fairfield",
+    "state_abbr": "AL",
+    "zip": "35221"
+  },
+  "contacts": {
+    "website": "https://www.miles.edu",
+    "main_phone": "205.929.1000",
+    "admissions_phone": "205.929.1000",
+    "admissions_email": "admission@miles.edu",
+    "financial_aid_phone": "205-929-1513",
+    "financial_aid_email": "finaid@miles.edu",
+    "fax": "(205) 929-3299",
+    "email": "admissions@miles.edu"
+  },
+  "type": "private",
+  "year_founded": "1898",
+  "enrollment": 1400,
+  "tuition": {
+    "in_state": 11099,
+    "out_of_state": 15990,
+    "room_board": 11200
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Biology",
+      "Criminal Justice",
+      "Education",
+      "Communications",
+      "Computer Science"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "miles_college.json",
+    "v2": "216-miles-college.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 33.5065,
+    "lon": -86.9341
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

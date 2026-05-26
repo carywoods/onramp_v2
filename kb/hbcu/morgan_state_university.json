@@ -1,0 +1,57 @@
+{
+  "school_id": "morgan_state_university",
+  "name": "Morgan State University",
+  "state": "Maryland",
+  "address": {
+    "street": "1700 East Cold Spring Ln.",
+    "city": "Baltimore",
+    "state_abbr": "MD",
+    "zip": "21251"
+  },
+  "contacts": {
+    "website": "https://www.morgan.edu",
+    "main_phone": "443-885-3333",
+    "admissions_phone": "1.800.332.6674",
+    "admissions_email": "admissionsdirector@morgan.edu",
+    "financial_aid_phone": "443-885-3170",
+    "financial_aid_email": "finaid@morgan.edu",
+    "fax": "(443) 885-3107",
+    "email": "hsv@morgan.edu"
+  },
+  "type": "public",
+  "year_founded": "1867",
+  "enrollment": 9027,
+  "tuition": {
+    "in_state": 8346,
+    "out_of_state": 16389,
+    "room_board": ""
+  },
+  "academics": {
+    "programs": [
+      "Engineering",
+      "Business Administration",
+      "Computer Science",
+      "Communications",
+      "Architecture",
+      "Education",
+      "Biology",
+      "Social Work"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "morgan_state_university.json",
+    "v2": "199-morgan-state-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 39.3432,
+    "lon": -76.5838
+  },
+  "region": "Mid-Atlantic",
+  "institution_level": "4-year"
+}

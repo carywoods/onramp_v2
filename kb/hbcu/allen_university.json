@@ -1,0 +1,56 @@
+{
+  "school_id": "allen_university",
+  "name": "Allen University",
+  "state": "South Carolina",
+  "address": {
+    "street": "1530 Harden St.",
+    "city": "Columbia",
+    "state_abbr": "SC",
+    "zip": "29204"
+  },
+  "contacts": {
+    "website": "https://allenuniversity.edu",
+    "main_phone": "803-376-5900",
+    "admissions_phone": "(803) 376-5801",
+    "admissions_email": "admissions@allenuniversity.edu",
+    "financial_aid_phone": "803-376-5900",
+    "financial_aid_email": "tmartin@allenuniversity.edu",
+    "fax": "(803) 545-0102",
+    "email": "asujai@allenuniversity.edu"
+  },
+  "type": "private",
+  "year_founded": "1870",
+  "enrollment": 700,
+  "tuition": {
+    "in_state": 16416,
+    "out_of_state": 16416,
+    "room_board": ""
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Biology",
+      "Criminal Justice",
+      "Education",
+      "Computer Science",
+      "Religion",
+      "Psychology"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "allen_university.json",
+    "v2": "229-allen-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 33.9994,
+    "lon": -81.0337
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

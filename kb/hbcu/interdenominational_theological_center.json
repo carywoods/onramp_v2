@@ -1,0 +1,54 @@
+{
+  "school_id": "interdenominational_theological_center",
+  "name": "Interdenominational Theological Center",
+  "state": "Georgia",
+  "address": {
+    "street": "700 Martin Luther King, Jr., Drive, SW",
+    "city": "Atlanta",
+    "state_abbr": "GA",
+    "zip": "30314"
+  },
+  "contacts": {
+    "website": "https://www.itc.edu",
+    "main_phone": "404-527-7794",
+    "admissions_phone": "404-527-7794",
+    "admissions_email": "Admissions@itc.edu",
+    "financial_aid_phone": "(404) 527-7708",
+    "financial_aid_email": "cklacey@itc.edu",
+    "fax": "(404) 527-0901",
+    "email": "jjones@itc.edu"
+  },
+  "type": "private",
+  "year_founded": "1883",
+  "enrollment": 288,
+  "tuition": {
+    "in_state": 7080,
+    "out_of_state": 7080,
+    "room_board": 4337
+  },
+  "academics": {
+    "programs": [
+      "Theology",
+      "Religion",
+      "Divinity",
+      "Christian Education",
+      "Black Church Studies"
+    ],
+    "student_body": "graduate only"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "interdenominational_theological_center.json",
+    "v2": "138-interdenominational-theological-center.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 33.749,
+    "lon": -84.413
+  },
+  "region": "Southeast",
+  "institution_level": "graduate-only"
+}

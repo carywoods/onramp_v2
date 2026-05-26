@@ -1,0 +1,54 @@
+{
+  "school_id": "paul_quinn_college",
+  "name": "Paul Quinn College",
+  "state": "Texas",
+  "address": {
+    "street": "3837 Simpson Stuart Rd.",
+    "city": "Dallas",
+    "state_abbr": "TX",
+    "zip": "75241"
+  },
+  "contacts": {
+    "website": "https://paulquinn.edu",
+    "main_phone": "(214) 376-1000",
+    "admissions_phone": "(214) 379-5449",
+    "admissions_email": "admissions@pqc.edu",
+    "financial_aid_phone": "214-379-5502",
+    "financial_aid_email": "finaid@pqc.edu",
+    "fax": "214.379.5448",
+    "email": "admissions@pqc.edu"
+  },
+  "type": "private",
+  "year_founded": "1872",
+  "enrollment": 850,
+  "tuition": {
+    "in_state": 5480,
+    "out_of_state": 5480,
+    "room_board": 4600
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Criminal Justice",
+      "Education",
+      "Computer Science",
+      "Liberal Arts"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "paul_quinn_college.json",
+    "v2": "243-paul-quinn-college.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 32.6721,
+    "lon": -96.8147
+  },
+  "region": "South Central",
+  "institution_level": "4-year"
+}

@@ -1,0 +1,56 @@
+{
+  "school_id": "lincoln_university_pa",
+  "name": "Lincoln University (PA)",
+  "state": "Pennsylvania",
+  "address": {
+    "street": "1570 Baltimore Pike",
+    "city": "Lincoln University",
+    "state_abbr": "PA",
+    "zip": "19352"
+  },
+  "contacts": {
+    "website": "https://www.lincoln.edu",
+    "main_phone": "484-365-8000",
+    "admissions_phone": "484-365-8081",
+    "admissions_email": "admissions@lincoln.edu",
+    "financial_aid_phone": "484-365-5300",
+    "financial_aid_email": "financialaid@lincoln.edu",
+    "fax": "484-365-8109",
+    "email": "admissions@lincoln.edu"
+  },
+  "type": "public",
+  "year_founded": "1854",
+  "enrollment": 1670,
+  "tuition": {
+    "in_state": 13144,
+    "out_of_state": 26808,
+    "room_board": 13000
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Criminal Justice",
+      "Computer Science",
+      "Biology",
+      "Education",
+      "Psychology",
+      "Sociology"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "lincoln_university_pa.json",
+    "v2": "228-lincoln-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 39.8082,
+    "lon": -75.9277
+  },
+  "region": "Mid-Atlantic",
+  "institution_level": "4-year"
+}

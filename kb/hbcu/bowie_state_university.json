@@ -1,0 +1,57 @@
+{
+  "school_id": "bowie_state_university",
+  "name": "Bowie State University",
+  "state": "Maryland",
+  "address": {
+    "street": "14000 Jericho Park Rd.",
+    "city": "Bowie",
+    "state_abbr": "MD",
+    "zip": "20715"
+  },
+  "contacts": {
+    "website": "https://www.bowiestate.edu",
+    "main_phone": "301-860-4000",
+    "admissions_phone": "301-860-3415",
+    "admissions_email": "ugradadmissions@bowiestate.edu",
+    "financial_aid_phone": "(301) 860-4118",
+    "financial_aid_email": "fa@bowiestate.edu",
+    "fax": "301-860-3518",
+    "email": "admissions@bowiest"
+  },
+  "type": "public",
+  "year_founded": "1865",
+  "enrollment": 4027,
+  "tuition": {
+    "in_state": 9218,
+    "out_of_state": 19938,
+    "room_board": 5219
+  },
+  "academics": {
+    "programs": [
+      "Computer Science",
+      "Business Administration",
+      "Education",
+      "Nursing",
+      "Criminal Justice",
+      "Communications",
+      "Psychology",
+      "Social Work"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "bowie_state_university.json",
+    "v2": "197-bowie-state-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 38.9537,
+    "lon": -76.7291
+  },
+  "region": "Mid-Atlantic",
+  "institution_level": "4-year"
+}

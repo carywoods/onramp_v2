@@ -1,0 +1,57 @@
+{
+  "school_id": "north_carolina_a_t_state_university",
+  "name": "North Carolina A&T State University",
+  "state": "North Carolina",
+  "address": {
+    "street": "1601 E. Market St.",
+    "city": "Greensboro",
+    "state_abbr": "NC",
+    "zip": "27411"
+  },
+  "contacts": {
+    "website": "https://www.ncat.edu",
+    "main_phone": "(336)334-7500",
+    "admissions_phone": "(336)334-7500",
+    "admissions_email": "admissions@ncat.edu",
+    "financial_aid_phone": "(336) 285-2366",
+    "financial_aid_email": "grad@ncat.edu",
+    "fax": "336-256-2613",
+    "email": "admissions@ncat.edu"
+  },
+  "type": "public",
+  "year_founded": "1891",
+  "enrollment": 14311,
+  "tuition": {
+    "in_state": 6813,
+    "out_of_state": 20673,
+    "room_board": 11500
+  },
+  "academics": {
+    "programs": [
+      "Engineering",
+      "Business Administration",
+      "Computer Science",
+      "Agriculture",
+      "Nursing",
+      "Communications",
+      "Education",
+      "Biology"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "north_carolina_a_t_state_university.json",
+    "v2": "218-north-carolina-at-state-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 36.0726,
+    "lon": -79.7887
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

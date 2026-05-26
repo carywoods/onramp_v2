@@ -1,0 +1,56 @@
+{
+  "school_id": "huston_tillotson_university",
+  "name": "Huston-Tillotson University",
+  "state": "Texas",
+  "address": {
+    "street": "900 Chicon Street",
+    "city": "Austin",
+    "state_abbr": "TX",
+    "zip": "78702"
+  },
+  "contacts": {
+    "website": "https://htu.edu",
+    "main_phone": "(512) 505-3160",
+    "admissions_phone": "512.505.3192",
+    "admissions_email": "admissions@htu.edu",
+    "financial_aid_phone": "(512) 505-3160",
+    "financial_aid_email": "finaid@htu.edu",
+    "fax": "",
+    "email": "admission@htu.edu"
+  },
+  "type": "private",
+  "year_founded": "1875",
+  "enrollment": 1000,
+  "tuition": {
+    "in_state": "11576",
+    "out_of_state": "11576",
+    "room_board": null
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Education",
+      "Computer Science",
+      "Biology",
+      "Criminal Justice",
+      "Communications",
+      "Psychology"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "huston_tillotson_university.json",
+    "v2": "240-huston-tillotson-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 30.2724,
+    "lon": -97.7226
+  },
+  "region": "South Central",
+  "institution_level": "4-year"
+}

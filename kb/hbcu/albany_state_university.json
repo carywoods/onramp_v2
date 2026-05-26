@@ -1,0 +1,57 @@
+{
+  "school_id": "albany_state_university",
+  "name": "Albany State University",
+  "state": "Georgia",
+  "address": {
+    "street": "504 College Dr.",
+    "city": "Albany",
+    "state_abbr": "GA",
+    "zip": "31705"
+  },
+  "contacts": {
+    "website": "https://www.asurams.edu",
+    "main_phone": "229-500-2002",
+    "admissions_phone": "229-500-2000",
+    "admissions_email": "shelbi.ham@asurams.edu",
+    "financial_aid_phone": "229-500-4358",
+    "financial_aid_email": "carrie.wilder@asurams.edu",
+    "fax": "229-500-4907",
+    "email": "shelbi.ham@asurams.edu"
+  },
+  "type": "public",
+  "year_founded": "1903",
+  "enrollment": 6768,
+  "tuition": {
+    "in_state": 5656,
+    "out_of_state": 17008,
+    "room_board": ""
+  },
+  "academics": {
+    "programs": [
+      "Nursing",
+      "Business Administration",
+      "Criminal Justice",
+      "Education",
+      "Biology",
+      "Computer Science",
+      "Social Work",
+      "Psychology"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "albany_state_university.json",
+    "v2": "182-albany-state-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 31.5785,
+    "lon": -84.1557
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

@@ -1,0 +1,56 @@
+{
+  "school_id": "coppin_state_university",
+  "name": "Coppin State University",
+  "state": "Maryland",
+  "address": {
+    "street": "2500 West North Avenue",
+    "city": "Baltimore",
+    "state_abbr": "MD",
+    "zip": "21216"
+  },
+  "contacts": {
+    "website": "https://www.coppin.edu",
+    "main_phone": "410.951.3000",
+    "admissions_phone": "410.951.3000",
+    "admissions_email": "admissions@coppin.edu",
+    "financial_aid_phone": "(410) 951-3636",
+    "financial_aid_email": "financialaid@coppin.edu",
+    "fax": "(410) 523-7351",
+    "email": "Admissions@coppin.edu"
+  },
+  "type": "public",
+  "year_founded": "1900",
+  "enrollment": 2500,
+  "tuition": {
+    "in_state": 7100,
+    "out_of_state": 14023,
+    "room_board": 12006
+  },
+  "academics": {
+    "programs": [
+      "Nursing",
+      "Criminal Justice",
+      "Social Work",
+      "Business Administration",
+      "Education",
+      "Psychology",
+      "Computer Science"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "coppin_state_university.json",
+    "v2": "198-coppin-state-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 39.3126,
+    "lon": -76.6697
+  },
+  "region": "Mid-Atlantic",
+  "institution_level": "4-year"
+}

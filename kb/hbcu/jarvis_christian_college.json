@@ -1,0 +1,55 @@
+{
+  "school_id": "jarvis_christian_college",
+  "name": "Jarvis Christian University",
+  "state": "Texas",
+  "address": {
+    "street": "830 FM 855",
+    "city": "Hawkins",
+    "state_abbr": "TX",
+    "zip": "75765"
+  },
+  "contacts": {
+    "website": "https://www.jarvis.edu",
+    "main_phone": "903-730-4890",
+    "admissions_phone": "(903) 730-4890",
+    "admissions_email": "kmitchell@jarvis.edu",
+    "financial_aid_phone": "(903) 730-4890",
+    "financial_aid_email": "ckjones@jarvis.edu",
+    "fax": "",
+    "email": "dsimmons@jarvis.edu"
+  },
+  "type": "private",
+  "year_founded": "1912",
+  "enrollment": 729,
+  "tuition": {
+    "in_state": "14494",
+    "out_of_state": "14494",
+    "room_board": null
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Biology",
+      "Education",
+      "Criminal Justice",
+      "Computer Science",
+      "Religion"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "jarvis_christian_college.json",
+    "v2": "242-jarvis-christian-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 32.2677,
+    "lon": -94.8527
+  },
+  "region": "South Central",
+  "institution_level": "4-year"
+}

@@ -1,0 +1,55 @@
+{
+  "school_id": "voorhees_college",
+  "name": "Voorhees College",
+  "state": "South Carolina",
+  "address": {
+    "street": "3235 College Dr",
+    "city": "Denmark",
+    "state_abbr": "SC",
+    "zip": "29042"
+  },
+  "contacts": {
+    "website": "https://voorhees.edu",
+    "main_phone": "(803) 780-1234",
+    "admissions_phone": "(803) 780-1030",
+    "admissions_email": "admissions@voorhees.edu",
+    "financial_aid_phone": "803 780-1150",
+    "financial_aid_email": "finaid@voorhees.edu",
+    "fax": "(803) 780-1430",
+    "email": "admissions@voorhees.edu"
+  },
+  "type": "private",
+  "year_founded": "1897",
+  "enrollment": 676,
+  "tuition": {
+    "in_state": "11630",
+    "out_of_state": "10086",
+    "room_board": null
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Biology",
+      "Criminal Justice",
+      "Computer Science",
+      "Education",
+      "Psychology"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "voorhees_college.json",
+    "v2": "234-voorhees-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 33.3235,
+    "lon": -81.116
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

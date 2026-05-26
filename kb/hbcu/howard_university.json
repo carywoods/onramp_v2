@@ -1,0 +1,57 @@
+{
+  "school_id": "howard_university",
+  "name": "Howard University",
+  "state": "District of Columbia",
+  "address": {
+    "street": "2400 Sixth St., NW",
+    "city": "Washington",
+    "state_abbr": "DC",
+    "zip": "20059"
+  },
+  "contacts": {
+    "website": "https://howard.edu",
+    "main_phone": "202-806-6100",
+    "admissions_phone": "202-806-6100",
+    "admissions_email": "admission@howard.edu",
+    "financial_aid_phone": "800-822-6363",
+    "financial_aid_email": "finaid@howard.edu",
+    "fax": "(202) 806-6132",
+    "email": "admission@howard.e"
+  },
+  "type": "private",
+  "year_founded": "1867",
+  "enrollment": 14890,
+  "tuition": {
+    "in_state": 35810,
+    "out_of_state": 35810,
+    "room_board": 6186
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Biology",
+      "Computer Science",
+      "Communications",
+      "Nursing",
+      "Pre-Med",
+      "Political Science",
+      "Law"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "howard_university.json",
+    "v2": "175-howard-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 38.9222,
+    "lon": -77.0202
+  },
+  "region": "Mid-Atlantic",
+  "institution_level": "4-year"
+}

@@ -1,0 +1,55 @@
+{
+  "school_id": "pensole_lewis_college",
+  "name": "Pensole Lewis College of Business and Design",
+  "state": "Michigan",
+  "address": {
+    "street": "3300 Mack Ave",
+    "city": "Detroit",
+    "state_abbr": "MI",
+    "zip": "48201"
+  },
+  "contacts": {
+    "website": "https://www.pensolelewis.edu/",
+    "main_phone": "313-664-7800",
+    "admissions_phone": "Not found",
+    "admissions_email": "admissions@pensolelewis.edu",
+    "financial_aid_phone": "Not found",
+    "financial_aid_email": "Not found",
+    "fax": "",
+    "email": ""
+  },
+  "type": "private",
+  "year_founded": "2020",
+  "enrollment": 150,
+  "tuition": {
+    "in_state": 28000,
+    "out_of_state": 28000,
+    "room_board": null
+  },
+  "academics": {
+    "programs": [
+      "Footwear Design",
+      "Product Design",
+      "Fashion Design",
+      "Industrial Design",
+      "Marketing"
+    ],
+    "student_body": ""
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "",
+    "v2": ""
+  },
+  "_conflicts": [],
+  "_resolution": "stub_no_reliable_data",
+  "federally_recognized": false,
+  "hbcu_designation_note": "Founded 2020. A new institution focused on design and business; HBCU federal designation not yet granted as of 2025.",
+  "coordinates": {
+    "lat": 42.3486,
+    "lon": -83.0457
+  },
+  "region": "Midwest",
+  "institution_level": "4-year"
+}

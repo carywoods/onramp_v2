@@ -1,0 +1,56 @@
+{
+  "school_id": "savannah_state_university",
+  "name": "Savannah State University",
+  "state": "Georgia",
+  "address": {
+    "street": "3219 College St.",
+    "city": "Savannah",
+    "state_abbr": "GA",
+    "zip": "31404"
+  },
+  "contacts": {
+    "website": "https://savannahstate.edu",
+    "main_phone": "(912) 358-4162",
+    "admissions_phone": "912-358-4338",
+    "admissions_email": "admissions@savannahstate.edu",
+    "financial_aid_phone": "912-358-4162",
+    "financial_aid_email": "finaid@savannahstate.edu",
+    "fax": "912.358.4631",
+    "email": "admissions@savannahstate.edu"
+  },
+  "type": "public",
+  "year_founded": "1890",
+  "enrollment": 3200,
+  "tuition": {
+    "in_state": 4556,
+    "out_of_state": 14918,
+    "room_board": ""
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Computer Science",
+      "Criminal Justice",
+      "Biology",
+      "Engineering Technology",
+      "Social Work",
+      "Communications"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "savannah_state_university.json",
+    "v2": "189-savannah-state-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 32.056,
+    "lon": -81.0998
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

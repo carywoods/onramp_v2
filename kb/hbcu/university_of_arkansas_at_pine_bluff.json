@@ -1,0 +1,56 @@
+{
+  "school_id": "university_of_arkansas_at_pine_bluff",
+  "name": "University of Arkansas at Pine Bluff",
+  "state": "Arkansas",
+  "address": {
+    "street": "1200 North University Drive",
+    "city": "Pine Bluff",
+    "state_abbr": "AR",
+    "zip": "71601"
+  },
+  "contacts": {
+    "website": "https://uapb.edu",
+    "main_phone": "870-575-8000",
+    "admissions_phone": "(870) 575-8492",
+    "admissions_email": "admissions@uapb.edu",
+    "financial_aid_phone": "(870) 534-2993",
+    "financial_aid_email": "kearneyj@uapb.edu",
+    "fax": "870.575.4652",
+    "email": "roshelll@uapb.edu"
+  },
+  "type": "public",
+  "year_founded": "1873",
+  "enrollment": 2000,
+  "tuition": {
+    "in_state": 6060,
+    "out_of_state": 17992,
+    "room_board": 9194
+  },
+  "academics": {
+    "programs": [
+      "Agriculture",
+      "Business Administration",
+      "Education",
+      "Criminal Justice",
+      "Computer Science",
+      "Biology",
+      "Nursing"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "university_of_arkansas_at_pine_bluff.json",
+    "v2": "86-university-of-arkansas-at-pine-bluff.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 34.2282,
+    "lon": -92.0032
+  },
+  "region": "South Central",
+  "institution_level": "4-year"
+}

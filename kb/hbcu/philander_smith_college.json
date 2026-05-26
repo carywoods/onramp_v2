@@ -1,0 +1,55 @@
+{
+  "school_id": "philander_smith_college",
+  "name": "Philander Smith College",
+  "state": "Arkansas",
+  "address": {
+    "street": "900 West Daisy Bates Drive",
+    "city": "Little Rock",
+    "state_abbr": "AR",
+    "zip": "72202"
+  },
+  "contacts": {
+    "website": "https://www.philander.edu",
+    "main_phone": "501-375-9845",
+    "admissions_phone": "1-800-446-6772",
+    "admissions_email": "admissions@philander.edu",
+    "financial_aid_phone": "(501) 370-5350",
+    "financial_aid_email": "financialaid@philander.edu",
+    "fax": "(501) 370-5357",
+    "email": "mdebro@philander.edu"
+  },
+  "type": "private",
+  "year_founded": "1877",
+  "enrollment": 1100,
+  "tuition": {
+    "in_state": 16950,
+    "out_of_state": 16950,
+    "room_board": 11800
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Biology",
+      "Education",
+      "Criminal Justice",
+      "Computer Science",
+      "Social Work"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "philander_smith_college.json",
+    "v2": "191-philander-smith-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 34.7465,
+    "lon": -92.2896
+  },
+  "region": "South Central",
+  "institution_level": "4-year"
+}

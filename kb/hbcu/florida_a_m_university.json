@@ -1,0 +1,57 @@
+{
+  "school_id": "florida_a_m_university",
+  "name": "Florida A&M University",
+  "state": "Florida",
+  "address": {
+    "street": "G-9 Foote-Hilyer Administration Center",
+    "city": "Tallahassee",
+    "state_abbr": "FL",
+    "zip": "32307"
+  },
+  "contacts": {
+    "website": "https://www.famu.edu",
+    "main_phone": "850-599-3591",
+    "admissions_phone": "850-412-5634",
+    "admissions_email": "cafsrecruitment@famu.edu",
+    "financial_aid_phone": "(850) 599-3730",
+    "financial_aid_email": "financialaid@famu.edu",
+    "fax": "850-412-5012",
+    "email": "adm@famu.edu"
+  },
+  "type": "public",
+  "year_founded": "1887",
+  "enrollment": 10428,
+  "tuition": {
+    "in_state": 5785,
+    "out_of_state": 17725,
+    "room_board": 5766
+  },
+  "academics": {
+    "programs": [
+      "Pharmacy",
+      "Business Administration",
+      "Nursing",
+      "Engineering",
+      "Computer Science",
+      "Journalism",
+      "Biology",
+      "Criminal Justice"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "florida_a_m_university.json",
+    "v2": "180-florida-a-m-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 30.4202,
+    "lon": -84.2968
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

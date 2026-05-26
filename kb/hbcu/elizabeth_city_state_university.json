@@ -1,0 +1,56 @@
+{
+  "school_id": "elizabeth_city_state_university",
+  "name": "Elizabeth City State University",
+  "state": "North Carolina",
+  "address": {
+    "street": "1704 Weeksville Road",
+    "city": "Elizabeth City",
+    "state_abbr": "NC",
+    "zip": "27909"
+  },
+  "contacts": {
+    "website": "https://www.ecsu.edu",
+    "main_phone": "252-335-3252",
+    "admissions_phone": "(252)335-3549",
+    "admissions_email": "fabryan@ecsu.edu",
+    "financial_aid_phone": "(252)335-4850",
+    "financial_aid_email": "minyamolo@ecsu.edu",
+    "fax": "252.335.3415",
+    "email": "fabryan@ecsu.edu"
+  },
+  "type": "public",
+  "year_founded": "1891",
+  "enrollment": 2360,
+  "tuition": {
+    "in_state": 6536,
+    "out_of_state": 10536,
+    "room_board": 8000
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Education",
+      "Computer Science",
+      "Criminal Justice",
+      "Biology",
+      "Aviation",
+      "Psychology"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "elizabeth_city_state_university.json",
+    "v2": "213-elizabeth-city-state-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 36.2954,
+    "lon": -76.2522
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

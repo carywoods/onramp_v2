@@ -1,0 +1,57 @@
+{
+  "school_id": "university_of_the_district_of_columbia",
+  "name": "University of the District of Columbia",
+  "state": "District of Columbia",
+  "address": {
+    "street": "4200 Connecticut Ave., NW Bldg 39",
+    "city": "Washington",
+    "state_abbr": "DC",
+    "zip": "20008"
+  },
+  "contacts": {
+    "website": "https://www.udc.edu",
+    "main_phone": "202-274-5000",
+    "admissions_phone": "202-274-5941",
+    "admissions_email": "Not found",
+    "financial_aid_phone": "202-274-5941",
+    "financial_aid_email": "finaid@udc.edu",
+    "fax": "(202) 274-5553",
+    "email": "admissions@udc.edu"
+  },
+  "type": "public",
+  "year_founded": "1851",
+  "enrollment": 5170,
+  "tuition": {
+    "in_state": 8146,
+    "out_of_state": 8146,
+    "room_board": null
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Nursing",
+      "Engineering",
+      "Computer Science",
+      "Law",
+      "Education",
+      "Biology",
+      "Criminal Justice"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "university_of_the_district_of_columbia.json",
+    "v2": "170-university-of-the-district-of-columbia.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 38.9432,
+    "lon": -77.0635
+  },
+  "region": "Mid-Atlantic",
+  "institution_level": "4-year"
+}

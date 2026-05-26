@@ -1,0 +1,55 @@
+{
+  "school_id": "southern_university_at_new_orleans",
+  "name": "Southern University at New Orleans",
+  "state": "Louisiana",
+  "address": {
+    "street": "6400 SUNO Knights Drive",
+    "city": "New Orleans",
+    "state_abbr": "LA",
+    "zip": "70126"
+  },
+  "contacts": {
+    "website": "https://www.suno.edu",
+    "main_phone": "(504) 286-5000",
+    "admissions_phone": "(504) 286-5315",
+    "admissions_email": "admissions@suno.edu",
+    "financial_aid_phone": "(504) 286-5000",
+    "financial_aid_email": "finaid@suno.edu",
+    "fax": "504 286 5304",
+    "email": "admissions@suno.edu"
+  },
+  "type": "public",
+  "year_founded": "1956",
+  "enrollment": 1773,
+  "tuition": {
+    "in_state": 7490,
+    "out_of_state": 16390,
+    "room_board": ""
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Criminal Justice",
+      "Social Work",
+      "Computer Science",
+      "Education",
+      "Psychology"
+    ],
+    "student_body": ""
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "southern_university_at_new_orleans.json",
+    "v2": ""
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 30.0271,
+    "lon": -90.0715
+  },
+  "region": "South Central",
+  "institution_level": "4-year"
+}

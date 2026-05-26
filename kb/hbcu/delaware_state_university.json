@@ -1,0 +1,57 @@
+{
+  "school_id": "delaware_state_university",
+  "name": "Delaware State University",
+  "state": "Delaware",
+  "address": {
+    "street": "1200 North DuPont Highway",
+    "city": "Dover",
+    "state_abbr": "DE",
+    "zip": "19901"
+  },
+  "contacts": {
+    "website": "https://www.desu.edu",
+    "main_phone": "302.857.6060",
+    "admissions_phone": "302.857.6351",
+    "admissions_email": "admissionsdocs@desu.edu",
+    "financial_aid_phone": "302.857.6250",
+    "financial_aid_email": "hsavage@desu.edu",
+    "fax": "(302) 857-6823",
+    "email": "admissions@desu.ed"
+  },
+  "type": "public",
+  "year_founded": "1891",
+  "enrollment": 6623,
+  "tuition": {
+    "in_state": 13122,
+    "out_of_state": 19346,
+    "room_board": null
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Nursing",
+      "Computer Science",
+      "Biology",
+      "Communications",
+      "Criminal Justice",
+      "Education",
+      "Engineering"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "delaware_state_university.json",
+    "v2": "177-delaware-state-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 39.1557,
+    "lon": -75.5243
+  },
+  "region": "Mid-Atlantic",
+  "institution_level": "4-year"
+}

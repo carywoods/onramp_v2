@@ -1,0 +1,50 @@
+{
+  "school_id": "concordia-college-alabama",
+  "name": "Concordia College Alabama",
+  "state": "AL",
+  "address": {
+    "street": "1804 Green St., Kreft",
+    "city": "Selma",
+    "state_abbr": "AL",
+    "zip": "36701"
+  },
+  "contacts": {
+    "website": null,
+    "email": "admissions@gloria.",
+    "fax": "(334) 874-3728"
+  },
+  "type": "public",
+  "year_founded": "1922",
+  "enrollment": 902,
+  "tuition": {
+    "in_state": 10000,
+    "out_of_state": 10000,
+    "room_board": null
+  },
+  "academics": {
+    "programs": [
+      "Business",
+      "Education",
+      "General Studies",
+      "Management",
+      "Continuing"
+    ],
+    "student_body": "coed"
+  },
+  "status": "closed",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "",
+    "v2": "186-concordia-college-alabama.json"
+  },
+  "_conflicts": [],
+  "closed_year": 2018,
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 32.5224,
+    "lon": -87.8386
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

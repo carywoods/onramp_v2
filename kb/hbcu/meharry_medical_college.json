@@ -1,0 +1,55 @@
+{
+  "school_id": "meharry_medical_college",
+  "name": "Meharry Medical College",
+  "state": "Tennessee",
+  "address": {
+    "street": "1005 Dr. D.B. Todd Jr. Blvd",
+    "city": "Nashville",
+    "state_abbr": "TN",
+    "zip": "37208"
+  },
+  "contacts": {
+    "website": "https://meharry.edu",
+    "main_phone": "615.327.6000",
+    "admissions_phone": "615.327.6254",
+    "admissions_email": "admissions@mmc.edu",
+    "financial_aid_phone": "512.505.3028",
+    "financial_aid_email": "admissions@mmc.edu",
+    "fax": "(877) 894.3456",
+    "email": "admissions@mmc.edu"
+  },
+  "type": "private",
+  "year_founded": "1876",
+  "enrollment": 891,
+  "tuition": {
+    "in_state": 44989,
+    "out_of_state": 44989,
+    "room_board": ""
+  },
+  "academics": {
+    "programs": [
+      "Medicine",
+      "Dentistry",
+      "Public Health",
+      "Biomedical Sciences",
+      "Nursing",
+      "Health Sciences"
+    ],
+    "student_body": ""
+  },
+  "status": "",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "meharry_medical_college.json",
+    "v2": ""
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 36.1677,
+    "lon": -86.816
+  },
+  "region": "Southeast",
+  "institution_level": "graduate-only"
+}

@@ -1,0 +1,56 @@
+{
+  "school_id": "talladega_college",
+  "name": "Talladega College",
+  "state": "Alabama",
+  "address": {
+    "street": "627 West Battle St.",
+    "city": "Talladega",
+    "state_abbr": "AL",
+    "zip": "35160"
+  },
+  "contacts": {
+    "website": "https://www.talladega.edu",
+    "main_phone": "(256) 761-6235",
+    "admissions_phone": "(256) 761-6100",
+    "admissions_email": "admissions@talladega.edu",
+    "financial_aid_phone": "(256) 761-6237",
+    "financial_aid_email": "finaid@talladega.edu",
+    "fax": "256-761-6450",
+    "email": "admissions@tallade"
+  },
+  "type": "private",
+  "year_founded": "1867",
+  "enrollment": 701,
+  "tuition": {
+    "in_state": 15650,
+    "out_of_state": 15650,
+    "room_board": null
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Biology",
+      "Computer Science",
+      "Education",
+      "Criminal Justice",
+      "Psychology",
+      "Communications"
+    ],
+    "student_body": "coed"
+  },
+  "status": "threatened",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "talladega_college.json",
+    "v2": "168-talladega-college.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 33.4318,
+    "lon": -86.1049
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

@@ -1,0 +1,56 @@
+{
+  "school_id": "shaw_university",
+  "name": "Shaw University",
+  "state": "North Carolina",
+  "address": {
+    "street": "118 E. South St.",
+    "city": "Raleigh",
+    "state_abbr": "NC",
+    "zip": "27601"
+  },
+  "contacts": {
+    "website": "https://www.shawu.edu",
+    "main_phone": "919-546-8200",
+    "admissions_phone": "919-546-8200",
+    "admissions_email": "admissions@shawu.edu",
+    "financial_aid_phone": "919-546-8200",
+    "financial_aid_email": "academicaffairs@shawu.edu",
+    "fax": "919-546-8453",
+    "email": "admissions@shawu.edu"
+  },
+  "type": "private",
+  "year_founded": "1865",
+  "enrollment": 1500,
+  "tuition": {
+    "in_state": 17280,
+    "out_of_state": 17280,
+    "room_board": 10500
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Criminal Justice",
+      "Education",
+      "Computer Science",
+      "Biology",
+      "Psychology",
+      "Communications"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "shaw_university.json",
+    "v2": "222-shaw-university.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 35.7721,
+    "lon": -78.6374
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

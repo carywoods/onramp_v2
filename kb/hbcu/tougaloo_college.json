@@ -1,0 +1,55 @@
+{
+  "school_id": "tougaloo_college",
+  "name": "Tougaloo College",
+  "state": "Mississippi",
+  "address": {
+    "street": "5000 W. County Line Rd.",
+    "city": "Tougaloo",
+    "state_abbr": "MS",
+    "zip": "39174"
+  },
+  "contacts": {
+    "website": "https://www.tougaloo.edu",
+    "main_phone": "(601) 977-7700",
+    "admissions_phone": "(601) 977-6180",
+    "admissions_email": "pscott2@tougaloo.edu",
+    "financial_aid_phone": "(601) 977-7766",
+    "financial_aid_email": "finaid@tougaloo.edu",
+    "fax": "(601) 977-6165",
+    "email": "pscott2@tougaloo.edu"
+  },
+  "type": "private",
+  "year_founded": "1869",
+  "enrollment": 1286,
+  "tuition": {
+    "in_state": 12628,
+    "out_of_state": 12628,
+    "room_board": 9500
+  },
+  "academics": {
+    "programs": [
+      "Biology",
+      "Business Administration",
+      "Education",
+      "Psychology",
+      "Computer Science",
+      "Social Work"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "tougaloo_college.json",
+    "v2": "207-tougaloo-college.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 32.4235,
+    "lon": -90.1132
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

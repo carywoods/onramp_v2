@@ -1,0 +1,55 @@
+{
+  "school_id": "virginia_university_of_lynchburg",
+  "name": "Virginia University of Lynchburg",
+  "state": "Virginia",
+  "address": {
+    "street": "434 528 5276 2058 Garfield Avenue",
+    "city": "Lynchburg",
+    "state_abbr": "VA",
+    "zip": "24501"
+  },
+  "contacts": {
+    "website": "https://wp.vul.edu",
+    "main_phone": "(434) 528-5276",
+    "admissions_phone": "(434) 528-5276",
+    "admissions_email": "pprice@vul.edu",
+    "financial_aid_phone": "434.544.8300",
+    "financial_aid_email": "financialaid@vul.edu",
+    "fax": "434-528-2705",
+    "email": "pprice@vul.edu"
+  },
+  "type": "private",
+  "year_founded": "1886",
+  "enrollment": 126,
+  "tuition": {
+    "in_state": 8448,
+    "out_of_state": 8448,
+    "room_board": ""
+  },
+  "academics": {
+    "programs": [
+      "Theology",
+      "Religion",
+      "Business Administration",
+      "Education",
+      "Liberal Arts"
+    ],
+    "student_body": ""
+  },
+  "status": "",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "virginia_university_of_lynchburg.json",
+    "v2": ""
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": false,
+  "hbcu_designation_note": "Operates as an HBCU and is recognized by the HBCU community, but does not currently appear on the U.S. Dept of Education official list.",
+  "coordinates": {
+    "lat": 37.4138,
+    "lon": -79.1422
+  },
+  "region": "Mid-Atlantic",
+  "institution_level": "4-year"
+}

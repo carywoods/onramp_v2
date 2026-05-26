@@ -1,0 +1,54 @@
+{
+  "school_id": "selma_university",
+  "name": "Selma University",
+  "state": "Alabama",
+  "address": {
+    "street": "1501 Lapsley St",
+    "city": "Selma",
+    "state_abbr": "AL",
+    "zip": "36701"
+  },
+  "contacts": {
+    "website": "https://www.selmauniversity.org/",
+    "main_phone": "334-872-2533",
+    "admissions_phone": "Not found",
+    "admissions_email": "admissions@selmauniversity.org",
+    "financial_aid_phone": "Not found",
+    "financial_aid_email": "Not found",
+    "fax": "",
+    "email": ""
+  },
+  "type": "private",
+  "year_founded": "1878",
+  "enrollment": 400,
+  "tuition": {
+    "in_state": 8500,
+    "out_of_state": 8500,
+    "room_board": 6200
+  },
+  "academics": {
+    "programs": [
+      "Theology",
+      "Religion",
+      "Liberal Arts",
+      "Education",
+      "Business Administration"
+    ],
+    "student_body": ""
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "",
+    "v2": ""
+  },
+  "_conflicts": [],
+  "_resolution": "stub_no_reliable_data",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 32.4074,
+    "lon": -87.0211
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

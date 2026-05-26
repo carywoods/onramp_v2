@@ -1,0 +1,57 @@
+{
+  "school_id": "benedict_college",
+  "name": "Benedict College",
+  "state": "South Carolina",
+  "address": {
+    "street": "1600 Harden St.",
+    "city": "Columbia",
+    "state_abbr": "SC",
+    "zip": "29204"
+  },
+  "contacts": {
+    "website": "https://benedict.edu",
+    "main_phone": "(803) 253-5000",
+    "admissions_phone": "803-253-5000",
+    "admissions_email": "admissions@benedict.edu",
+    "financial_aid_phone": "(803) 705-4418",
+    "financial_aid_email": "financial.aid@benedict.edu",
+    "fax": "803-252-5215",
+    "email": "admissions@benedict.edu"
+  },
+  "type": "private",
+  "year_founded": "1870",
+  "enrollment": 1628,
+  "tuition": {
+    "in_state": 18348,
+    "out_of_state": 18348,
+    "room_board": ""
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Biology",
+      "Computer Science",
+      "Criminal Justice",
+      "Education",
+      "Engineering",
+      "Social Work",
+      "Communications"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "benedict_college.json",
+    "v2": "230-benedict-college.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 34.0007,
+    "lon": -81.029
+  },
+  "region": "Southeast",
+  "institution_level": "4-year"
+}

@@ -1,0 +1,56 @@
+{
+  "school_id": "lincoln_university_mo",
+  "name": "Lincoln University (MO)",
+  "state": "Missouri",
+  "address": {
+    "street": "820 Chestnut St.",
+    "city": "Jefferson City",
+    "state_abbr": "MO",
+    "zip": "65101"
+  },
+  "contacts": {
+    "website": "https://www.lincolnu.edu",
+    "main_phone": "573-681-5000",
+    "admissions_phone": "573-872-1237",
+    "admissions_email": "Admissions@LincolnU.edu",
+    "financial_aid_phone": "213-252-5100",
+    "financial_aid_email": "sfs@LincolnU.edu",
+    "fax": "573-681-5889",
+    "email": "Admissions@LincolnU.edu"
+  },
+  "type": "public",
+  "year_founded": "1866",
+  "enrollment": 2200,
+  "tuition": {
+    "in_state": 8675,
+    "out_of_state": 16340,
+    "room_board": ""
+  },
+  "academics": {
+    "programs": [
+      "Business Administration",
+      "Education",
+      "Criminal Justice",
+      "Computer Science",
+      "Biology",
+      "Nursing",
+      "Psychology"
+    ],
+    "student_body": "coed"
+  },
+  "status": "open",
+  "last_updated": "2026-05-25",
+  "_sources": {
+    "v1": "lincoln_university_mo.json",
+    "v2": "202-lincoln-university-missouri.json"
+  },
+  "_conflicts": [],
+  "_resolution": "perplexity_verified",
+  "federally_recognized": true,
+  "coordinates": {
+    "lat": 38.5573,
+    "lon": -92.1735
+  },
+  "region": "Midwest",
+  "institution_level": "4-year"
+}
